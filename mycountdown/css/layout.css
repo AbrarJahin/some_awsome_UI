@@ -1,0 +1,773 @@
+/*
+Item Name : MyCountdown - Sliding Coming Soon Page
+Author URI : http://themeforest.net/user/Pixelworkshop/
+Version : 1.0
+*/
+
+/*
+
+TABLE OF CONTENTS
+
+01 RESET
+02 PAGE & GRID
+03 HEADER
+04 DOTS NAVIGATION
+05 SCROLLPANE
+06 CONTENT STYLING
+07 COUNTDOWN
+08 FORM ELEMENTS
+
+*/
+
+
+
+/*  _______________________________________
+
+	01 RESET
+    _______________________________________  */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, 
+b, u, i, center, 
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, 
+time, mark, audio, video{margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display:block}
+body{line-height:1}
+ol, ul{list-style:none}
+blockquote, q{quotes:none}
+blockquote:before, blockquote:after, 
+q:before, q:after{content:''; content:none}
+table{border-collapse:collapse; border-spacing:0}
+*:focus {outline: none;}
+
+
+
+/*  _______________________________________
+
+	02 PAGE & GRID
+    _______________________________________  */
+
+
+
+html, body {
+	height: 100%;
+	width:100%;
+	overflow:hidden;
+}
+body {
+	font-family: 'Droid Sans',sans-serif;
+}
+#wrapper {
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	overflow:hidden;
+}
+	#mask {
+		width:2000%;
+		height:2000%;
+	}
+	.section_holder {
+		width:5%;
+		height:5%;
+		min-width:960px;
+		min-height:900px;
+		float:left;
+	}
+	.container {
+		width:100%;
+		height:100%;
+		margin:0;
+		position:relative;
+	}
+	
+.wrapper_black {background:url("../img/backgrounds/black.jpg") repeat;}
+.wrapper_blue {background:url("../img/backgrounds/blue.jpg") repeat;}
+.wrapper_brown {background:url("../img/backgrounds/brown.jpg") repeat;}
+.wrapper_green {background:url("../img/backgrounds/green.jpg") repeat;}
+.wrapper_grey {background:url("../img/backgrounds/grey.jpg") repeat;}
+.wrapper_ocean {background:url("../img/backgrounds/ocean.jpg") repeat;}
+.wrapper_orange {background:url("../img/backgrounds/orange.jpg") repeat;}
+.wrapper_peach {background:url("../img/backgrounds/peach.jpg") repeat;}
+.wrapper_purple {background:url("../img/backgrounds/purple.jpg") repeat;}
+.wrapper_red {background:url("../img/backgrounds/red.jpg") repeat;}
+.wrapper_teal {background:url("../img/backgrounds/teal.jpg") repeat;}
+.wrapper_lemon {background:url("../img/backgrounds/lemon.jpg") repeat;}
+.wrapper_pink {background:url("../img/backgrounds/pink.jpg") repeat;}
+.wrapper_coffee {background:url("../img/backgrounds/coffee.jpg") repeat;}
+.wrapper_olive {background:url("../img/backgrounds/olive.jpg") repeat;}
+
+.section_content {
+	background:url("../img/bg_content.png") center center no-repeat;
+	width:900px;
+	height:900px;
+	margin:0 auto;
+	position:absolute;
+	top:50%;
+	margin-top:-425px;
+	left:50%; 
+	margin-left:-450px;
+}
+.content_container {
+	margin:150px auto 0 auto;
+	width: 735px;
+}
+.column_1,
+.column_2,
+.column_3 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 18px;
+	margin-right: 17px;
+}
+	.column_1 {
+		width:210px;
+	}
+	.column_2 {
+		width:455px;
+	}
+	.column_3 {
+		width:700px;
+	}
+	.column_4 {
+		position: relative;
+		width:540px;
+		margin:0 0 0 95px;
+	}
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 12px;
+}
+.clear_section {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+
+
+/*  _______________________________________
+
+	03 HEADER
+    _______________________________________  */
+
+
+
+#menu {
+	position: fixed;
+	width:100%;
+	padding:0;
+	margin:0;
+	top:0;
+	height:50px;
+	background:url("../img/header.png") repeat-x;
+}
+#menu ul {
+	text-align: center;
+}
+#menu ul li {
+	display:inline;
+	margin:0 15px 0 15px;
+}
+#menu ul li a {
+	display: inline-block;
+    text-align: center;
+	text-transform:uppercase;	
+	font-size:12px;
+	line-height:12px;
+	padding:14px 0px 14px 0px;
+	text-shadow:1px 1px #000000;
+}
+#menu ul li a:hover,
+#menu ul li a.selected {
+	text-decoration:none;
+	color:#ffffff;
+	border-top:2px solid #ffffff;
+}
+
+
+
+/*  _______________________________________
+
+	04 DOTS NAVIGATION
+    _______________________________________  */
+
+
+
+.navigationmap {
+	position: fixed;
+	text-align:center;
+	float:right;
+	bottom:0;
+	right:20px;
+}
+	.navigationmap li {
+		float:left;
+		margin:0;
+		padding:0;
+	}
+	.navigationmap li.clearrow {
+		clear:both;
+		float:none;
+	}
+	.navigationmap li.emptyitem {
+		float:left;
+		display:block;
+		width:20px;
+		height:20px;
+		margin:3px;
+	}
+	.navigationmap a {
+		display:block;
+		width:20px;
+		height:20px;
+		margin:3px;
+		background:url("../img/navigation.png") no-repeat;
+	}
+	.navigationmap_vertical li {
+		clear:both;
+	}
+	.navigationmap .selected {
+		background:url("../img/navigation_active.png") no-repeat;
+	}
+
+
+
+/*  _______________________________________
+
+	05 SCROLLPANE
+    _______________________________________  */
+
+
+
+.scrollpane {
+	width: 755px;
+	height: 400px;
+	margin:0 auto;
+	overflow: auto;
+}
+.jspContainer {
+	overflow: hidden;
+	position: relative;
+}
+.jspPane {
+	position: absolute;
+}
+.jspVerticalBar {
+	position: absolute;
+	top: -30px;
+	height:370px;
+	right:1px;
+	width: 10px;
+	background:url("../img/scrollpane/scrollpane_track.png") center 5px no-repeat;
+}
+	.jspVerticalBar * {
+		margin: 0;
+		padding: 0;
+	}
+.jspVerticalBar .jspCap {
+	display: block;
+	background: none;
+	height: 30px;
+}
+.jspTrack {
+	position: relative;
+}
+.jspDrag {
+	background:url("../img/scrollpane/scrollpane_drag.png") center center no-repeat;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	width:11px;
+	height:11px;
+}
+
+
+
+/*  _______________________________________
+
+	06 CONTENT STYLING
+    _______________________________________  */
+
+
+
+p, ul, ol, h1, h2, h3, h4, h5, h6 {
+	color:#cccccc;
+	text-shadow:1px 1px #000000;
+	margin-bottom:24px;
+}
+p, ul, ol {
+	font-size:11px;
+	line-height:20px;
+}
+a {
+	text-decoration:none;
+	color:#ffffff;
+}
+	a:hover {
+		text-decoration:underline;
+	}
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+	line-height:100%;
+}
+h1 {
+	font-size:28px;
+	line-height:32px;
+}
+h2 {
+	font-size: 24px; 
+}
+h3 {
+	font-size: 18px; 
+}
+h4 {
+	font-size: 16px; 
+}
+h5 {
+	font-size: 14px;
+	font-style:normal;
+	text-transform:uppercase;
+}
+h6 {
+	font-size: 12px; 
+	font-style:normal;
+	text-transform:uppercase;
+	padding-bottom:6px;
+	border-bottom:1px solid rgba(255,255,255,0.04);
+}
+.intro_title {
+	font-family: 'Droid Serif', serif;
+	font-style:italic;
+	line-height:32px;
+	text-align:center;
+	font-size:18px;
+	margin-bottom:42px;
+}
+
+/* Lists */
+
+ul, ol {
+	margin-left:0;
+}
+ul {
+	list-style:none;
+}
+ol {
+	list-style:decimal;
+}
+.list li, .list2 li, .num li, .num2 li {
+	padding-left:12px
+}
+.list {
+	margin:0 0 18px 15px;
+	list-style:disc;
+}
+.list2 {
+	margin:0 0 18px 15px; 
+	list-style:square;
+}
+.num {
+	margin:0 0 18px 18px; 
+	list-style:decimal;
+}
+.num2 {
+	margin:0 0 18px 18px; 
+	list-style:upper-latin;
+}
+
+/* Colored Border Paragraphs */
+
+.dark, .brown, .yellow, .red, .blue, .green {
+	padding-left:15px; 
+}
+.dark {
+	border-left:#3B3B3B solid 7px;
+}
+.brown  {
+	border-left:#8D8767 solid 7px;
+}
+.yellow {
+	border-left:#DBA742 solid 7px;
+}
+.red {
+	border-left:#C05D48 solid 7px;
+}
+.blue {
+	border-left:#52878B solid 7px;
+}
+.green {
+	border-left:#B0BD85 solid 7px;
+}
+
+/* Portfolio Images */
+
+img {
+	margin-bottom:20px;
+}
+.gallery {
+	float:left;
+	padding:0;
+	margin:2px 0;
+}
+.gallery li {
+	width:232px;
+	height:145px;
+	float:left;
+	padding:0;
+	margin:0 1px 1px 0;
+}
+.gallery li.gallery_last {
+	margin-right:0;
+}
+
+/* Misc */
+
+.logo {
+	background:url("../img/logo.png");
+	width:245px;
+	height:44px;
+	margin:0 auto;
+}
+.separator {
+	background:url("../img/separator.png") center center;
+	clear:both;
+	width:700px;
+	height:90px;
+	margin:0 auto;
+}
+.black_box {
+	padding:20px 20px 0 20px;
+	width:170px;
+	background:#000000;
+	background:rgba(0,0,0,0.3);
+	border-bottom:1px solid rgba(255,255,255,0.04);
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+}
+
+/* Social Icons */
+
+.social_icons {
+	margin:10px auto;
+	width:184px;
+}
+	.social_icons li {
+		float:left;
+		margin:0 5px 0 5px;
+	}
+
+
+
+/*  _______________________________________
+
+	07 COUNTDOWN
+    _______________________________________  */
+
+
+
+.datecountdown {
+	margin:0 auto;
+	width:700px;
+}
+	.datecountdown ul {	
+		list-style:none;
+		float:left;
+		width:700px;
+	}
+		.datecountdown ul li.countdowndata {
+			width:110px;
+			line-height:36px;
+			float:left;
+			margin:0;
+			clear:left;
+		}
+		.datecountdown ul li.countdowngraph {
+			background:url("../img/darkbg30.png") repeat;
+			border-bottom:1px solid rgba(255,255,255,0.06);
+			-webkit-border-radius:5px;
+			-khtml-border-radius:5px;
+			-moz-border-radius:5px;
+			border-radius:5px;
+			margin-bottom:20px;
+			height:20px;
+			padding:5px;
+			float:left;
+			width:580px;
+		}
+			.datecountdown ul li.countdowngraph span {
+				height:20px;
+				float:left;
+				-webkit-border-radius:4px;
+				-khtml-border-radius:4px;
+				-moz-border-radius:4px;
+				border-radius:4px;
+			}
+			.datecountdown ul li.countdowngraph span.countdownyear {
+				background:url("../img/progressbars/progress_years.png") repeat-x;
+			}
+			.datecountdown ul li.countdowngraph span.countdownmonth {
+				background:url("../img/progressbars/progress_months.png") repeat-x;
+			}
+			.datecountdown ul li.countdowngraph span.countdownday {
+				background:url("../img/progressbars/progress_days.png") repeat-x;
+			}
+			.datecountdown ul li.countdowngraph span.countdownhours {
+				background:url("../img/progressbars/progress_hours.png") repeat-x;
+			}
+			.datecountdown ul li.countdowngraph span.countdownminutes {
+				background:url("../img/progressbars/progress_minutes.png") repeat-x;
+			}
+			.datecountdown ul li.countdowngraph span.countdownseconds {
+				background:url("../img/progressbars/progress_seconds.png") repeat-x;
+			}
+
+
+
+/*  _______________________________________
+
+	08 FORM ELEMENTS
+    _______________________________________  */
+
+
+
+#contact {
+	display: block;
+	width: 455px;
+	margin: 0;
+	padding: 0;
+}
+#contactform {
+	clear:both;
+}
+input,
+input.submit,
+textarea {
+	border:none;
+	background:url("../img/darkbg30.png") repeat;
+	border-bottom:1px solid rgba(255,255,255,0.06);
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+}
+input, 
+textarea {
+	font-family: 'Droid Sans',sans-serif;
+	font-size:11px;
+	color:#dddddd;
+	margin:10px 0;
+	padding:5px;
+	width:295px;
+	resize:none;
+}
+input:hover, 
+textarea:hover {
+	background:url("../img/darkbg40.png") repeat;
+}
+label,
+input.submit {
+	font-family: 'Droid Sans',sans-serif;
+	font-size: 11px;
+	color:#eeeeee;
+}
+input.submit {
+	text-shadow:none;
+}
+label {
+	float: left;
+	height: 26px;
+	margin:10px 0;
+	line-height: 26px;
+	width: 150px;
+}
+input {
+	height:20px;
+}
+input.verify {
+	width:30px;
+	float:left;
+}
+input.submit {
+	float:right;
+	height:30px;
+	margin-left:20px;
+	padding:8px 5px 8px 5px;
+	width:80px;
+}
+span.required{
+	font-size: 13px;
+	color:rgb(144,0,0);
+	color:rgba(144,0,0, 0.7);
+}
+#message {
+	margin: 0;
+	padding: 0;
+}
+.error_message, 
+.success_message {
+	font-size:11px;
+	padding:10px 10px 10px 36px; 
+	margin-bottom:18px;
+	text-shadow:1px 1px 1px #ffffff; 
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+}
+	.error_message {
+		background:rgb(251, 229, 226) url("../img/icons/cross.png") no-repeat 10px 8px; 
+		background:rgba(251, 229, 226, 0.8) url("../img/icons/cross.png") no-repeat 10px 8px; 
+		border:#200704 solid 1px; 
+		color:#6b180d;
+	}
+	.success_message {
+		background:rgb(225, 248, 203) url("../img/icons/tick.png") no-repeat 10px 8px; 
+		background:rgba(225, 248, 203, 0.8) url("../img/icons/tick.png") no-repeat 10px 8px; 
+		border:#242a0d solid 1px; 
+		color:#465119;
+	}
+.loader {
+	clear:both;
+	padding: 12px 0 0 15px;
+}
+
+/* Newsletter Styling */
+
+#newsletter_signup {
+	margin:-10px 0;
+}
+#newsletter_email {
+	width:530px;
+	text-align:center;
+	margin-bottom:20px;
+}
+#newsletter_button {
+	float:left;
+	width:100px;
+	margin-left:220px;
+	margin-bottom:20px;
+}
+#newsletter_response {  
+	clear:both;
+    display:block;
+	margin:0 auto 0 auto;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+}  
+	.newsletter_waiting {
+		background:url("../img/icons/loader.gif") no-repeat;
+		margin:0 auto;
+		width:24px;
+		height:24px;
+		padding:0;
+	}
+	.newsletter_success,
+	.newsletter_error {
+		width:300px;
+		padding:7px 10px 1px 36px; 
+		text-shadow:1px 1px 1px #ffffff; 
+	}
+	.newsletter_error {
+		background:rgb(251, 229, 226) url("../img/icons/cross.png") no-repeat 10px 8px; 
+		background:rgba(251, 229, 226, 0.8) url("../img/icons/cross.png") no-repeat 10px 8px; 
+		border:#200704 solid 1px; 
+		color:#6b180d;
+	}
+	.newsletter_success {
+		background:rgb(225, 248, 203) url("../img/icons/tick.png") no-repeat 10px 8px; 
+		background:rgba(225, 248, 203, 0.8) url("../img/icons/tick.png") no-repeat 10px 8px; 
+		border:#242a0d solid 1px; 
+		color:#465119;
+	}
+
+
+
+/*  _______________________________________
+
+	DEMO ONLY
+    _______________________________________  */
+
+
+
+.panel {
+	position: fixed;
+	top: 200px;
+	display: none;
+	background:#030303;
+	-moz-border-radius: 0 6px 6px 0;
+	-webkit-border-radius: 0 6px 6px 0;
+	border-radius: 0 6px 6px 0;
+	width: 110px;
+	height: auto;
+	padding: 15px 15px 3px 0px;
+}
+.panel ul li {
+	line-height:21px;
+}
+.panel a {
+	color:#dddddd;
+	padding-left:10px;
+}
+.panel a:hover,
+.panel a.current {
+	border-left:2px solid #ffffff;
+	text-decoration:none;
+	padding-left:8px;
+}
+a.trigger{
+	position: fixed;
+	text-decoration: none;
+	top: 160px; 
+	left: -1px;
+	font-size: 12px;
+	font-family: 'Droid Serif', serif;
+	font-style:italic;
+	font-weight:bold;
+	color:#fff;
+	line-height:24px;
+	padding: 3px 15px 3px 12px;
+	background:#030303;
+	-moz-border-radius: 0 6px 6px 0;
+	-webkit-border-radius: 0 6px 6px 0;
+	border-radius: 0 6px 6px 0;
+	display: block;
+}
+a.trigger:hover{
+	position: fixed;
+	display: block;
+}
+

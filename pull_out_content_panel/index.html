@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>  
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="css/pulloutpanel.css" />
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="font/css/font-awesome-ie7.css">
+    <![endif]-->
+    <link href="css/scrollbars.css" rel="stylesheet" />
+    
+    <title>Pull Out Content Panel</title>
+
+    <script src='js/jquery.js'></script>
+    <script src='js/pulloutpanel.js'></script>
+    <script>
+        $(document).ready(function($){
+            $('#pocp1').pullOutContentPanel(
+                // No options in the demo
+            );
+        });
+    </script>
+
+</head>
+
+
+<body>
+
+
+
+
+<div id="pocp1" class="pocp_left"><!-- BEGIN PULL OUT CONTENT PANEL -->
+
+
+    <div class="pocp"><!-- BEGIN PANEL CONTAINER -->
+
+
+        <div class="pocp_content"><!-- BEGIN PANEL INNER CONTENT -->
+
+
+            <h2>Sliding Menu</h2>
+            <p>This menu uses a different effect when activated. You can choose the position and the behavior of this panel.</p>
+            <ul class="pocp_icons">
+                <li><a href="http://themeforest.net/"><i class="icon-gear"></i>ThemeForest</a></li>
+                <li><a href="http://codecanyon.net/"><i class="icon-code"></i>CodeCanyon</a></li>
+                <li><a href="http://audiojungle.net/"><i class="icon-music"></i>AudioJungle</a></li>
+                <li><a href="http://videohive.net/"><i class="icon-bookmark"></i>VideoHive</a></li>
+                <li><a href="http://activeden.net/"><i class="icon-lock"></i>ActiveDen</a></li>
+                <li><a href="http://graphicriver.net/"><i class="icon-tag"></i>GraphicRiver</a></li>
+                <li><a href="http://android.appstorm.net/"><i class="icon-leaf"></i>Android.Apptorm</a></li>
+                <li><a href="http://notes.envato.com/"><i class="icon-star"></i>Envato Notes</a></li>
+            </ul>
+            <p>In this panel you can add nested toggle elements to show or hide secondary informations.</p>
+
+            <ul class="pocp_toggle">
+
+                <li>
+
+                    <span class="pocp_toggle_title"><i class="icon-plus"></i>About Us</span>
+
+                    <div class="pocp_panel">
+                        <p>Aliquam orci velit, auctor tincidunt erat a, pulvinar tristique magna. Praesent sed sagittis tortor, non imperdiet nulla.</p>
+                    </div>
+
+                </li>
+
+                <li>
+
+                    <span class="pocp_toggle_title"><i class="icon-plus"></i>Team</span>
+
+                    <div class="pocp_panel">
+                        <p>Nunc nisi lacus, porttitor quis dignissim ac, interdum vel ante. Duis ultricies odio eu.</p>
+                    </div>
+
+                </li>
+
+                <li>
+
+                    <span class="pocp_toggle_title"><i class="icon-plus"></i>Portfolio</span>
+
+                    <div class="pocp_panel">
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames turpis.</p>
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <h2>Styled Elements</h2>
+            <p>This item includes many styled elements such as headers, paragraphs, lists, etc.</p>
+            <p class="dark">This is a text contained into a <strong>dark</strong> container with a border.</p>
+            <p class="brown">This is a text contained into a <strong>brown</strong> container with a border.</p>
+            <p class="yellow">This is a text contained into a <strong>yellow</strong> container with a border.</p>
+            <p class="red">This is a text contained into a <strong>red</strong> container with a border.</p>
+            <p class="blue">This is a text contained into a <strong>blue</strong> container with a border.</p>
+            <p class="green">This is a text contained into a <strong>green</strong> container with a border.</p>
+
+            <h2>Video</h2>
+            <p>Ut ligula nibh, tincidunt et dolor vitae, bibendum lectus, et tempus lorem lobortis consectetur neque.</p>
+            <div class="video_container">
+                <iframe src="http://player.vimeo.com/video/32001208?portrait=0&amp;badge=0"></iframe>
+            </div>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>
+
+
+        </div><!-- END PANEL INNER CONTENT -->
+
+
+    </div><!-- END PANEL CONTAINER -->
+
+
+</div><!-- END PULL OUT CONTENT PANEL -->
+
+
+
+
+<!-- PAGE CONTENT - NOT PART OF THE MENU -->
+
+<div class="page_wrapper">
+
+
+    <div class="menu_description">
+
+        <h1>Pull Out Content Panel</h1>
+
+        <p><strong>IMPORTANT</strong> this is a limited preview, you only see a portion of the possibilities of this panel. If you need to see the other options included, be sure to check the description, the video preview and the screenshots.</p>
+
+        <p>The panel is initialized with the following script (not the demo) :</p>
+    <pre>
+    $('#pocp1').pullOutContentPanel({
+        pocp_scrollbars : true,
+        pocp_showonload: false,
+        pocp_pg_overlay: false
+    });
+    </pre>
+
+        <p>This <strong>Pull Out Content Panel</strong> has been created to offer a complete solution to add side menus on your site. This element can be placed on the left and on the right and it has been carefully designed to fit into any website. The jQuery script offers a few options that you can easily set up : you can enable or disable the custom scrollbars, make the panel visible when the page loads or hide it if a user clicks anywhere else on the page.</p>
+        <p>If you have a lot of content to add into this panel, you have two options : first you'll see custom scrollbars that will automatically take into account the height of your content. If that's not enough, you can add several panels that can be scrolled with the arrows.</p>
+        <p>This element includes a lot of styled elements such as headings, lists, toggles, form elements, etc. The <a href="http://fortawesome.github.io/Font-Awesome/">font-awesome</a> icon collection is already there to enhance your list elements. The CSS file is well structured and easy to customize, you can change the colors, the panel width and any element that you can see. Images and videos will automatically take the available space so you don't need to resize them manually.</p>
+        <p>The contact form included is quite simple and you only need to add your email address. The feedback messages appearing when a user sends an email can be changed or translated easily.</p>
+        <h2>Features</h2>
+        <ul>
+            <li>Great pull-out panel</li>
+            <li>CSS3 effects</li>
+            <li>jQuery enhancements</li>
+            <li>Automatic custom scrollbars</li>
+            <li>Infinite carousel</li>
+            <li>Toggle elements</li>
+            <li>Clean and professional design</li>
+            <li>Fits into any layout</li>
+            <li>Lots of styled elements</li>
+            <li>Font-awesome icon collection</li>
+            <li>Designed for desktop computers, tablets and mobiles</li>
+            <li>Simple working contact form</li>
+        </ul>
+        <h2>Compatibility</h2>
+        <p>This element has been tested on several devices and browsers to ensure a maximum compatibility : Internet Explorer, Firefox, Chrome, Opera, Safari have successfully passed the tests. Here's a list of compatibility :</p>
+        <ul>
+            <li>Internet Explorer 7+</li>
+            <li>Firefox 4+</li> 
+            <li>Chrome</li> 
+            <li>Opera 10.50+</li> 
+            <li>Safari 4+</li> 
+            <li>Chrome on Android</li> 
+            <li>Safari on iPad and iPhone</li> 
+        </ul>
+        <p>The whole panel is styled via CSS so you may notice some slight differences between browsers : some CSS3 effects like shadows or rounded corners are not showing up in Internet Explorer for example (for more informations on this topic, you can visit <a href="http://findmebyip.com/litmus/">findmebyIP</a>).</p> 
+        <h2>Free Support, Free Updates</h2>
+        <p>When you purchase a product on Codecanyon, you can always access it in your downloads page. There you can subscribe to receive an email and get notified if an update is available, only the last version will appear in your downloads page. Those updates are totally free !</p>
+        <p>If you encounter an issue when using my work or find a problem, you can contact me at any time from my <a href="http://codecanyon.net/user/Pixelworkshop">profile page</a>. You'll need to be logged in to be able to access the contact form (in the sidebar). I usually reply within 24-48 hours but during holidays or week-ends, it can take more time.</p>
+        <p>I try to regularly update my products based on the feedback I receive, so if you find any kind of bug, I'll do my best to update the menu as soon as possible. If you have an idea that could improve it, feel free to ask me, some customization questions happened to be the starting point of an update.</p>
+
+        <h2>My Other Works</h2>
+
+        <p>Here is a selection of my best products that you can find in my <a href="http://codecanyon.net/user/Pixelworkshop/portfolio">Codecanyon portfolio</a>, if you have any question about them, you can reach me from <a href="http://codecanyon.net/user/Pixelworkshop">here</a>.</p>
+        <h4>Navigation Systems</h4>
+        <ul>
+            <li><a href="http://codecanyon.net/item/responsive-css3-multi-drop-down-menu/4124019">Universal Responsive Mega Menu</a></li>
+            <li><a href="http://codecanyon.net/item/universal-responsive-mega-menu/4984236">Responsive CSS3 Multi Drop Down Menu</a></li>
+            <li><a href="http://codecanyon.net/item/vertical-css3-mega-menu/3206040">Vertical CSS3 Mega Menu</a></li>
+            <li><a href="http://codecanyon.net/item/mega-menu-reloaded/1593152">Mega Menu Reloaded</a></li>
+            <li><a href="http://codecanyon.net/item/responsive-mega-menu-complete-set/152825">Responsive Mega Menu Complete Set</a></li>
+            <li><a href="http://codecanyon.net/item/css3-mega-drop-down-menu/126387">CSS3 Mega Drop Down Menu</a></li>
+        </ul>
+        <h4>Footers</h4>
+        <ul>
+            <li><a href="http://codecanyon.net/item/responsive-css3-multi-drop-down-menu/4124019">Universal Responsive Mega Menu</a></li>
+            <li><a href="http://codecanyon.net/item/sticky-footer/168476">Sticky Footer</a></li>
+            <li><a href="http://codecanyon.net/item/pure-css3-sticky-footer/128701">Pure CSS3 Sticky Footer</a></li>
+        </ul>
+        <h4>Pricing Tables</h4>
+        <ul>
+            <li><a href="http://codecanyon.net/item/responsive-pricing-tables/5139265">Responsive Pricing Tables</a></li>
+            <li><a href="http://codecanyon.net/item/responsive-css3-pricing-tables/553346">Responsive CSS3 Pricing Tables</a></li>
+        </ul>
+        <h4>Hover Effects</h4>
+        <ul>
+            <li><a href="http://codecanyon.net/item/css3-form-elements-pack/2831697">CSS3 Form Elements Pack</a></li>
+            <li><a href="http://codecanyon.net/item/css3-image-hover-effects/471215">CSS3 Image Hover Effects Vol.1</a></li>
+            <li><a href="http://codecanyon.net/item/css3-image-hover-effects-vol2/1319878">CSS3 Image Hover Effects Vol.2</a></li>
+        </ul>
+        <p>Thanks for reading, and if you want, you can follow me on <a href="http://twitter.com/pixlworkshop">Twitter</a> !</p>
+        <p><strong><em>Pixelworkshop</em></strong></p>
+
+    </div>
+
+
+</div>
+
+<!-- PAGE CONTENT - NOT PART OF THE MENU -->
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-43307842-1', 'pixelworkshop.fr');
+  ga('send', 'pageview');
+</script>
+
+
+
+</body>
+</html>

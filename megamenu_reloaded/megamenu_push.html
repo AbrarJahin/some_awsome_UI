@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<link rel="stylesheet" href="css/megamenu.css" type="text/css" media="screen" />
+
+<title>Mega Menu Reloaded</title>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.easing.js"></script><!-- jQuery Easing effects -->
+<script src="js/megamenu.js"></script><!-- Mega Menu Script -->
+<script>
+$(document).ready(function($){
+	$('.megamenu').megaMenuReloaded({
+        menu_speed_show : 300, // Time (in milliseconds) to show a drop down
+        menu_speed_hide : 200, // Time (in milliseconds) to hide a drop down
+        menu_speed_delay : 200, // Time (in milliseconds) before showing a drop down
+        menu_effect : 'open_close_slide', // Drop down effect, choose between 'hover_fade', 'hover_slide', 'click_fade', 'click_slide', 'open_close_fade', 'open_close_slide'
+        menu_easing : 'jswing', // Easing Effect : 'easeInQuad', 'easeInElastic', etc.
+        menu_click_outside : 1, // Clicks outside the drop down close it (1 = true, 0 = false)
+        menu_show_onload : 0, // Drop down to show on page load (type the number of the drop down, 0 for none)
+        menubar_trigger : 1, // Show the menu trigger (button to show / hide the menu bar), only for the fixed version of the menu (1 = show, 0 = hide)
+        menubar_hide : 0, // Hides the menu bar on load (1 = hide, 0 = show)
+        menu_responsive : 1, // Enables mobile-specific script
+        menu_carousel : 0, // Enable / disable carousel
+        menu_carousel_groups : 0 // Number of groups of elements in the carousel
+	});
+	$('#megamenu_form').ajaxForm({target:'#alert'}); 
+});
+</script>
+
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="css/megamenu_ie.css" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+
+
+<div class="megamenu_wrapper megamenu_container megamenu_push"><!-- Begin Mega Menu Container -->
+
+
+    
+    <ul class="megamenu"><!-- Begin Mega Menu -->
+           
+
+
+        <li class="megamenu_button"><span>Mega Menu</span></li>
+
+
+        
+        <li><span class="drop">Panels</span><!-- Begin Item -->
+        
+        
+            <div class="megamenu_fullwidth"><!-- Begin Item Container -->
+            
+
+                <div class="megamenu_tabs"><!-- Begin Tabs Container -->
+             
+                        
+                    <ul class="megamenu_tabs_nav">
+                        <li><a href="megamenu_push.html#section1" class="current">Section 1</a></li>
+                        <li><a href="megamenu_push.html#section2">Section 2</a></li>
+                        <li><a href="megamenu_push.html#section3">Section 3</a></li>
+                        <li><a href="megamenu_push.html#section4">Section 4</a></li>
+                    </ul>
+        
+                    <div class="clear"></div>
+                    
+                    
+                    <div class="megamenu_tabs_panels"><!-- Begin Panels Container -->
+                    
+                    
+                        <div id="section1"><!-- Begin Section 1 -->
+                        
+                            <div class="col_2">
+                                <img src="img/products/thumbnail01.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail02.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail03.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail04.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail05.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail06.jpg" alt="" />
+                            </div>
+                            
+                            <div class="clear"></div>
+                            
+                            <div class="col_2">
+                                <img src="img/products/thumbnail07.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail08.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail09.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail10.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail11.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail12.jpg" alt="" />
+                            </div>
+                            
+                            <div class="clear"></div>
+                            
+                            <div class="col_2">
+                                <img src="img/products/thumbnail13.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail14.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail15.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail16.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail17.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail18.jpg" alt="" />
+                            </div>
+                        
+                        </div><!-- End Section 1 -->
+                        
+                        
+                        <div id="section2" class="megamenu_tabs_hide"><!-- Begin Section 2 -->
+                        
+                            <div class="col_2">
+                                <img src="img/products/thumbnail11.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail12.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail10.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail07.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail09.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail08.jpg" alt="" />
+                            </div>
+                            
+                            <div class="clear"></div>
+                            
+                            <div class="col_2">
+                                <img src="img/products/thumbnail06.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail04.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail05.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail03.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail01.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail02.jpg" alt="" />
+                            </div>
+                                
+                        </div><!-- End Section 2 -->
+                        
+                        
+                        <div id="section3" class="megamenu_tabs_hide"><!-- Begin Section 3 -->
+                        
+
+                            <div class="col_2">
+                                <img src="img/products/thumbnail18.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail16.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail17.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail14.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail13.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail15.jpg" alt="" />
+                            </div>
+                            
+                            <div class="clear"></div>
+                            
+                            <div class="col_2">
+                                <img src="img/products/thumbnail08.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail09.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail07.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail13.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail11.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail12.jpg" alt="" />
+                            </div>
+                            
+                            <div class="clear"></div>
+                            
+                            <div class="col_2">
+                                <img src="img/products/thumbnail02.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail03.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail05.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail04.jpg" alt="" />
+                            </div>
+
+                        </div><!-- End Section 3 -->
+                        
+                        
+                        <div id="section4" class="megamenu_tabs_hide"><!-- Begin Section 4 -->
+                        
+                            <div class="col_2">
+                                <img src="img/products/thumbnail02.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail01.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail03.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail04.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail06.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail05.jpg" alt="" />
+                            </div>
+                            
+                            <div class="clear"></div>
+                            
+                            <div class="col_2">
+                                <img src="img/products/thumbnail11.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail15.jpg" alt="" />
+                            </div>
+                            <div class="col_2">
+                                <img src="img/products/thumbnail12.jpg" alt="" />
+                            </div>
+                        
+                        </div><!-- End Section 4 -->
+                        
+                    
+                    </div><!-- End Panels Container -->
+                
+    
+                </div><!-- End Tabs Container -->
+
+                            
+            </div><!-- End Item Container -->
+
+        
+        </li><!-- End Item -->
+        
+        
+        
+        <li><span class="drop">Typography</span><!-- Begin Item -->
+        
+        
+            <div class="megamenu_fullwidth"><!-- Begin Item Container -->
+            
+            
+                <div class="col_8">
+                
+					<h1>This is a Heading H1</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever <a href="megamenu_push.html#">since the 1500s</a>, when an unknown printer took a galley of type...</p>
+					<h2>This is a Heading H2</h2>
+                    <p>It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.</p>
+					<h3>This is a Heading H3</h3>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of <a href="megamenu_push.html#">Letraset sheets</a> containing Lorem Ipsum.</p>
+					<h4>This is a Heading H4</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+					<h5>This is a Heading H5</h5>
+                    <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition.</p>
+					<h6>This is a Heading H6</h6>
+                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                
+                </div>
+            
+                <div class="col_4">
+                
+                	<h4>Products</h4>
+
+                    <div class="col_2 col_nomargin_left">
+                        <img src="img/products/thumbnail01.jpg" alt="" />
+                    </div>
+
+                    <div class="col_2 col_nomargin_right">
+                        <img src="img/products/thumbnail02.jpg" alt="" />
+                    </div>
+                	
+                    <div class="clear"></div>
+                    
+                    <div class="col_2 col_nomargin_left">
+                        <img src="img/products/thumbnail03.jpg" alt="" />
+                    </div>
+
+                    <div class="col_2 col_nomargin_right">
+                        <img src="img/products/thumbnail04.jpg" alt="" />
+                    </div>
+                	
+                    <div class="clear"></div>
+                    
+                	<h4>Services</h4>
+
+                    <div class="col_2 col_nomargin_left">
+                        <img src="img/products/thumbnail05.jpg" alt="" />
+                    </div>
+
+                    <div class="col_2 col_nomargin_right">
+                        <img src="img/products/thumbnail06.jpg" alt="" />
+                    </div>
+                	
+                    <div class="clear"></div>
+                    
+                    <div class="col_2 col_nomargin_left">
+                        <img src="img/products/thumbnail02.jpg" alt="" />
+                    </div>
+
+                    <div class="col_2 col_nomargin_right">
+                        <img src="img/products/thumbnail01.jpg" alt="" />
+                    </div>
+
+                </div>
+                                
+            
+            </div><!-- End Item Container -->
+            
+        
+        </li><!-- End Item -->
+        
+        
+        
+        <li><span class="drop">Miscellaneous</span><!-- Begin Item -->
+        
+        
+            <div class="megamenu_fullwidth"><!-- Begin Item Container -->
+            
+
+                <div class="megamenu_tabs"><!-- Begin Tabs Container -->
+             
+                        
+                    <ul class="megamenu_tabs_nav">
+                        <li><a href="megamenu_push.html#section11" class="current">Products</a></li>
+                        <li><a href="megamenu_push.html#section12">Services</a></li>
+                        <li><a href="megamenu_push.html#section13">Typography</a></li>
+                        <li><a href="megamenu_push.html#section14">HTML Elements</a></li>
+                    </ul>
+        
+                    <div class="clear"></div>
+                    
+                    
+                    <div class="megamenu_tabs_panels"><!-- Begin Panels Container -->
+                    
+                    
+                        <div id="section11"><!-- Begin Section 1 -->
+                        
+                            <div class="col_6">
+                                <h2>This is a product sample</h2>
+                                <p>It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.</p>
+                                <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition.</p>
+                                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of <a href="megamenu_push.html#">Letraset sheets</a> containing Lorem Ipsum.</p>
+                            </div>
+                        
+                            <div class="col_6">
+                                <img src="img/products/img_product01.jpg" alt="" />
+                            </div>
+        
+                            <div class="clear"></div>
+
+                            <div class="col_6">
+                                <h2>Another sample</h2>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever <a href="megamenu_push.html#">since the 1500s</a>, when an unknown printer took a galley of type...</p>
+                                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of <a href="megamenu_push.html#">Letraset sheets</a> containing Lorem Ipsum.</p>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            </div>
+                        
+                            <div class="col_6">
+                                <img src="img/products/img_product02.jpg" alt="" />
+                            </div>
+        
+                        </div><!-- End Section 1 -->
+                        
+                        
+                        <div id="section12" class="megamenu_tabs_hide"><!-- Begin Section 2 -->
+                        
+                            <div class="col_8">
+                                <h3>Our service</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever <a href="megamenu_push.html#">since the 1500s</a>, when an unknown printer took a galley of type... It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of <a href="megamenu_push.html#">Letraset sheets</a> containing Lorem Ipsum.</p>
+                            </div>
+                        
+                            <div class="col_4">
+                                <img src="img/products/img_service01.jpg" alt="" />
+                            </div>
+        
+                            <div class="clear"></div>
+
+                            <div class="col_8">
+                                <h3>Service Illustration</h3>
+                                <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition.</p>
+                                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of <a href="megamenu_push.html#">Letraset sheets</a> containing Lorem Ipsum. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                            </div>
+                        
+                            <div class="col_4">
+                                <img src="img/products/img_service02.jpg" alt="" />
+                            </div>
+                                
+                        </div><!-- End Section 2 -->
+                        
+                        
+                        <div id="section13" class="megamenu_tabs_hide"><!-- Begin Section 3 -->
+                        
+                            <div class="col_8">
+                            
+                                <h3>Unordered and Ordered Lists</h3>
+            
+                                <ul>
+                                    <li>First unordered list item with some lorem ipsum text to fill the space. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+                                    <li>Second unordered list item. Vivamus tempus egestas lorem, ac adipiscing purus varius et. Nunc ac posuere urna. Vestibulum ante ipsum primis in faucibus orci luctus</li>
+                                    <li>Third unordered list item. Etiam sagittis feugiat eros, vel congue purus porttitor ut. Donec vestibulum ligula et enim elementum volutpat. Vivamus tellus mi.</li>
+                                </ul>
+                                <ol>
+                                    <li>First ordered list item with some lorem ipsum text to fill the space. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+                                    <li>Second ordered list item. Vivamus tempus egestas lorem, ac adipiscing purus varius et. Nunc ac posuere urna. Vestibulum ante ipsum primis in faucibus orci luctus</li>
+                                    <li>Third ordered list item. Etiam sagittis feugiat eros, vel congue purus porttitor ut. Donec vestibulum ligula et enim elementum volutpat. Vivamus tellus mi.</li>
+                                </ol>
+            
+                            </div>
+                        
+                            <div class="col_4">
+                            
+                                <h3>Paragraphs with Icons</h3>
+            
+                                <p class="calendar">This is a paragraph with a calendar icon. Curabitur lorem nulla, imperdiet.</p>
+                                <p class="note">This is a paragraph with a note icon. Praesent id nulla eu risus rhoncus.</p>
+                                <p class="archive">This is a paragraph with a archive icon. Ut pulvinar mauris at nunc.</p>
+                                <p class="search">This is a paragraph with a search icon. Nulla tincidunt, purus at luctus.</p>
+                                <p class="help">This is a paragraph with a help icon. Vestibulum venenatis diam sit amet.</p>
+            
+                            </div>
+                                
+                        </div><!-- End Section 3 -->
+                        
+                        
+                        <div id="section14" class="megamenu_tabs_hide"><!-- Begin Section 4 -->
+                        
+                            <div class="col_8">
+                            
+                                <h3>Paragraphs with Borders</h3>
+            
+                                <p class="dark">Nulla quis metus a dolor feugiat porta. Phasellus sapien magna, gravida congue fermentum vel, gravida sit amet sapien. Quisque elit est, ullamcorper ac hendrerit eget, porta id enim. Phasellus in velit velit.</p>
+                                <p class="brown">Praesent a dolor sem. Sed scelerisque, tellus id pulvinar tristique, erat eros rutrum mi, id adipiscing arcu sem vel est. Ut ac turpis ipsum. Mauris leo nulla, vestibulum id bibendum nec, auctor eu quam.</p>
+                                <p class="yellow">Nulla quis metus a dolor feugiat porta. Phasellus sapien magna, gravida congue fermentum vel, gravida sit amet sapien. Quisque elit est, ullamcorper ac hendrerit eget, porta id enim. Phasellus in velit velit.</p>
+                                <p class="red">Curabitur vulputate, massa sit amet mollis sodales, arcu quam scelerisque augue, ac elementum velit mauris ac tellus. Nunc dapibus mollis ante a sollicitudin. Nullam adipiscing ante.</p>
+                                <p class="blue">Quisque varius, erat nec fermentum aliquam, erat urna venenatis orci, in semper lorem ante at dolor. Quisque scelerisque mattis magna ut lobortis. Cras porttitor scelerisque ligula eget condimentum.</p>
+                                <p class="green">Vestibulum sed elit ut arcu. Donec leo dui, mollis ut volutpat et, suscipit a mauris. Etiam molestie, purus id dapibus volutpat, nunc nisl ornare odio, sit amet ornare. Maecenas rutrum venenatis diam ac luctus.</p>
+                            
+                            </div>
+                        
+                            <div class="col_4">
+                            
+                                <h3>Paragraphs with Icons</h3>
+            
+                                <p class="favorite">This is a paragraph with a favorite icon. Donec tortor sem, venenatis. </p>
+                                <p class="lock">This is a paragraph with a lock icon. Vivamus eu felis lacus, in tincidunt.</p>
+                                <p class="briefcase">This is a paragraph with a briefcase icon. Cras sagittis, tortor at.</p>
+                                <p class="user">This is a paragraph with a user icon. Mauris quis augue lectus, eget congue.</p>
+                                <p class="black_bg">This is a simple paragraph contained in a box with a dark background. It can be used to highlight some texts. Nulla tincidunt, purus at luctus eu felis lacus, in tincidunt.</p>
+            
+                            </div>
+                                
+                        </div><!-- End Section 4 -->
+                        
+                    
+                    </div><!-- End Panels Container -->
+                
+    
+                </div><!-- End Tabs Container -->
+
+                            
+            </div><!-- End Item Container -->
+            
+        
+        </li><!-- End Item -->
+        
+        
+        
+        <li><span class="drop">Columns Grid</span><!-- Begin Item -->
+        
+        
+            <div class="megamenu_fullwidth"><!-- Begin Item Container -->
+            
+                        
+                <div class="col_12">
+					<p class="black_bg">930px</p>
+                </div>
+                
+                <div class="col_11">
+					<p class="black_bg">850px</p>
+                </div>
+                
+                <div class="col_1">
+					<p class="black_bg">50px</p>
+                </div>
+                
+                <div class="col_10">
+					<p class="black_bg">770px</p>
+                </div>
+                
+                <div class="col_2">
+					<p class="black_bg">130px</p>
+                </div>
+                
+                <div class="col_9">
+					<p class="black_bg">690px</p>
+                </div>
+                
+                <div class="col_3">
+					<p class="black_bg">210px</p>
+                </div>
+                
+                <div class="col_8">
+					<p class="black_bg">610px</p>
+                </div>
+                
+                <div class="col_4">
+					<p class="black_bg">290px</p>
+                </div>
+                
+                <div class="col_7">
+					<p class="black_bg">530px</p>
+                </div>
+                
+                <div class="col_5">
+					<p class="black_bg">370px</p>
+                </div>
+                
+                <div class="col_6">
+					<p class="black_bg">450px</p>
+                </div>
+                
+                <div class="col_6">
+					<p class="black_bg">450px</p>
+                </div>
+                
+                <div class="col_4">
+					<p class="black_bg">290px</p>
+                </div>
+                
+                <div class="col_4">
+					<p class="black_bg">290px</p>
+                </div>
+                
+                <div class="col_4">
+					<p class="black_bg">290px</p>
+                </div>
+                
+                <div class="col_3">
+					<p class="black_bg">210px</p>
+                </div>
+                
+                <div class="col_3">
+					<p class="black_bg">210px</p>
+                </div>
+                
+                <div class="col_3">
+					<p class="black_bg">210px</p>
+                </div>
+                
+                <div class="col_3">
+					<p class="black_bg">210px</p>
+                </div>
+                
+                <div class="col_2">
+					<p class="black_bg">130px</p>
+                </div>
+                
+                <div class="col_2">
+					<p class="black_bg">130px</p>
+                </div>
+                
+                <div class="col_2">
+					<p class="black_bg">130px</p>
+                </div>
+                
+                <div class="col_2">
+					<p class="black_bg">130px</p>
+                </div>
+                
+                <div class="col_2">
+					<p class="black_bg">130px</p>
+                </div>
+                
+                <div class="col_2">
+					<p class="black_bg">130px</p>
+                </div>
+                
+                <div class="col_1">
+					<p class="black_bg">50px</p>
+                </div>
+                
+                <div class="col_1">
+					<p class="black_bg">50px</p>
+                </div>
+                
+                <div class="col_1">
+					<p class="black_bg">50px</p>
+                </div>
+                
+                <div class="col_1">
+					<p class="black_bg">50px</p>
+                </div>
+                
+                <div class="col_1">
+					<p class="black_bg">50px</p>
+                </div>
+                
+                <div class="col_1">
+					<p class="black_bg">50px</p>
+                </div>
+                
+                <div class="col_1">
+					<p class="black_bg">50px</p>
+                </div>
+                
+                <div class="col_1">
+					<p class="black_bg">50px</p>
+                </div>
+                
+                <div class="col_1">
+					<p class="black_bg">50px</p>
+                </div>
+                
+                <div class="col_1">
+					<p class="black_bg">50px</p>
+                </div>
+                
+                <div class="col_1">
+					<p class="black_bg">50px</p>
+                </div>
+                
+                <div class="col_1">
+					<p class="black_bg">50px</p>
+                </div>
+                
+            
+            </div><!-- End Item container -->
+            
+        
+        </li><!-- End Item -->
+        
+        
+        
+        <li><span class="drop">Misc Elements</span><!-- Begin Item -->
+        
+        
+            <div class="megamenu_fullwidth megamenu_scrollbars"><!-- Begin Item Container -->
+            
+            
+                <div class="megamenu_scroller_container"><!-- Begin Scroller Container -->
+                
+                
+                    <div class="megamenu_scroll_area"><!-- Begin Scrolling Area -->
+    
+                
+                        <div class="col_6">
+                        
+                            <h3>Youtube Video</h3>
+                            <iframe width="450" height="253" src="http://www.youtube.com/embed/0mtLe03kyuE?wmode=transparent"></iframe>
+                        
+                        </div>
+                        
+                        <div class="col_6">
+                        
+                            <h3>Vimeo Video</h3>
+                            <iframe src="http://player.vimeo.com/video/59560377?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=dbdbdb" width="450" height="253"></iframe>
+                                         
+                        </div>
+                        
+                        <div class="clear"></div>
+                    
+                        <div class="col_6">
+                        
+                            <h3>Basic Tables</h3>
+        
+                            <table class="table_light">
+                              <tr><th>Title 1</th><th>Title 2</th><th>Title 3</th><th>Title 4</th></tr>
+                              <tr><td>Cell 1</td><td>Cell 2</td><td>Cell 3</td><td>Cell 4</td></tr>
+                              <tr><td>Cell 1</td><td>Cell 2</td><td>Cell 3</td><td>Cell 4</td></tr>
+                              <tr><td>Cell 1</td><td>Cell 2</td><td>Cell 3</td><td>Cell 4</td></tr>
+                            </table>
+                
+                            <table class="table_dark">
+                              <tr><th>Title 1</th><th>Title 2</th><th>Title 3</th><th>Title 4</th></tr>
+                              <tr><td>Cell 1</td><td>Cell 2</td><td>Cell 3</td><td>Cell 4</td></tr>
+                              <tr><td>Cell 1</td><td>Cell 2</td><td>Cell 3</td><td>Cell 4</td></tr>
+                              <tr><td>Cell 1</td><td>Cell 2</td><td>Cell 3</td><td>Cell 4</td></tr>
+                            </table>
+                            
+                        </div>
+                    
+                        <div class="col_6">
+                        
+                            <h3>Images</h3>
+                            
+                            <p>Nullam ultricies semper erat in lacinia. In ac tellus vitae orci tristique hendrerit sed sit amet lectus. Vivamus dapibus mattis diam, vitae imperdiet nunc vehicula in. Maecenas quam mauris, convallis sit amet varius ut, pretium a enim. Maecenas quis nisl quis ante dictum vehicula at nec nunc.</p>
+                            <p>Morbi eget sem nec felis condimentum posuere. Curabitur in leo mi, eget mollis nunc. Morbi enim sapien, dictum ac mollis nec. There are many variations of passages of Lorem Ipsum available.</p>
+         
+                            <div class="col_2 col_nomargin_left">
+        
+                                <img src="img/products/thumbnail01.jpg" alt="" />
+        
+                            </div>
+        
+                            <div class="col_2">
+        
+                                <img src="img/products/thumbnail02.jpg" alt="" />
+        
+                            </div>
+        
+                            <div class="col_2 col_nomargin_right">
+        
+                                <img src="img/products/thumbnail03.jpg" alt="" />
+        
+                            </div>
+                            
+                            <div class="clear"></div>
+                            
+                           <p>By injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+        
+                        </div>
+    
+                
+                    </div><!-- End Scrolling Area -->
+                
+                
+                </div><!-- End Scroller Container -->
+            
+            
+            </div><!-- End Item Container -->
+            
+        
+        </li><!-- End Item -->
+        
+        
+        
+        <li><span class="nodrop"><a href="megamenu_push.html#">No Drop</a></span> </li>
+        
+        
+        
+        <li><span class="drop">iFrame</span><!-- Begin Item -->
+        
+        
+            <div class="megamenu_fullwidth"><!-- Begin Item Container -->
+
+            
+                <div class="col_12">
+                
+                    <iframe width="930" height="600" src="http://validator.w3.org/"></iframe>
+
+                </div>
+                
+            
+            </div><!-- End Item Container -->
+            
+        
+        </li><!-- End Item -->
+        
+        
+        
+        <li><span class="drop">Contact Form</span><!-- Begin Item -->
+        
+        
+            <div class="megamenu_fullwidth"><!-- Begin Item Container -->
+        
+            
+                <div class="col_4">
+                
+                	<h3>Contact Us !</h3>
+                    
+                    <p>This is a fully working simple contact form. Just add your email address and you're done !</p>
+                                
+                    <div class="contact_form">
+                    
+                        <div class="message">
+                            <div id="alert"></div>
+                        </div>
+                        
+                        <form method="post" action="http://www.pixelworkshop.fr/demos/megamenu_reloaded/js/sendmail.php" id="megamenu_form">
+                        
+                            <label for="name">Name<span class="required"> *</span></label><br />
+                            <input name="name" type="text" class="form_element" id="name" value="" autocomplete="off" /> 
+                            
+                            <br />
+                            <label for="email">Email<span class="required"> *</span></label><br />
+                            <input name="email" type="text" class="form_element" id="email" value="" autocomplete="off" />
+                            
+                            <br />
+                            <label for="message">Message<span class="required"> *</span></label><br />
+                            <textarea name="message" class="form_element" id="message"></textarea>
+                                
+                            <p class="special"><label for="last">Don't fill this in :</label><input type="text" class="form_element" name="last" value="" id="last" /></p>
+                            
+                            <div class="form_buttons">
+                            <input type="submit" class="button" id="submit" value="Submit" />
+                            <input type="reset" class="button" id="reset" value="Reset" />
+                            </div>
+                        
+                        </form>
+                    
+                    </div>
+
+                </div>
+            
+                <div class="col_8">
+                
+					<h3>Some Inline Text</h3>
+                    
+                    <p>Nullam ultricies semper erat in lacinia. In ac tellus vitae orci tristique hendrerit sed sit amet lectus. Vivamus dapibus mattis diam, vitae imperdiet nunc vehicula in. Maecenas quam mauris, convallis sit amet varius ut, pretium a enim. Maecenas quis nisl quis ante dictum vehicula at nec nunc. Morbi eget sem nec felis condimentum posuere. Curabitur in leo mi, eget mollis nunc. Morbi enim sapien, dictum ac mollis nec.</p>
+                    <img class="inline_img" src="img/img_sample.jpg" alt="" />
+                    <p>Praesent sed est ac lectus blandit tincidunt. Vestibulum rutrum vestibulum suscipit. Duis commodo condimentum risus at dignissim. In quis justo at felis vulputate dapibus. Suspendisse quis risus turpis, ut pharetra arcu. Donec adipiscing, quam non faucibus luctus, mi arcu blandit diam, at faucibus mi ante vel augue.</p>
+                
+                </div>
+                
+            
+            </div><!-- End Item Container -->
+            
+        
+        </li><!-- End Item -->
+
+
+
+    </ul><!-- End Mega Menu -->
+
+
+
+</div><!-- End Mega Menu Container -->
+
+
+
+
+
+
+<div class="dummy_content">
+
+    <h2>Mega Menu Reloaded - Pushing Page Content</h2>
+        
+    <p>This <strong>Mega Menu</strong> comes with awesome options and is the most complete solution to build mega menus. It also works without javascript and when disabled most of the content remains accessible. Colors are easy to change and you have 2 awesome tools that can help you : <a href="http://www.colourlovers.com/">Colour Lovers</a> to find colors and <a href="http://0to255.com/facade">0to255</a> for different tones of a given color.</p>
+    <p>The menu can work on mouse click or mouse hover and comes with a complete set of options detailed in the documentation.</p>
+    <p>The contact form doesn't require any PHP knowledge, you only have to add your email address as specified in the documentation. All feedback messages appearing when sending an email can be translated in the source code and are easy to modify. This contact form is quite simple and can be replaced by another product that has more options.</p> 
+    <p>This is a demonstration page and upon purchase you'll get HTML pages with clean indented markup. Integrating and customizing this menu requires at least a basic knowledge of HTML and CSS, this is not a plugin ready to be uploaded to your Wordpress or Joomla site. All modifications have to be done in the source code.</p>
+    <h3>Features</h3>
+    <ul>
+        <li>Menu Bar Carousel</li>
+        <li>Custom Scrollbars (for large drop downs with a lot of content)</li> 
+        <li>Inner Tabs to include more content</li>
+        <li>Column Grid System (up to 12 columns)</li>
+        <li>Relies mainly on CSS, improved with some javascript</li>
+        <li>Clean and attractive design</li>
+        <li>100% valid HTML/CSS markup</li>
+        <li>Uses some CSS3 effects</li>
+        <li>Comes with a fully working AJAX contact form</li>
+        <li>Cross-browser tested</li>
+    </ul>
+    <p>It has been tested with all the major browsers and degrades gracefully down to IE6. All tests have been done with native applications running under a virtual machine to get accurate results. Please keep in mind that some CSS3 features don't work with old browsers like rounded corners. For more informations, please visit <a href="http://findmebyip.com/litmus/">findmebyIP</a>.</p>
+    <p>This menu is fully responsive and has been tested on an iPhone, an iPad and two other Android devices.</p>
+    <h3>Compatible Browsers</h3>
+    <ul>
+        <li>Internet Explorer 6+</li>
+        <li>Firefox 2+</li>
+        <li>Chrome 1+</li>
+        <li>Safari 3+</li>
+        <li>Opera 11+</li>
+    </ul>
+    <p><strong>Notice</strong> : IE6 requires an additional script that improves its compatibility with some basic CSS properties. You'll find more informations <a href="http://code.google.com/p/ie7-js/">here</a>.</p>
+    <h3>Credit Photos</h3>
+    <p>Photos by <a href="http://www.flickr.com/photos/markjsebastian/">Mark Sebastian</a></p>
+    <ul>
+        <li><a href="http://www.flickr.com/photos/markjsebastian/2420247862/in/photostream">Old Dusty Radio (#48791)</a></li>
+        <li><a href="http://www.flickr.com/photos/markjsebastian/2433403926/in/photostream">_MG_49220</a></li>
+        <li><a href="http://www.flickr.com/photos/markjsebastian/3137728868/in/photostream">Silent Night (#71772)</a></li>
+        <li><a href="http://www.flickr.com/photos/markjsebastian/5101510772/in/photostream">_MG_5826</a></li>
+        <li><a href="http://www.flickr.com/photos/markjsebastian/4713902130/in/photostream">Oyster Bay, New York (#112565)</a></li>
+        <li><a href="http://www.flickr.com/photos/markjsebastian/4573038675/in/photostream">(#108818)</a></li>
+        <li><a href="http://www.flickr.com/photos/markjsebastian/4539225401/in/photostream">Joshua Tree (#90600)</a></li>
+        <li><a href="http://www.flickr.com/photos/markjsebastian/4512013323/in/photostream">A Paper Bag Story (#95752)</a></li>
+        <li><a href="http://www.flickr.com/photos/markjsebastian/4035393587/in/photostream">IMG_91330</a></li>
+        <li><a href="http://www.flickr.com/photos/markjsebastian/3991099211/in/photostream">(500) Bags of Summer (#95860)</a></li>
+        <li><a href="http://www.flickr.com/photos/markjsebastian/3904870763/in/photostream">_MG_1854</a></li>
+        <li><a href="http://www.flickr.com/photos/markjsebastian/3425397343/in/photostream">Helena Hong (#78898)</a></li>
+    </ul>
+    <h3>Support and Updates</h3>
+    <p>Feel free to contact me at any time if you have questions by using the contact form of my <a href="http://codecanyon.net/user/Pixelworkshop">profile page</a>. Please keep in mind that once purchased, I provide support for free but customizations are a paid service (adding some functionnality, tweaking the menu, etc.). Support questions sent via any other way won't be answered.</p>
+    <p>I try to regularly update my products based on the feedback I receive, so if you find any kind of bug, I'll do my best to update the menu as soon as possible. If you have an idea that could improve it, feel also free to ask me, some customization questions happened to be the starting point of an update.</p>
+    <ul>
+        <li><a href="http://pixelworkshop.fr/">Pixelworkshop Site</a></li>
+        <li><a href="http://blog.pixelworkshop.fr/">Pixelworkshop - Blog</a></li>
+        <li><a href="http://twitter.com/pixlworkshop">Pixelworkshop on Twitter</a></li>
+    </ul>
+    <p>Thanks for reading !</p>
+    <p><strong><em>Pixelworkshop</em></strong></p>
+    
+</div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-43307842-1', 'pixelworkshop.fr');
+  ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>

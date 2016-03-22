@@ -1,0 +1,35 @@
+jQuery(document).ready(function(){
+	
+	$('#contactform').submit(function(){
+	
+		var action = $(this).attr('action');
+		
+		$('#contactform #submit').attr('disabled','disabled');
+		
+		$("#message").slideUp(750,function() {
+		$('#message').hide();			
+		
+		$.post(action, { 
+			name: $('#name').val(),
+			email: $('#email').val(),
+			phone: $('#phone').val(),
+			subject: $('#subject').val(),
+			comments: $('#comments').val(),
+			verify: $('#verify').val()
+		},
+			function(data){
+				document.getElementById('message').innerHTML = data;
+				$('#message').slideDown('slow');
+				$('#contactform #submit').attr('disabled',''); 
+				if(data.match('success') != null) $('#contactform').slideUp('slow');
+				
+			}
+		);
+		
+		});
+		
+		return false; 
+	
+	});
+	
+});

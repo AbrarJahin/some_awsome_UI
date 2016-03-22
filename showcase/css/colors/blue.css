@@ -1,0 +1,42 @@
+/*  _______________________________________
+
+	COLOR STYLING - BLUE
+    _______________________________________  */
+
+
+
+/*
+Percentages are values given from a starting color,
+when you choose a basic color, you can find other variants
+on : http://0to255.com/
+It helps to keep consistency when choosing colors.
+*/
+
+#slider_container, 
+#static_container, 
+#small_separator,
+.button_link {
+	background-color:#536987; /* Header colored part, 43% */
+}
+#menu li:hover div a {
+	color:#6a82a3; /* 53% */
+}
+a, 
+#sidebar a:hover, 
+#menu li:hover div a:hover,
+.control h2, 
+.pc_item h2 {
+	color:#536987; /* 43% */
+}
+a:hover,
+.active h2, 
+#posts a:hover {
+	color:#405167; /* 33% Rotator active heading color */
+}
+#static_content a {
+	color:#b4c0d0; /* 76% */
+}
+.button_link,
+.button_link:hover {
+	border:1px solid #334052; /* 26% */
+}

@@ -1,0 +1,79 @@
+/*  _______________________________________
+
+	COIN SLIDER
+    _______________________________________  */
+
+
+
+/*
+	Coin Slider jQuery plugin CSS styles
+	http://workshop.rs/projects/coin-slider
+*/
+
+
+#coin-slider {
+	overflow:hidden;
+}
+.coin-slider { 
+	overflow: hidden; 
+	zoom: 1; 
+	position: relative; 
+	height:484px;
+}
+.coin-slider a { 
+	text-decoration: none; 
+	outline: none; 
+	border: none; 
+}
+
+.cs-buttons {
+	font-size: 0px; 
+	padding: 0px; 
+    top:21px;
+}
+.cs-buttons a { 
+	position:relative;
+	z-index:99;
+	cursor:pointer;
+	display:block;
+	width:14px;
+	height:14px;
+	background:url("../../img/slider/bullets.png") 0px 0px no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:7px;
+	float:left;
+}
+	.cs-buttons a.cs-active {
+		font-weight:bold;
+		background:url("../../img/slider/bullets.png") 0px -14px no-repeat;
+	}
+
+.cs-title {
+	width: 100%;
+	padding: 10px;
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size:12px;
+}
+.cs-prev, 
+.cs-next {
+	position:absolute;
+	top:45%;
+	z-index:99;
+	cursor:pointer;
+    display:block;
+    width:30px;
+    height:30px;
+    text-indent:-9999px;
+    border:0;
+}
+	.cs-prev {
+		background:url("../../img/slider/arrows.png") -30px 0 no-repeat;
+		margin-left:15px;
+	}
+	.cs-next {
+		background:url("../../img/slider/arrows.png") 0px 0 no-repeat;
+		margin-right:15px;
+	}
+

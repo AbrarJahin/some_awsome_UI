@@ -1,0 +1,137 @@
+/*  _______________________________________
+
+	SIMPLE DROP DOWN MENU
+    _______________________________________  */
+
+
+
+#menu_container {
+	width:100%;
+	margin:0px auto;
+	height:44px;
+}
+
+#menu {
+	list-style:none;
+	width:870px;
+	height:44px;
+	margin:0px auto;
+	padding: 1px 0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#FFFFFF;
+	background:url("../../img/background/menu.png") no-repeat;
+}
+#menu li {
+	float:left;
+	text-align:center;
+	position:relative;
+	padding: 16px 12px 15px 12px;
+	margin:0px 20px 0px 1px;
+	border:none;
+	position:relative;
+	min-height: 1px;		/* Sophie Dennis contribution for IE7 */
+	vertical-align: bottom;		/* Sophie Dennis contribution for IE7 */
+}
+#menu li:hover {
+	background-color:#131313;
+}
+#menu li a {
+	font-size:12px;
+	color:#FFFFFF;
+	text-transform:uppercase;
+	text-shadow:1px 1px 1px #000000;
+	outline:0;
+	font-weight:600;
+	text-decoration:none;
+	display:block;
+	white-space:nowrap;
+}
+	
+#menu li:hover a {
+}
+	
+#menu a.top_parent, #menu a.top_parent:hover {
+	background: url("../../img/menu/down.png") right center no-repeat;
+	padding-right:20px;
+}
+	
+#menu a.parent, #menu a.parent:hover {
+	background: url("../../img/menu/left.png") right center no-repeat;
+	padding-right:20px;
+}
+
+#menu ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	float:left;
+	width:auto;	/* width of all menu boxes */
+	/* NOTE: For adjustable menu boxes you can comment out the above width rule.
+	However, you will have to add padding in the "#menh a" rule so that the menu boxes
+	will have space on either side of the text -- try it */
+}
+#menu li li {
+	width:150px;
+	padding: 12px;
+	margin:0px 0px 0px 1px;
+}
+#menu li li a {
+	text-transform:none;
+	padding: 0px 8px 0px 8px;
+	margin:0;
+	text-align:left;
+	font-weight:400;
+}
+
+
+#menu ul ul { /* First level drop down */
+	border:1px solid #1b1b1b;
+	border-top:1px solid #000000;
+	background: url("../../img/background/dropdown.jpg") repeat-x #181818;
+	position:absolute;
+	z-index:500;
+	top:auto;
+	display:none;
+	width:180px;
+	margin:15px 0px 0px -12px;
+
+	/* CSS 3 Stylings */
+
+	-moz-border-radius: 0px 0px 6px 6px;
+    -webkit-border-radius: 0px 0px 6px 6px;
+    border-radius: 0px 0px 6px 6px;
+}
+
+#menu ul ul ul { /* Second level drop down */
+	border:1px solid #1b1b1b;
+	background: #181818;
+	top:0;
+	left:100%;
+	width:180px;
+	margin:-1px 0px 0px 0px;
+
+	/* CSS 3 Stylings */
+
+	-moz-border-radius: 0px 6px 6px 6px;
+    -webkit-border-radius: 0px 6px 6px 6px;
+    border-radius: 0px 6px 6px 6px;
+}
+
+div#menu li:hover {
+	cursor:pointer;
+	z-index:100;
+}
+
+div#menu li:hover ul ul,
+div#menu li li:hover ul ul,
+div#menu li li li:hover ul ul,
+div#menu li li li li:hover ul ul
+{display:none;}
+
+div#menu li:hover ul,
+div#menu li li:hover ul,
+div#menu li li li:hover ul,
+div#menu li li li li:hover ul
+{display:block;}
+

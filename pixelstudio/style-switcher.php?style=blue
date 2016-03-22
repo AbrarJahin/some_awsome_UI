@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">	
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>PixelStudio // A one-page elegant theme</title>
+
+<link rel="stylesheet" href="assets/css/layout.css" type="text/css" /><!-- General & common styles -->
+
+<link id="stylesheet" type="text/css" href="assets/css/colors/blue.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/switcher.css" type="text/css" /><!-- Fancybox styles -->
+<link rel="stylesheet" href="assets/css/fancybox.css" type="text/css" /><!-- Fancybox Lightbox -->
+<link rel="stylesheet" href="assets/css/coinslider.css" type="text/css" /><!-- Coin Slider -->
+
+<script type="text/javascript" src="assets/js/jquery.js" charset="utf-8"></script><!-- jQuery -->
+<script type="text/javascript" src="assets/js/scrollto.js" charset="utf-8"></script><!-- ScrollTo Plugin -->
+<script type="text/javascript" src="assets/js/coinslider.js" charset="utf-8"></script><!-- Coin slider (mini slider in "Home" section -->
+<script type="text/javascript" src="assets/js/tabs.js" charset="utf-8"></script><!-- Tabs Plugin -->
+<script type="text/javascript" src="assets/js/mousewheel.js" charset="utf-8"></script><!-- Mousewheel Plugin -->
+<script type="text/javascript" src="assets/js/fancybox.js" charset="utf-8"></script><!-- Fancybox Lightbox -->
+<script type="text/javascript" src="assets/js/form.js" charset="utf-8"></script><!-- Contact Form Script -->
+<script type="text/javascript" src="assets/js/cufon.js"></script>
+<script type="text/javascript" src="assets/js/Calluna_400.font.js"></script>
+<script type="text/javascript">
+	Cufon.replace('h1, h2, h3, h4, h5, .box_title', {hover: true}); // Modify the classes according to your preferences
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".trigger").click(function(){
+		$(".panel_trigger").toggle("fast");
+		$(this).toggleClass("active");
+		return false;
+	});
+});
+</script>
+<script type="text/javascript" src="assets/js/navigation.js" charset="utf-8"></script><!-- One-Page Navigation Plugin -->
+
+<!--[if IE 6]>
+<link rel="stylesheet" href="assets/css/ie6.css" type="text/css" />
+<script src="assets/js/ddbelatedpng.js"></script>
+<![endif]--> 
+
+</head>
+
+<body>
+
+
+<div id="header_wrapper"><!-- BEGIN HEADER -->
+    
+  <div id="header"><!-- BEGIN HEADER CONTAINER -->
+        
+        <div id="logo"></div><!-- LOGO CONTAINER -->
+    
+		<ul id="menu"><!-- BEGIN MENU -->
+
+            <li class="current"><a href="style-switcher.php?style=grey#section1">Home</a></li>
+            <li><a href="style-switcher.php?style=grey#section2">Portfolio</a></li>
+            <li><a href="style-switcher.php?style=grey#section3">My work</a></li>
+            <li><a href="style-switcher.php?style=grey#section4">About me</a></li>
+            <li><a href="style-switcher.php?style=grey#section5">Elements</a></li>
+            <li><a href="style-switcher.php?style=grey#section6">Contact</a></li>
+            
+		</ul><!-- END MENU -->
+
+    </div><!-- END HEADER CONTAINER -->
+    
+</div><!-- END HEADER -->
+
+
+<div class="container" id="section1"><!-- BEGIN SECTION 1 -->
+    
+	<div class="grid_6">
+	<h1>Welcome !</h1>
+    </div>
+        
+	<div class="grid_6 top"></div><!-- Top double line border -->
+
+	<div class="grid_3">
+    
+        <h2 class="strong">Welcome to <span class="color">Pixelstudio</span> !</h2>
+        <p>Sed sed mollis neque. Integer ac libero ligula, sit amet volutpat magna. Maecenas tincidunt nulla iaculis massa ultricies facilisis. Curabitur sagittis cursus dolor, a tempor mauris sagittis ac. Pellentesque pharetra mattis urna, sit amet euismod nunc egestas ac. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+        <p> Nulla fringilla tempus quam, ut ornare erat volutpat a. Cras porttitor lacus et diam aliquet hendrerit. Donec vitae tellus nec nibh bibendum tincidunt et auctor erat. Aliquam erat mauris, faucibus ultricies condimentum adipiscing, bibendum eu nulla.</p>
+    
+	</div>
+        
+	<div class="grid_3">
+
+        <ul id='coin-slider'><!-- Begin Coin slider -->
+        
+            <li><a href="style-switcher.php?style=grey#"><img src="assets/img/slide1.jpg" alt="" /><span>Description for image 1</span></a></li>
+            <li><a href="style-switcher.php?style=grey#"><img src="assets/img/slide2.jpg" alt="" /><span>Description for image 2</span></a></li>
+            <li><a href="style-switcher.php?style=grey#"><img src="assets/img/slide3.jpg" alt="" /><span>Description for image 3</span></a></li>
+            <li><a href="style-switcher.php?style=grey#"><img src="assets/img/slide4.jpg" alt="" /><span>Description for image 4</span></a></li>
+        
+        </ul><!-- End Coin slider -->
+
+    </div>
+
+	<div class="grid_6 separator"></div><!-- Grey separator line -->
+
+	<div class="grid_2">
+        
+		<h3 class="note_book">What I do</h3>
+        <p>Donec neque libero, tincidunt ultrices tristique et, rhoncus et lacus. Phasellus varius felis nec erat malesuada dignissim. Sed aliquet, risus eu malesuada tempus.</p>
+      
+	</div>
+
+	<div class="grid_2">
+        
+		<h3 class="paint_brush">How I do it</h3>
+        <p>Etiam ligula ante, ullamcorper vel luctus feugiat, dignissim sit amet odio. Suspendisse ultricies risus a quam tincidunt et tristique ipsum hendrerit.</p>
+      
+	</div>
+
+	<div class="grid_2">
+        
+		<h3 class="business_user">About me</h3>
+        <p>Nunc luctus purus ac eros interdum ullamcorper. Pellentesque ut dolor nulla. Nunc et massa arcu, at bibendum velit. Sed ut lacus non elit tempor dignissim.</p>
+      
+	</div>
+    
+	<div class="grid_6 bottom"></div><!-- Bottom double line border -->
+
+</div><!-- END SECTION 1 -->
+
+
+<div class="clear"></div>
+
+
+<div class="container" id="section2"><!-- BEGIN SECTION 2 -->
+
+	<div class="grid_6">
+	<h1>Portfolio</h1>
+    </div>
+        
+	<div class="grid_6 top"></div><!-- Top double line border -->
+
+	<div class="grid_6">
+    
+        <ul class="portfolio">
+
+            <li><a class="example5" title="Project title" href="assets/img/a.jpg"><img src="assets/img/01.jpg" width="250" height="152" alt="260" class="portfolio260" /></a></li>
+            <li><a class="example5" title="Project title" href="assets/img/b.jpg"><img src="assets/img/02.jpg" width="250" height="152" alt="260" class="portfolio260" /></a></li>
+            <li class="last"><a class="example5" title="Project title" href="assets/img/c.jpg"><img src="assets/img/03.jpg" width="250" height="152" alt="260" class="portfolio260" /></a></li>
+            <li><a class="example5" title="Project title" href="assets/img/d.jpg"><img src="assets/img/04.jpg" width="250" height="152" alt="260" class="portfolio260" /></a></li>
+            <li><a class="example5" title="Project title" href="assets/img/e.jpg"><img src="assets/img/05.jpg" width="250" height="152" alt="260" class="portfolio260" /></a></li>
+            <li class="last"><a class="example5" title="Project title" href="assets/img/f.jpg"><img src="assets/img/06.jpg" width="250" height="152" alt="260" class="portfolio260" /></a></li>
+            <li><a class="example5" title="Project title" href="assets/img/g.jpg"><img src="assets/img/07.jpg" width="250" height="152" alt="260" class="portfolio260" /></a></li>
+            <li><a class="example5" title="Project title" href="assets/img/h.jpg"><img src="assets/img/08.jpg" width="250" height="152" alt="260" class="portfolio260" /></a></li>
+            <li class="last"><a class="example5" title="Project title" href="assets/img/c.jpg"><img src="assets/img/03.jpg" width="250" height="152" alt="260" class="portfolio260" /></a></li>
+            <li><a class="example5" title="Project title" href="assets/img/g.jpg"><img src="assets/img/07.jpg" width="250" height="152" alt="260" class="portfolio260" /></a></li>
+            <li><a class="example5" title="Project title" href="assets/img/a.jpg"><img src="assets/img/01.jpg" width="250" height="152" alt="260" class="portfolio260" /></a></li>
+            <li class="last"><a class="example5" title="Project title" href="assets/img/f.jpg"><img src="assets/img/06.jpg" width="250" height="152" alt="260" class="portfolio260" /></a></li>
+
+        </ul>
+        
+    </div>
+    
+	<div class="grid_6 bottom"></div><!-- Bottom double line border -->
+
+</div><!-- END SECTION 2 -->
+
+
+<div class="clear"></div>
+
+
+<div class="container" id="section3"><!-- BEGIN SECTION 3 -->
+
+	<div class="grid_6">
+	<h1>My work</h1>
+    </div>
+        
+	<div class="grid_6 top"></div><!-- Top double line border -->
+
+	<div class='grid_6'><!-- Begin grid container -->
+                        
+        <ul class="tabs"><!-- Begin tab links -->
+            <li><a href="style-switcher.php?style=grey#tab1">Print</a></li>
+            <li><a href="style-switcher.php?style=grey#tab2">Design</a></li>
+            <li><a href="style-switcher.php?style=grey#tab3">Logo</a></li>
+            <li><a href="style-switcher.php?style=grey#tab4">Illustration</a></li>
+        </ul><!-- End tab links -->
+        
+        <div class='tab_container'><!-- Begin tabs container -->
+                            
+            <div id="tab1" class="tab_content"><!-- Begin TAB 1 -->
+        
+                <ul class="portfolio">
+    
+                    <li><a class="example5" title="Project title" href="assets/img/a.jpg"><img src="assets/img/01.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/d.jpg"><img src="assets/img/04.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/b.jpg"><img src="assets/img/02.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li class="last"><a class="example5" title="Project title" href="assets/img/c.jpg"><img src="assets/img/03.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/g.jpg"><img src="assets/img/07.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/f.jpg"><img src="assets/img/06.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/e.jpg"><img src="assets/img/05.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li class="last"><a class="example5" title="Project title" href="assets/img/h.jpg"><img src="assets/img/08.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/d.jpg"><img src="assets/img/04.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/g.jpg"><img src="assets/img/07.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/a.jpg"><img src="assets/img/01.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li class="last"><a class="example5" title="Project title" href="assets/img/c.jpg"><img src="assets/img/03.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+    
+                </ul>
+        
+            </div><!-- End TAB 1 -->
+            
+            <div id="tab2" class="tab_content"><!-- Begin TAB 2 -->
+        
+                <ul class="portfolio">
+    
+                    <li><a class="example5" title="Project title" href="assets/img/b.jpg"><img src="assets/img/02.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/d.jpg"><img src="assets/img/04.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/a.jpg"><img src="assets/img/01.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li class="last"><a class="example5" title="Project title" href="assets/img/h.jpg"><img src="assets/img/08.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/e.jpg"><img src="assets/img/05.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/g.jpg"><img src="assets/img/07.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/f.jpg"><img src="assets/img/06.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li class="last"><a class="example5" title="Project title" href="assets/img/c.jpg"><img src="assets/img/03.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+    
+                </ul>
+        
+            </div><!-- End TAB 2 -->
+            
+            <div id="tab3" class="tab_content"><!-- Begin TAB 3 -->
+        
+                <ul class="portfolio">
+    
+                    <li><a class="example5" title="Project title" href="assets/img/g.jpg"><img src="assets/img/07.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/d.jpg"><img src="assets/img/04.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/e.jpg"><img src="assets/img/05.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li class="last"><a class="example5" title="Project title" href="assets/img/h.jpg"><img src="assets/img/08.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/a.jpg"><img src="assets/img/01.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/f.jpg"><img src="assets/img/06.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+    
+                </ul>
+        
+            </div><!-- End TAB 3 -->
+    
+            <div id="tab4" class="tab_content"><!-- Begin TAB 4 -->
+        
+                <ul class="portfolio">
+    
+                    <li><a class="example5" title="Project title" href="assets/img/c.jpg"><img src="assets/img/03.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/d.jpg"><img src="assets/img/04.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/b.jpg"><img src="assets/img/02.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li class="last"><a class="example5" title="Project title" href="assets/img/c.jpg"><img src="assets/img/03.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/g.jpg"><img src="assets/img/07.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/f.jpg"><img src="assets/img/06.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/e.jpg"><img src="assets/img/05.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li class="last"><a class="example5" title="Project title" href="assets/img/h.jpg"><img src="assets/img/08.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/d.jpg"><img src="assets/img/04.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+                    <li><a class="example5" title="Project title" href="assets/img/g.jpg"><img src="assets/img/07.jpg" width="180" height="116" alt="180" class="portfolio190" /></a></li>
+    
+                </ul>
+            
+            </div><!-- End TAB 4 -->
+    
+        </div><!-- End tabs container -->
+    
+    </div><!-- End grid container -->
+    
+	<div class="grid_6 bottom"></div><!-- Bottom double line border -->
+
+</div><!-- END SECTION 3 -->
+
+
+<div class="clear"></div>
+
+
+<div class="container" id="section4"><!-- BEGIN SECTION 4 -->
+
+	<div class="grid_6">
+        <h1>About me</h1>
+    </div>
+        
+	<div class="grid_6 top"></div><!-- Top double line border -->
+
+	<div class="grid_4">
+    
+        <p><span class="dropcap">N</span>am imperdiet faucibus orci ut vestibulum. Cras ut tellus ac leo blandit convallis a vitae odio. Integer molestie varius hendrerit. Ut lacinia eleifend dolor ut luctus. Sed euismod quam congue est congue lacinia. Aliquam quam augue, fringilla faucibus consequat vitae, mollis ac nulla. Nunc at urna enim, non mollis mi. Nunc eget magna mauris. Aenean elit ligula, dignissim.</p>
+        <p>Quisque cursus libero ante, a pellentesque massa. Vestibulum et dolor ut est tincidunt aliquam. Aliquam nunc velit, ornare eu porta et, volutpat sit amet arcu. Quisque vel risus dolor. Sed blandit, sapien ac tempus faucibus, lectus massa tincidunt tortor, a commodo risus orci gravida tortor.</p>
+        <h2>Pellentesque eu metus est, id accumsan leo</h2>
+        <p>Nulla facilisi. Nam sagittis pretium iaculis. Curabitur egestas mattis dui, vitae ultricies tortor facilisis vel. Phasellus et cursus enim. Maecenas vel porta magna. Curabitur at elit ut lacus luctus mattis. Sed nibh quam, blandit vitae feugiat eu, gravida a elit. Donec commodo laoreet venenatis. Curabitur eget augue augue, in pellentesque arcu. Phasellus eget turpis nec lorem sagittis sagittis.</p>
+        <h2>Morbi viverra, neque quis</h2>
+        <p>Cras feugiat rutrum leo, at viverra nisl ornare quis. Maecenas quis quam justo. Proin molestie, massa lacinia pharetra aliquam, eros nunc ultricies magna, sit amet molestie ligula nulla vitae arcu. Donec commodo laoreet venenatis. Curabitur eget augue augue, in pellentesque arcu. Phasellus eget turpis nec lorem sagittis sagittis. Quisque porta fringilla quam, a volutpat justo imperdiet non.</p>
+        <h3>Some styled typography</h3>
+        <p class="color1">Sed adipiscing lorem massa, in aliquet lectus. Nunc mollis mauris vitae est vestibulum mattis. Nunc lacus magna, aliquet sit amet elementum at, iaculis ac lacus. Maecenas et interdum erat. Sed augue dolor, fermentum ut commodo quis.</p>
+        <p class="color2">Nam bibendum, purus sit amet convallis tempor, dolor lorem ullamcorper eros, vitae dapibus justo diam a elit. Duis at massa nulla, eget consequat velit. Nulla auctor, mauris eu mattis gravida, lorem neque posuere eros, quis vehicula mauris. </p>
+        <p class="color3">Praesent in tellus in urna fermentum lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla tempus pretium lorem, semper laoreet mi ornare sagittis. Id placerat leo dictum non.</p>
+        <p class="color4">Fusce tristique tellus quis orci bibendum hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse aliquam tellus at sem condimentum condimentum. Fusce tristique tellus quis.</p>
+        
+    </div>
+
+
+	<div class="grid_2">
+    
+        <h2>From Flickr</h2>
+        
+        <ul class="thumbnails">
+            <li><img src="assets/img/t1.jpg" width="70" height="70" alt="Thumbnail" class="thumbnail80" /></li>
+            <li><img src="assets/img/t2.jpg" width="70" height="70" alt="Thumbnail" class="thumbnail80" /></li>
+            <li class="last"><img src="assets/img/t3.jpg" width="70" height="70" alt="Thumbnail" class="thumbnail80" /></li>
+            <li><img src="assets/img/t4.jpg" width="70" height="70" alt="Thumbnail" class="thumbnail80" /></li>
+            <li><img src="assets/img/t5.jpg" width="70" height="70" alt="Thumbnail" class="thumbnail80" /></li>
+            <li class="last"><img src="assets/img/t6.jpg" width="70" height="70" alt="Thumbnail" class="thumbnail80" /></li>
+            <li><img src="assets/img/t3.jpg" width="70" height="70" alt="Thumbnail" class="thumbnail80" /></li>
+            <li><img src="assets/img/t2.jpg" width="70" height="70" alt="Thumbnail" class="thumbnail80" /></li>
+            <li class="last"><img src="assets/img/t1.jpg" width="70" height="70" alt="Thumbnail" class="thumbnail80" /></li>
+        </ul>
+        
+    </div>
+
+	<div class="grid_2 pusher21">
+        
+        <h2>Links</h2>
+        <ul class="bullet_list_right">
+            <li><a href="style-switcher.php?style=grey#">Themeforest</a></li>
+            <li><a href="style-switcher.php?style=grey#">GraphicRiver</a></li>
+            <li><a href="style-switcher.php?style=grey#">CodeCanyon</a></li>
+            <li><a href="style-switcher.php?style=grey#">ActiveDen</a></li>
+            <li><a href="style-switcher.php?style=grey#">3DOcean</a></li>
+            <li><a href="style-switcher.php?style=grey#">VideoHive</a></li>
+            <li><a href="style-switcher.php?style=grey#">Audiojungle</a></li>
+        </ul>
+        
+    </div>
+    
+	<div class="grid_6 bottom"></div><!-- Bottom double line border -->
+
+</div><!-- END SECTION 4 -->
+
+
+<div class="clear"></div>
+
+
+<div class="container" id="section5"><!-- BEGIN SECTION 5 -->
+
+	<div class="grid_6">
+        <h1>Elements &amp; classes</h1>
+    </div>
+        
+	<div class="grid_6 top"></div><!-- Top double line border -->
+
+	<div class="grid_4">
+    
+        <p><span class="dropcap">D</span>onec vel est elit. Morbi augue enim, lobortis a commodo vitae, sodales in arcu. Suspendisse dapibus lacinia sem at molestie. Sed auctor tempus ullamcorper. Ut sed bibendum odio. Quisque tincidunt luctus convallis. <a href="style-switcher.php?style=grey#">Morbi tincidunt egestas risus</a>, non tincidunt gilla, nibh at scelerisque luctus, dui diam vestibulum justo, et venenatis nulla lectus in ligula. Ut in enim sapien, quis tempus nisi. Ut odio erat, tincidunt vitae aliquam at, vehicula eu purus. Maecenas nisl velit, ultricies vel fringilla sed, aliquam sed massa. <a href="style-switcher.php?style=grey#">Duis dignissim purus</a> at sem dapibus pulvinar. Etiam eget mauris semper sem consequat commodo. Etiam tortor purus, tristique congue faucibus vel, tempor nec urna. Aliquam commodo, est sed cursus pellentesque.</p>
+
+		<h2>Some additional text, this is another header</h2>
+        <p>Nulla facilisi. Nam sagittis pretium iaculis. Curabitur egestas mattis dui, vitae ultricies tortor facilisis vel. Phasellus et cursus enim. Maecenas vel porta magna. Curabitur at elit ut lacus luctus mattis. Sed nibh quam, blandit vitae feugiat eu, gravida a elit.</p>
+
+        <ul class="bullet_list">
+            <li>Praesent molestie sapien sed arcu tempor vitae congue metus ultricies.</li>
+            <li>Proin blandit arcu lacinia eros feugiat gravida.</li>
+            <li>Curabitur sodales auctor arcu, eget tempus nisi lacinia at.</li>
+        </ul>
+        
+        <p><span class="strong">Nunc eleifend, ante a vestibulum ultricies</span>, neque sapien vulputate velit, eu ultrices orci velit ac turpis. Morbi id augue ac lorem dapibus aliquet id eu sem. Sed sed magna ac erat dignissim.</p>
+
+		<ol class="numbered_list">
+            <li>Morbi nec leo a lectus elementum accumsan nec a enim.</li>
+            <li>Nunc dignissim ante nec eros rhoncus volutpat.</li>
+            <li>Proin blandit arcu lacinia eros feugiat gravida.</li>
+		</ol>
+        
+		<h2>This is an h2 header</h2>
+        <p>Quisque pretium, nulla non venenatis pharetra, dui mauris interdum massa, eu lobortis ipsum justo et orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <h3>This is an h3 header</h3>
+        <p>Aliquam convallis tincidunt nisl vel dictum. Mauris rhoncus purus nec eros hendrerit sit amet feugiat augue venenatis. Pellentesque quis justo aliquet urna luctus aliquet at a dolor.</p>
+        <h4>This is an h4 header</h4>
+        <p>Proin molestie molestie iaculis. Nunc iaculis condimentum massa. Etiam aliquam diam in est luctus et pellentesque dui pharetra. Morbi lobortis massa at eros pharetra id egestas neque pretium.</p>
+        <h5>This is an h5 header</h5>
+        <p>Proin molestie molestie iaculis. Nunc iaculis condimentum massa. Etiam aliquam diam in est luctus et pellentesque dui pharetra. Morbi lobortis massa at eros pharetra id egestas neque pretium.</p>
+
+	</div>
+
+
+	<div class="grid_2">
+        <a class="example5 noborder" title="Project title" href="assets/img/b.jpg"><img src="assets/img/02.jpg" width="250" height="152" alt="260" class="portfolio260" /></a>
+    </div>
+    
+	<div class="grid_2 pusher7">
+    
+        <h3>Testimonials</h3>
+        <p class="testimonials"><span>Duis pulvinar blandit tempus. Etiam nisl ipsum, imperdiet ut adipiscing vel, porta ut justo. Aenean aliquam eleifend lacus sed convallis. Morbi aliquet ornare aliquam.</span></p>
+        <p class="testimonials_author">John Doe, <a href="style-switcher.php?style=grey#">ABC Company</a></p>
+        <p class="testimonials">Basellus nec nunc vel erat tincidunt posuere. Nulla pulvinar nulla sit amet nunc ornare tempor. Nulla id neque eros.</p>
+        <p class="testimonials_author">John Doe, <a href="style-switcher.php?style=grey#">Company ABC</a></p>
+        <p class="testimonials">Donec tincidunt dolor sed augue fermentum et tempor lorem malesuada. Fusce ultricies, sem semper eleifend lobortis, eros erat consectetur.</p>
+        <p class="testimonials_author">John Doe, <a href="style-switcher.php?style=grey#">Company ABC</a></p>
+
+    </div>
+
+	<div class="grid_2 pusher14">
+    
+        <ul class="textbox">
+            <li class="box_title">This is a textbox</li>
+            <li><span class="strong">Duis pulvinar blandit tempus.</span> Etiam nisl ipsum, imperdiet ut adipiscing vel, porta ut justo. Aenean aliquam eleifend lacus sed convallis. Morbi aliquet ornare aliquam.</li>
+            <li><span class="strong">In velit nisi, iaculis in aliquet eget</span>, fermentum non orci. Ut commodo pharetra dui lacinia vulputate. Mauris et ante tortor. Fusce quis dui sit amet risus mattis elementum quis sit amet lectus.</li>
+        </ul>
+
+    </div>
+
+    
+	<div class="grid_6 bottom"></div><!-- Bottom double line border -->
+
+</div><!-- END SECTION 5 -->
+
+
+<div class="clear"></div>
+
+
+<div class="container" id="section6"><!-- BEGIN SECTION 6 -->
+
+	<div class="grid_6">
+        <h1>Contact</h1>
+    </div>
+        
+	<div class="grid_6 top"></div><!-- Top double line border -->
+
+	<div class="grid_4">
+    
+        <p>Donec vel est elit. Morbi augue enim, lobortis a commodo vitae, sodales in arcu. Suspendisse dapibus lacinia sem at molestie. Sed auctor tempus ullamcorper. Ut sed bibendum odio. Quisque tincidunt luctus convallis.</p>
+
+        <div class="message"><!-- Messages displayed when sending email -->
+            <div id="alert"></div>
+        </div>
+                                
+        <form action="http://www.pixelworkshop.fr/demos/pixelstudio/assets/php/sendmail.php" method="post" id="contactForm" class="form"><!-- Begin contact form -->
+                                    
+            <ul class="contact">
+                                    
+                <li>
+                <label for="name">Name :</label>
+                <input id="name" name="name" class="text" size="40" />
+                </li>
+                <li>
+                <label for="email">Email :</label>
+                <input id="email" name="email" class="text" size="40" />
+                </li>
+                <li class="special">
+                <label for="last">Don't fill this in :</label>
+                <input type="text" name="last" value="" id="last" />
+                </li>
+                <li>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="6" cols="35"></textarea>
+                </li>
+                <li><input type="submit" value="SUBMIT" id="submit" class="button" /></li>
+                <li><input type="reset" value="RESET" class="button" /></li>
+                                        
+            </ul>      
+                                              
+        </form><!-- End contact form -->
+  
+    </div>
+    
+    <div class="grid_2">
+    
+        <h3>Contact information</h3>
+        <p>Feel free to contact us for any of your projects, we’ll gat back to you as soon as possible !</p>
+        <p class="address_icon">Company name<br />789 Street name<br />999 00 City name, Country</p>
+        <p class="phone_icon">Phone : +000 987 654 321<br />Fax : +000 123 456 789</p>
+        <p class="mail_icon">Email : <a href="style-switcher.php?style=grey#">sales@yourcompany.com</a></p>
+    
+    </div>
+    
+	<div class="grid_6 bottom"></div><!-- Bottom double line border -->
+
+</div><!-- END SECTION 6 -->
+
+
+<div class="clear"></div>
+
+
+<div id="footer_wrapper"><!-- BEGIN FOOTER -->
+
+	<div id="footer"><!-- BEGIN FOOTER CONTAINER -->
+        
+		<ul class="container">
+
+		<li class="grid_2">
+        
+            <h3>Social networks</h3>
+            <p>For all news and updates, join us on the social networks and stay tuned !</p>
+            
+            <ul class="social_icons">
+                <li><img src="assets/img/icons/facebook.png" width="24" height="24" alt="Facebook" /></li>
+                <li><img src="assets/img/icons/twitter.png" width="24" height="24" alt="Twitter" /></li>
+                <li><img src="assets/img/icons/flickr.png" width="24" height="24" alt="Flickr" /></li>
+                <li><img src="assets/img/icons/digg.png" width="24" height="24" alt="Digg" /></li>
+                <li><img src="assets/img/icons/blogger.png" width="24" height="24" alt="Blogger" /></li>
+            </ul>
+      
+        </li>
+
+		<li class="grid_2">
+        
+            <h3>Freelance work</h3>
+            <p>I'm currently available for freelance work, I can design for you a brand new website or create an awesome logo.<br />Just <a href="style-switcher.php?style=grey#">drop me an email</a> to get in touch !</p>
+      
+        </li>
+
+		<li class="grid_2">
+        
+            <p>&nbsp;</p>
+            <p>This theme uses 100% valid<br /><a href="style-switcher.php?style=grey#">HTML</a> and <a href="style-switcher.php?style=grey#">CSS</a></p>
+            <p>Copyright &copy; 2010 Pixelstudio</p>
+      
+        </li>
+
+		</ul>
+
+    </div><!-- END FOOTER CONTAINER -->
+    
+</div><!-- END FOOTER -->
+
+<div class="panel_trigger">
+    <h6>Pick up a color</h6>
+	<ul id="style-switcher">
+		<li id="blue"><a href="style-switcher.php?style=blue"><span>Blue</span></a></li>
+		<li id="red"><a href="style-switcher.php?style=red"><span>Red</span></a></li>
+		<li id="green"><a href="style-switcher.php?style=green"><span>Green</span></a></li>
+		<li id="pink"><a href="style-switcher.php?style=pink"><span>Pink</span></a></li>
+		<li id="purple"><a href="style-switcher.php?style=purple"><span>Purple</span></a></li>
+		<li id="orange"><a href="style-switcher.php?style=orange"><span>Orange</span></a></li>
+		<li id="brown"><a href="style-switcher.php?style=brown"><span>Brown</span></a></li>
+		<li id="grey"><a href="style-switcher.php?style=grey"><span>Grey</span></a></li>
+	</ul>
+
+</div>
+<a class="trigger" href="style-switcher.php?style=grey#"></a>
+
+<script type="text/javascript"> Cufon.now(); </script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-43307842-1', 'pixelworkshop.fr');
+  ga('send', 'pageview');
+</script>
+
+
+
+</body>
+</html>

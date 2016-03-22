@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>  
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" href="css/flexinav.css" />
+    <link rel="stylesheet" href="css/scrollbars.css" />
+    <link rel="stylesheet" href="fonts/css/font-awesome.css">
+    
+    <title>FlexiNav - Flexible and Responsive Navigation</title>
+
+    <script src='js/scripts.js'></script>
+    <script>
+        $(document).ready(function($){
+            $('#flexinav1').flexiNav({
+                flexinav_effect: 'flexinav_hover', // Type of event to show the drop downs ('flexinav_hover' or 'flexinav_click')
+                flexinav_show_duration: 300, // Duration to fade in drop downs
+                flexinav_hide_duration: 200, // Duration to fade out drop downs
+                flexinav_show_delay: 200, // Delay before fading in/out drop downs
+                flexinav_trigger : true, // Button to toggle the menu bar (fixed version only)
+                flexinav_hide : false, // Hides the menu bar when the page loads (fixed version only)
+                flexinav_scrollbars: false, // Enables scrollbars within drop downs
+                flexinav_scrollbars_height: 500, // Height of drop downs that use scrollbars (unique value in pixels)
+                flexinav_responsive: true // Enables the responsive version of the menu
+            });
+        });
+    </script>
+
+</head>
+
+
+<body>
+
+
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+
+
+<div class="container container_fixed">
+
+
+
+
+    <div id="flexinav1" class="flexinav flexinav_fixed"><!-- BEGIN FLEXINAV -->
+
+
+
+        <div class="flexinav_wrapper"><!-- Flexinav Container -->
+
+
+
+            <ul class="flexinav_menu"><!-- Flexinav (left part) -->
+
+                
+
+                <li class="flexinav_collapse"><span><i class="fa fa-bars"></i>Navigation</span></li>
+
+
+                <li><span><i class="fa fa-home"></i>Home</span>
+
+                    <div class="flexinav_ddown flexinav_ddown_480">
+
+                        <div class="colrow">
+
+                            <div class="col12">
+
+                                <h2>Welcome !</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, <a href="http://codecanyon.net/user/Pixelworkshop/portfolio">dignissimos ipsa</a> incidunt odio architecto dicta recusandae libero ipsum quod minus ipsam. Libero, quasi dolor ullam eligendi iusto eveniet facere molestiae placeat numquam nihil mollitia.</p>
+                                <img src="http://placehold.it/480x200" alt="">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, molestiae, omnis, laudantium, animi eos veritatis cumque temporibus quibusdam ex officiis nulla itaque doloribus nobis mollitia pariatur molestias aspernatur qui quos alias earum et perferendis atque deleniti autem fugiat provident.</p>
+
+                                <div class="colrow">
+
+                                    <div class="col12">
+                                        <h2>Useful Links</h2>
+                                    </div>
+
+                                    <div class="col6">
+
+                                        <ul class="flexinav_icons">
+                                            <li><a href="01-flexinav-fixed.html#"><i class="fa fa-gears"></i>Codecanyon</a></li>
+                                            <li><a href="01-flexinav-fixed.html#"><i class="fa fa-heart"></i>Themeforest</a></li>
+                                            <li><a href="01-flexinav-fixed.html#"><i class="fa fa-magic"></i>Graphicriver</a></li>
+                                            <li><a href="01-flexinav-fixed.html#"><i class="fa fa-video-camera"></i>Videohive</a></li>
+                                            <li><a href="01-flexinav-fixed.html#"><i class="fa fa-music"></i>Audiojungle</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="col6">
+
+                                        <ul class="flexinav_icons">
+                                            <li><a href="01-flexinav-fixed.html#"><i class="fa fa-star"></i>3Docean</a></li>
+                                            <li><a href="01-flexinav-fixed.html#"><i class="fa fa-camera"></i>Photodune</a></li>
+                                            <li><a href="01-flexinav-fixed.html#"><i class="fa fa-flash"></i>Activeden</a></li>
+                                            <li><a href="01-flexinav-fixed.html#"><i class="fa fa-leaf"></i>Envato</a></li>
+                                            <li><a href="01-flexinav-fixed.html#"><i class="fa fa-microphone"></i>Tuts+</a></li>
+                                        </ul>
+
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                </li>
+
+
+                <li><span><i class="fa fa-certificate"></i>Fly-Outs</span>
+
+                    <div class="flexinav_ddown flexinav_ddown_fly_out flexinav_ddown_240">
+
+                        <ul class="dropdown_flyout">
+                        
+                            <li class="flyout_heading">Marketplaces</li>
+
+                            <li class="dropdown_parent"><span>Fly-Outs</span>
+
+                                <ul class="dropdown_flyout_level flexinav_icons">
+
+                                    <li class="dropdown_parent"><span><i class="fa fa-asterisk"></i>Level 1</span>
+
+                                        <ul class="dropdown_flyout_level">
+
+                                            <li><a href="01-flexinav-fixed.html#">Level 2</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Level 2</a></li>
+
+                                            <li class="dropdown_parent"><span>Level 2</span>
+
+                                                <ul class="dropdown_flyout_level">
+                                                    
+                                                    <li><a href="01-flexinav-fixed.html#">Level 3</a></li>
+                                                    <li><a href="01-flexinav-fixed.html#">Level 3</a></li>
+
+                                                    <li class="dropdown_parent dropdown_parent_left"><span>Level 3</span>
+
+                                                        <ul class="dropdown_flyout_level dropdown_flyout_level_left">
+
+                                                            <li><a href="01-flexinav-fixed.html#">Level 4</a></li>
+                                                            <li><a href="01-flexinav-fixed.html#">Level 4</a></li>
+                                                            <li><a href="01-flexinav-fixed.html#">Level 4</a></li>
+
+                                                            <li class="dropdown_parent"><span>Level 4</span>
+
+                                                                <ul class="dropdown_flyout_level">
+
+                                                                    <li><a href="01-flexinav-fixed.html#">Level 5</a></li>
+                                                                    <li><a href="01-flexinav-fixed.html#">Level 5</a></li>
+                                                                    <li><a href="01-flexinav-fixed.html#">Level 5</a></li>
+
+                                                                </ul>
+
+                                                            </li>
+
+                                                        </ul>
+
+                                                    </li>
+
+                                                </ul>
+
+                                            </li>
+
+                                        </ul>
+
+                                    </li>
+
+                                    <li><a href="01-flexinav-fixed.html#"><i class="fa fa-bookmark"></i>Level 1</a></li>
+                                    <li><a href="01-flexinav-fixed.html#"><i class="fa fa-comment"></i>Level 1</a></li>
+                                    <li><a href="01-flexinav-fixed.html#"><i class="fa fa-cog"></i>Level 1</a></li>
+                                    <li><a href="01-flexinav-fixed.html#"><i class="fa fa-heart"></i>Level 1</a></li>
+
+                                </ul>
+
+                            </li>
+
+                            <li><a href="01-flexinav-fixed.html#">Audiojungle</a></li>
+                            
+                            <li class="dropdown_parent"><span>Codecanyon</span>
+
+                                <ul class="dropdown_flyout_level">
+
+                                    <li class="dropdown_parent"><span>Javascript</span>
+
+                                        <ul class="dropdown_flyout_level">
+
+                                            <li><a href="01-flexinav-fixed.html#">All</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Calendars</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Countdowns</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Forms</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Images and Medias</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Loaders</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Media</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Navigation</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">News Tickers</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Ratings and Charts</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Shopping Carts</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Sliders</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Social Networks</a></li>
+
+                                        </ul>
+
+                                    </li>
+
+                                    <li class="dropdown_parent"><span>PHP Scripts</span>
+
+                                        <ul class="dropdown_flyout_level">
+
+                                            <li><a href="01-flexinav-fixed.html#">Calendars</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Countdowns</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Forms</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Images and Medias</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Loaders</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Navigation</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">News Tickers</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Polls</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Shopping Carts</a></li>
+
+                                        </ul>
+
+                                    </li>
+
+                                    <li class="dropdown_parent"><span>Wordpress</span>
+
+                                        <ul class="dropdown_flyout_level">
+
+                                            <li><a href="01-flexinav-fixed.html#">Forms</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Galleries</a></li>
+
+                                            <li class="dropdown_parent"><span>eCommerce</span>
+
+                                                <ul class="dropdown_flyout_level">
+
+                                                    <li><a href="01-flexinav-fixed.html#">All</a></li>
+                                                    <li><a href="01-flexinav-fixed.html#">Wordpress</a></li>
+                                                    <li><a href="01-flexinav-fixed.html#">WooCommerce</a></li>
+                                                    <li><a href="01-flexinav-fixed.html#">Jigoshop</a></li>
+                                                    <li><a href="01-flexinav-fixed.html#">Standalone</a></li>
+
+                                                </ul>
+
+                                            </li>
+
+                                        </ul>
+
+                                    </li>
+
+                                    <li class="dropdown_parent"><span>Plugins</span>
+
+                                        <ul class="dropdown_flyout_level">
+
+                                            <li><a href="01-flexinav-fixed.html#">Magento</a></li>
+
+                                            <li class="dropdown_parent"><span>ExpressionEngine</span>
+
+                                                <ul class="dropdown_flyout_level">
+
+                                                    <li><a href="01-flexinav-fixed.html#">All</a></li>
+                                                    <li><a href="01-flexinav-fixed.html#">Utilities</a></li>
+
+                                                </ul>
+
+                                            </li>
+
+                                            <li class="dropdown_parent"><span>Joomla</span>
+
+                                                <ul class="dropdown_flyout_level">
+
+                                                    <li><a href="01-flexinav-fixed.html#">All</a></li>
+                                                    <li><a href="01-flexinav-fixed.html#">Galleries</a></li>
+                                                    <li><a href="01-flexinav-fixed.html#">Sliders</a></li>
+                                                    <li><a href="01-flexinav-fixed.html#">Social Networking</a></li>
+                                                    <li><a href="01-flexinav-fixed.html#">Mobile</a></li>
+                                                    <li><a href="01-flexinav-fixed.html#">Utilities</a></li>
+
+                                                </ul>
+
+                                            </li>
+
+                                            <li><a href="01-flexinav-fixed.html#">Concrete5</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Drupal</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">OpenCart</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Virtuemart</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">osCommerce</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Prestashop</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Zen Cart</a></li>
+
+                                        </ul>
+
+                                    </li>
+
+                                    <li class="dropdown_parent"><span>CSS</span>
+
+                                        <ul class="dropdown_flyout_level">
+
+                                            <li><a href="01-flexinav-fixed.html#">All</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Navigation and Menus</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Layouts</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Animations and Effects</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Charts and Graphs</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Tabs and Sliders</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Forms</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Buttons</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Pricing Tables</a></li>
+
+                                        </ul>
+
+                                    </li>
+
+                                    <li><a href="01-flexinav-fixed.html#">HTML5</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Mobile</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Apps</a></li>
+
+                                </ul>
+
+                            </li>
+                            
+                            <li class="dropdown_parent"><span>Themeforest</span>
+
+                                <ul class="dropdown_flyout_level">
+
+                                    <li class="dropdown_parent"><span>Site Templates</span>
+
+                                        <ul class="dropdown_flyout_level">
+
+                                            <li><a href="01-flexinav-fixed.html#">Creative</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Corporate</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Retail</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Technology</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Entertainment</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Personal</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Speciality Pages</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Admin Templates</a></li>
+
+                                        </ul>
+
+                                    </li>
+
+                                    <li class="dropdown_parent"><span>Wordpress</span>
+
+                                        <ul class="dropdown_flyout_level">
+
+                                            <li><a href="01-flexinav-fixed.html#">Blog</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Creative</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Corporate</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Retail</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Technology</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Nonprofit</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Entertainment</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Wedding</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">eCommerce</a></li>
+
+                                        </ul>
+
+                                    </li>
+
+                                    <li class="dropdown_parent"><span>CMS Themes</span>
+
+                                        <ul class="dropdown_flyout_level">
+
+                                            <li><a href="01-flexinav-fixed.html#">Joomla</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Drupal</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Concrete5</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">ExpressionEngine</a></li>
+
+                                        </ul>
+
+                                    </li>
+
+                                    <li class="dropdown_parent"><span>eCommerce</span>
+
+                                        <ul class="dropdown_flyout_level">
+
+                                            <li><a href="01-flexinav-fixed.html#">Magento</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Shopify</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">OpenCart</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">osCommerce</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">PrestaShop</a></li>
+                                            <li><a href="01-flexinav-fixed.html#">Zen Cart</a></li>
+
+                                        </ul>
+
+                                    </li>
+
+                                    <li><a href="01-flexinav-fixed.html#">Blogging</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Marketing</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Forums</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">PSD Templates</a></li>
+
+                                </ul>
+                                
+                            </li>
+                            
+                            <li><a href="01-flexinav-fixed.html#">Videohive</a></li>
+                            <li><a href="01-flexinav-fixed.html#">Graphicriver</a></li>
+                            <li><a href="01-flexinav-fixed.html#">Photodune</a></li>
+                            <li class="last"><a href="01-flexinav-fixed.html#">3Docean</a></li>
+
+                            <li class="flyout_heading">Network</li>
+
+                            <li><a href="01-flexinav-fixed.html#">Tuts</a></li>
+                            <li><a href="01-flexinav-fixed.html#">Creattica</a></li>
+                            <li><a href="01-flexinav-fixed.html#">Microlancer</a></li>
+                            <li><a href="01-flexinav-fixed.html#">Rockable Press</a></li>
+                            <li class="last"><a href="01-flexinav-fixed.html#">Envato Notes</a></li>
+                            
+                        </ul>                       
+
+                    </div>
+
+                </li>
+
+
+                <li class="flexnav_mega"><span><i class="fa fa-bars"></i>Mega Grid</span>
+
+                    <div class="flexinav_ddown flexinav_ddown_full">
+
+                        <div class="colrow">
+
+                            <div class="col12">
+                                <p class="coldemo">col12</p>
+                            </div>
+
+                        </div>
+
+                        <div class="colrow">
+
+                            <div class="col11">
+                                <p class="coldemo">col11</p>
+                            </div>
+                            <div class="col1">
+                                <p class="coldemo">col1</p>
+                            </div>
+
+                        </div>
+
+                        <div class="colrow">
+
+                            <div class="col10">
+                                <p class="coldemo">col10</p>
+                            </div>
+                            <div class="col2">
+                                <p class="coldemo">col2</p>
+                            </div>
+
+                        </div>
+
+                        <div class="colrow">
+
+                            <div class="col9">
+                                <p class="coldemo">col9</p>
+                            </div>
+                            <div class="col3">
+                                <p class="coldemo">col3</p>
+                            </div>
+
+                        </div>
+
+                        <div class="colrow">
+
+                            <div class="col8">
+                                <p class="coldemo">col8</p>
+                            </div>
+                            <div class="col4">
+                                <p class="coldemo">col4</p>
+                            </div>
+
+                        </div>
+
+                        <div class="colrow">
+
+                            <div class="col7">
+                                <p class="coldemo">col7</p>
+                            </div>
+                            <div class="col5">
+                                <p class="coldemo">col5</p>
+                            </div>
+
+                        </div>
+
+                        <div class="colrow">
+
+                            <div class="col6">
+                                <p class="coldemo">col6</p>
+                            </div>
+                            <div class="col6">
+                                <p class="coldemo">col6</p>
+                            </div>
+
+                        </div>
+
+                        <div class="colrow">
+
+                            <div class="col4">
+                                <p class="coldemo">col4</p>
+                            </div>
+                            <div class="col4">
+                                <p class="coldemo">col4</p>
+                            </div>
+                            <div class="col4">
+                                <p class="coldemo">col4</p>
+                            </div>
+
+                        </div>
+
+                        <div class="colrow">
+
+                            <div class="col3">
+                                <p class="coldemo">col3</p>
+                            </div>
+                            <div class="col3">
+                                <p class="coldemo">col3</p>
+                            </div>
+                            <div class="col3">
+                                <p class="coldemo">col3</p>
+                            </div>
+                            <div class="col3">
+                                <p class="coldemo">col3</p>
+                            </div>
+
+                        </div>
+
+                        <div class="colrow">
+
+                            <div class="col2">
+                                <p class="coldemo">col2</p>
+                            </div>
+                            <div class="col2">
+                                <p class="coldemo">col2</p>
+                            </div>
+                            <div class="col2">
+                                <p class="coldemo">col2</p>
+                            </div>
+                            <div class="col2">
+                                <p class="coldemo">col2</p>
+                            </div>
+                            <div class="col2">
+                                <p class="coldemo">col2</p>
+                            </div>
+                            <div class="col2">
+                                <p class="coldemo">col2</p>
+                            </div>
+
+                        </div>
+
+                        <div class="colrow">
+
+                            <div class="col1">
+                                <p class="coldemo">col1</p>
+                            </div>
+                            <div class="col1">
+                                <p class="coldemo">col1</p>
+                            </div>
+                            <div class="col1">
+                                <p class="coldemo">col1</p>
+                            </div>
+                            <div class="col1">
+                                <p class="coldemo">col1</p>
+                            </div>
+                            <div class="col1">
+                                <p class="coldemo">col1</p>
+                            </div>
+                            <div class="col1">
+                                <p class="coldemo">col1</p>
+                            </div>
+                            <div class="col1">
+                                <p class="coldemo">col1</p>
+                            </div>
+                            <div class="col1">
+                                <p class="coldemo">col1</p>
+                            </div>
+                            <div class="col1">
+                                <p class="coldemo">col1</p>
+                            </div>
+                            <div class="col1">
+                                <p class="coldemo">col1</p>
+                            </div>
+                            <div class="col1">
+                                <p class="coldemo">col1</p>
+                            </div>
+                            <div class="col1">
+                                <p class="coldemo">col1</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+
+                <li class="flexnav_mega"><span><i class="fa fa-bookmark"></i>Texts</span>
+
+                    <div class="flexinav_ddown flexinav_ddown_mega">
+
+                        <div class="colrow">
+
+                            <div class="col8">
+                                <h2>Responsive with a maximum compatibility</h2>
+                                <p>Ducimus, nostrum, dolores, officiis rerum tempore nulla voluptatibus nesciunt illum pariatur ea neque enim voluptatum consectetur totam ipsa saepe repudiandae suscipit inventore cum obcaecati eveniet voluptatem optio soluta corporis quas? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi.</p>
+                                <div class="colrow">
+                                    <div class="col4">
+                                        <h4>Column Title</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo tellus adipiscing, pharetra nibh quis.</p>
+                                    </div>
+                                    <div class="col4">
+                                        <h4>Column Title</h4>
+                                        <p>Phasellus neque ligula, venenatis at facilisis quis, aliquet non purus. Nulla facilisi. Donec id ante vitae nisi.</p>
+                                    </div>
+                                    <div class="col4">
+                                        <h4>Column Title</h4>
+                                        <p>Donec non egestas justo, eget hendrerit elit. Praesent gravida luctus risus, a volutpat tellus ullamcorper quis.</p>
+                                    </div>
+                                </div>
+                                <div class="colrow">
+                                    <div class="col6">
+                                        <h4>Column Title</h4>
+                                        <p>Suspendisse ut vulputate erat. Vestibulum quis auctor odio. Etiam porta nec lectus non sollicitudin. Nunc id tortor nisi. Vivamus sed tortor in ante dignissim condimentum. Nullam at rci. </p>
+                                    </div>
+                                    <div class="col6">
+                                        <h4>Column Title</h4>
+                                        <p>Quisque vel lectus eget nunc pellentesque bibendum. Sed aliquam nunc id ornare blandit. Sed suscipit lectus tortor, eget volutpat nibh consequat id. Sed condimentum libero sit. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col4">
+                                <p>Donec tortor augue, semper eu convallis vitae, mollis commodo neque. Morbi nibh erat, imperdiet viverra volutpat a, vulputate vel nunc. Etiam consequat scelerisque volutpat. Suspendisse potenti mollis sit amet sagittis.</p>
+                                <img src="http://placehold.it/320x200" alt="" />
+                                <p>Sed mi erat, dictum id ultricies adipiscing, viverra sit amet elit ut, tempor ornare id massa commodo, iaculis libero sit amet.</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+
+                </li>
+
+
+                <li class="flexnav_mega"><span>Lists + Link<a href="http://codecanyon.net/user/Pixelworkshop/portfolio"><i class="fa fa-arrow-circle-right"></i></a></span>
+
+                    <div class="flexinav_ddown flexinav_ddown_mega">
+
+                        <div class="colrow">
+
+                            <div class="col2">
+                                <ul>
+                                    <li><a href="01-flexinav-fixed.html#">Codecanyon</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Themeforest</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Graphicriver</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Videohive</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Audiojungle</a></li>
+                                </ul>
+                            </div>
+                            <div class="col2">
+                                <ul>
+                                    <li><a href="01-flexinav-fixed.html#">Psdtuts+</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Nettuts+</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Vectorstuts+</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Webdesigntuts+</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">WPtuts+</a></li>
+                                </ul>
+                            </div>
+                            <div class="col2">
+                                <ul>
+                                    <li><a href="01-flexinav-fixed.html#">Microlancer</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Creaticca</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Rockable&nbsp;Press</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Envato</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">FreelanceSwitch</a></li>
+                                </ul>
+                            </div>
+                            <div class="col2">
+                                <ul>
+                                    <li><a href="01-flexinav-fixed.html#">Graphicriver</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Videohive</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Audiojungle</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Codecanyon</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Themeforest</a></li>
+                                </ul>
+                            </div>
+                            <div class="col2">
+                                <ul>
+                                    <li><a href="01-flexinav-fixed.html#">Vectorstuts+</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Webdesigntuts+</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">WPtuts+</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Psdtuts+</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Nettuts+</a></li>
+                                </ul>
+                            </div>
+                            <div class="col2">
+                                <ul>
+                                    <li><a href="01-flexinav-fixed.html#">Rockable&nbsp;Press</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Envato</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">FreelanceSwitch</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Microlancer</a></li>
+                                    <li><a href="01-flexinav-fixed.html#">Creaticca</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </li>
+
+
+
+            </ul><!-- Flexinav (left part) -->
+
+
+
+            <ul class="flexinav_menu flexinav_menu_right"><!-- Flexinav (right part) -->
+
+                
+
+                <li><a href="http://codecanyon.net/user/Pixelworkshop/portfolio"><i class="fa fa-link"></i>Link</a></li>
+
+
+                <li><span><i class="fa fa-envelope"></i>Contact</span>
+
+                    <div class="flexinav_ddown flexinav_ddown_400 flexinav_ddown_right">
+
+                        <div class="colrow">
+
+                            <div class="col12">
+
+                                <h2>Contact us !</h2>
+                                <p>Phasellus molestie facilisis orci ut bibendum. Aliquam accumsan eros sit amet metus egestas porta.</p>
+
+                                <div class="contact_form" id="contact_form"><!-- Begin Contact Form -->
+
+                                    <form method="POST" id="flexinav_form">
+
+                                        <label for="name">Name<span class="required"> *</span></label>
+                                        <input class="form_element" type="text" name="name" id="name" />
+
+                                        <label for="email">Email<span class="required"> *</span></label>
+                                        <input class="form_element" type="text" name="email" id="email" />
+                                            
+                                        <label for="message">Message<span class="required"> *</span></label>
+                                        <textarea name="message" class="form_element" id="message"></textarea>
+
+                                        <div class="form_buttons">
+                                            <input type="button" class="button" id="submit" value="Submit" />
+                                            <input type="reset" class="button" id="reset" value="Reset" />
+                                        </div>
+
+                                    </form>
+
+                                </div><!-- End Contact Form -->
+
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                </li>
+
+
+
+            </ul><!-- Flexinav (right part) -->
+
+
+
+        </div><!-- Flexinav Container -->
+
+
+
+    </div><!-- END FLEXINAV -->
+
+
+
+
+
+
+
+    <!-- NOT PART OF THE MENU -->
+
+
+    <div class="dummy_content">
+
+        <h1>FlexiNav - Flexible and Responsive Navigation</h1>
+
+        <p><strong>FlexiNav</strong> is the most flexible navigation system that is designed to work on any device. It is fully responsive and comes with 10 color presets. Here is an overview of the possible options you can set independently for each menu (you can have several menus on a same page) :</p>
+    <pre>
+    $('#flexinav1').flexiNav({
+        flexinav_effect: 'flexinav_hover',
+        flexinav_show_duration: 300,
+        flexinav_hide_duration: 200,
+        flexinav_show_delay: 200,
+        flexinav_trigger : true,
+        flexinav_hide : false, 
+        flexinav_scrollbars: false,
+        flexinav_scrollbars_height: 500, 
+        flexinav_responsive: true
+    });
+    </pre>
+
+        <p>This menu can be fixed at the top of the browser and has an optionnal trigger button to show or hide the menu bar. On mobile devices, the menu is put back into the flow of the page to make sure that all the content can be reached on any device (fixed elements that don't fit into a phone screen can't be scrolled). If one menu isn't enough, you can add others as you wish.</p>
+        <p><strong>FlexiNav</strong> comes with a full set of drop downs sizes from fixed widths (12 sizes) to drop downs that can cover either the whole browser width or the whole menu bar width. Each drop down can independently stick to the left edge or to the right edge of its parent. In the same way, the menu bar can contain left aligned or right aligned items. All elements are resized down when viewed on a mobile device and the break points match the ones used in the <a href="http://getbootstrap.com/">Bootstrap</a> framework.</p> 
+        <p>If you have a lot of content to add into a given drop down, you have the possibility to use the custom scrollbars provided in the package. From a given height set in the script options, the script will automatically adjust the height of the drop down and the scrollbars.</p>
+        <p><strong>FlexiNav</strong> includes a lot of styled elements such as headings, lists, lists with icons, form elements, etc. The <a href="http://fontawesome.io/">font-awesome</a> icon collection is already there to enhance your list elements. The CSS file is well structured and easy to customize : you can change the existing colors presets or create your owns. Images and videos will automatically take the available space so you don't need to resize them manually.</p>
+        <p>The contact form included is quite simple and you only need to add your email address. The feedback messages appearing when a user sends an email can be changed or translated easily.</p>
+        <h2>Features</h2>
+        <ul>
+            <li>100% Responsive navigation system</li>
+            <li>Works well along with <a href="http://getbootstrap.com/">Bootstrap</a></li>
+            <li>3 types of drop downs (fixed width, mega and full browser width)</li>
+            <li>Unique full browser width drop downs</li>
+            <li>Sticky menu variant</li>
+            <li>Flexible columns grid</li>
+            <li>Unlimited fly-outs</li>
+            <li>Left or right alignment for the menu items and the drop downs</li>
+            <li>Custom scrollbars</li>
+            <li>Clean and professional design</li>
+            <li>Fits into any layout</li>
+            <li>Lots of styled elements</li>
+            <li><a href="http://fontawesome.io/">Font-awesome</a> icon collection</li>
+            <li>Designed for desktop computers, tablets and mobiles</li>
+            <li>Simple and working contact form</li>
+        </ul>
+        <h2>Compatibility</h2>
+        <p><strong>FlexiNav</strong> has been tested on several devices and browsers to ensure a maximum compatibility : Internet Explorer, Firefox, Chrome, Opera, Safari have successfully passed the tests. Here's a list of compatibility :</p>
+        <ul>
+            <li>Internet Explorer 8+</li>
+            <li>Firefox</li> 
+            <li>Chrome</li> 
+            <li>Opera 11+</li> 
+            <li>Safari 4+</li> 
+            <li>Chrome on Android</li> 
+            <li>Safari on iPad and iPhone</li> 
+        </ul>
+        <p>The whole menu is styled via CSS so you may notice some slight differences between browsers (especially older versions of IE). For more informations on this topic, you can visit <a href="http://findmebyip.com/litmus/">findmebyIP</a>.</p> 
+        <h2>Free Support, Free Updates</h2>
+        <p>When you purchase a product on Codecanyon, you can always access it in your downloads page. There you can subscribe to receive an email and get notified if an update is available, only the last version will appear in your downloads page. Those updates are totally free !</p>
+        <p>If you encounter an issue when using my work or find a problem, you can contact me at any time from my <a href="http://codecanyon.net/user/Pixelworkshop">profile page</a>. You'll need to be logged in to be able to access the contact form (in the sidebar). I usually reply within 24-48 hours but during holidays or week-ends, it can take more time.</p>
+        <p>I try to regularly update my products based on the feedback I receive, so if you find any kind of bug, I'll do my best to update the menu as soon as possible. If you have an idea that could improve it, feel free to ask me, some customization questions happened to be the starting point of an update.</p>
+
+        <h2>My Other Works</h2>
+
+        <p>Here is a selection of my best products that you can find in my <a href="http://codecanyon.net/user/Pixelworkshop/portfolio">Codecanyon portfolio</a>, if you have any question about them, you can reach me from <a href="http://codecanyon.net/user/Pixelworkshop">here</a>.</p>
+        <h4>jQuery-based Navigation Systems</h4>
+        <ul>
+            <li><a href="http://codecanyon.net/item/universal-responsive-mega-menu/4984236">Responsive CSS3 Multi Drop Down Menu</a></li>
+            <li><a href="http://codecanyon.net/item/mega-menu-reloaded/1593152">Mega Menu Reloaded</a></li>
+            <li><a href="http://codecanyon.net/item/responsive-mega-menu-complete-set/152825">Responsive Mega Menu Complete Set</a></li>
+        </ul>
+        <h4>CSS-based Navigation Systems</h4>
+        <ul>
+            <li><a href="http://codecanyon.net/item/responsive-css3-multi-drop-down-menu/4124019">Universal Responsive Mega Menu</a></li>
+            <li><a href="http://codecanyon.net/item/vertical-css3-mega-menu/3206040">Vertical CSS3 Mega Menu</a></li>
+            <li><a href="http://codecanyon.net/item/css3-mega-drop-down-menu/126387">CSS3 Mega Drop Down Menu</a></li>
+        </ul>
+        <h4>Footers</h4>
+        <ul>
+            <li><a href="http://codecanyon.net/item/responsive-css3-multi-drop-down-menu/4124019">Universal Responsive Mega Menu</a></li>
+            <li><a href="http://codecanyon.net/item/sticky-footer/168476">Sticky Footer</a></li>
+            <li><a href="http://codecanyon.net/item/pure-css3-sticky-footer/128701">Pure CSS3 Sticky Footer</a></li>
+        </ul>
+        <h4>Pricing Tables</h4>
+        <ul>
+            <li><a href="http://codecanyon.net/item/responsive-pricing-tables/5139265">Responsive Pricing Tables</a></li>
+            <li><a href="http://codecanyon.net/item/responsive-css3-pricing-tables/553346">Responsive CSS3 Pricing Tables</a></li>
+        </ul>
+        <h4>Hover Effects</h4>
+        <ul>
+            <li><a href="http://codecanyon.net/item/css3-image-hover-effects/471215">CSS3 Image Hover Effects Vol.1</a></li>
+            <li><a href="http://codecanyon.net/item/css3-image-hover-effects-vol2/1319878">CSS3 Image Hover Effects Vol.2</a></li>
+        </ul>
+        <h4>Forms</h4>
+        <ul>
+            <li><a href="http://codecanyon.net/item/css3-form-elements-pack/2831697">CSS3 Form Elements Pack</a></li>
+        </ul>
+        <p>Thanks for reading, and if you want, you can follow me on <a href="http://twitter.com/pixlworkshop">Twitter</a> !</p>
+        <p><strong><em>Pixelworkshop</em></strong></p>
+
+    </div>
+
+
+</div>
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-43307842-1', 'pixelworkshop.fr');
+  ga('send', 'pageview');
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+    //]]>
+</script>
+
+
+</body>
+</html>

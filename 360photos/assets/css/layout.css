@@ -1,0 +1,234 @@
+/*
+Theme Name : 360Photos
+Theme URL : http://themeforest.net/item/360-photos-fullscreen-background-portfolio/87500
+Author URL : http://themeforest.net/user/Keliah
+Version : 3.1
+*/
+
+/*
+
+TABLE OF CONTENTS
+
+01 RESET
+02 GRID
+03 HEADER AND MENU
+   1. Header
+   2. Kwicks Menu
+   3. Simple Menu
+04 TYPOGRAPHY
+   1. General Typography
+   2. Lists
+   3. Paragraphs with Colored Borders
+   4. Thumbnails
+05 SLIDESHOW
+   1. Left Panel
+   2. Right Panel
+   3. Left and Right Panels Common Styling
+06 CONTACT FORM
+
+*/
+
+
+
+/*  _______________________________________
+
+	01 RESET
+    _______________________________________  */
+
+
+
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, 
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td{margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline}
+:focus{outline:0}
+body{line-height:1}
+ol, ul{list-style:none}
+table{border-collapse:separate; border-spacing:0}
+caption, th, td{text-align:left; font-weight:normal}
+blockquote:before, blockquote:after, 
+q:before, q:after{content:""}
+blockquote, q{quotes:""""}
+
+
+
+/*  _______________________________________
+
+	02 GRID
+    _______________________________________  */
+
+
+
+/*
+	Variable Grid System.
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/
+	Licensed under GPL and MIT.
+*/
+
+body{font-family:"Lucida Sans", "Lucida Grande", sans-serif;margin-bottom:50px;}
+img {outline:none;border:none;}
+.container_3{margin:50px auto; width:964px}
+.grid_1, 
+.grid_2, 
+.grid_3{display:inline; float:left; position:relative; margin-left:10px; margin-right:10px; -moz-border-radius:15px; -webkit-border-radius:15px; border-radius:15px; box-shadow:0 0 5px 0 #222; -webkit-box-shadow:0 0 5px 0 #222; -moz-box-shadow:0 0 5px 0 #222}
+.container_3 .grid_1{width:300px}
+.container_3 .grid_2{width:620px}
+.container_3 .grid_3{width:940px}
+.left{width:60px; float:left}
+.right{padding:25px 0px 10px 20px; float:left; position:relative}
+.grid_1 .right{width:200px}
+.grid_2 .right{width:520px}
+.grid_3 .right{width:840px}
+.clear{clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0}
+.clearfix:after{clear:both; content:' '; display:block; font-size:0; line-height:0; visibility:hidden; width:0; height:0}
+.clearfix{display:inline-block}
+* html .clearfix{height:1%}
+.clearfix{display:block}
+
+
+
+/*  _______________________________________
+
+	03 HEADER AND MENU
+    _______________________________________  */
+
+
+
+/* 1. Header */
+
+#header_wrapper{background-color:#000; position:relative; width:100%; height:80px; margin:0; padding:0; border-bottom:1px solid #444}
+#header{position:relative; margin:0 auto; width:940px; overflow:hidden}
+#logo{width:220px; height:80px; float:left; background:url("../img/logo.jpg") no-repeat}
+
+/* 2. Kwicks Menu */
+
+#kwicksmenu{list-style:none; margin:0; padding:0; float:right}
+#kwicksmenu li{float:left; display:block; margin-right:0px}
+#kwicksmenu li span{display:none}
+#kwicksmenu li a{display:block; overflow:hidden; height:80px; width:80px; border:none}
+#kwicksmenu #photos{background:url("../img/menu/menu_1.jpg")}
+#kwicksmenu #about_me{background:url("../img/menu/menu_2.jpg")}
+#kwicksmenu #contact{background:url("../img/menu/menu_3.jpg")}
+#kwicksmenu .opened{width:230px}
+
+/* 3. Simple Menu */
+
+#simplemenu{width:240px; margin:0; padding:0; float:right; list-style:none; position:relative; background:url("../img/menu/menu.jpg")}
+#simplemenu span{display:none}
+#simplemenu li{width:80px; padding:0; float:left; position:relative; cursor:pointer}
+#simplemenu li, #simplemenu li a{height:80px; display:block}
+#simplemenu #photos{float:left; background:url("../img/menu/menu.jpg") 0px 0px no-repeat}
+#simplemenu #about_me{float:left; background:url("../img/menu/menu.jpg") -80px 0px no-repeat}
+#simplemenu #contact{float:left; background:url("../img/menu/menu.jpg") -160px 0px no-repeat}
+#simplemenu #photos a:hover, #simplemenu #photos a.active{background:url("../img/menu/menu.jpg") 0px -80px no-repeat; border:none}
+#simplemenu #about_me a:hover, #simplemenu #about_me a.active{background:url("../img/menu/menu.jpg") -80px -80px no-repeat; border:none}
+#simplemenu #contact a:hover, #simplemenu #contact a.active{background:url("../img/menu/menu.jpg") -160px -80px no-repeat; border:none}
+
+
+
+/*  _______________________________________
+
+	04 TYPOGRAPHY
+    _______________________________________  */
+
+
+
+/* 1. General Typography */
+
+p{font-size:12px; line-height:18px; color:#333; margin-bottom:20px}
+a{text-decoration:none}
+h1, h2, h3{font-weight:bold; font-family:Arial,Helvetica,sans-serif}
+h1{font-size:24px; margin-bottom:25px; color:#212121; padding-bottom:10px; border-bottom:#bbb 1px dotted}
+h2{font-size:18px; margin-bottom:20px; color:#212121}
+h3{font-size:16px; margin-bottom:15px; padding-bottom:10px; border-bottom:#bbb 1px dotted}
+#alert{line-height:22px; margin-bottom:15px}
+#alert li {padding:0;line-height:12px;}
+.error{color:#ED4340}
+.sent{color:#75A133}
+
+/* 2. Lists */
+
+.bullet_list{margin-bottom:20px}
+.bullet_list li{list-style:none; margin-left:20px; font-size:12px; line-height:18px}
+.numbered_list{list-style:decimal; margin-bottom:20px}
+.numbered_list li{margin-left:20px; font-size:12px; line-height:18px}
+
+/* 3. Paragraphs with Colored Borders */
+
+.dark{border-left:#333 solid 7px; padding-left:15px}
+.brown{border-left:#8e8767 solid 7px; padding-left:15px}
+.yellow{border-left:#e0b35e solid 7px; padding-left:15px}
+.red{border-left:#b05a3a solid 7px; padding-left:15px}
+
+/* 4. Thumbnails */
+
+.thumbnail{width:220px; padding:0}
+.thumbnail li{float:left; display:block; padding:0 0 20px 0}
+.thumb{margin-right:20px; width:84px; height:84px}
+
+
+/*  _______________________________________
+
+	05 SLIDESHOW
+    _______________________________________  */
+
+
+
+/* 1. Left Panel */
+
+.panel, a.trigger, a.trigger:hover{position:absolute; left:0; border:1px solid #444; border-left:none}
+.panel{background:url("../img/opacity.png") repeat; top:120px; display:none; width:330px; height:auto; padding:30px 30px 30px 130px; -moz-border-radius:0px 15px 15px 0px; -webkit-border-radius:0px 15px 15px 0px; border-radius:0px 15px 15px 0px}
+a.trigger, a.trigger:hover{top:130px; background:url("../img/icons/plus_minus.png") bottom left no-repeat; display:block; height:40px; width:55px; -moz-border-radius:0px 15px 15px 0px; -webkit-border-radius:0px 15px 15px 0px; border-radius:0px 15px 15px 0px}
+a.trigger.active{background:url("../img/icons/plus_minus.png") bottom right no-repeat}
+.control, .control_buttons{padding:10px 0 10px 20px; margin-bottom:10px}
+.control ul li a, .control_buttons ul li a{font-family:Arial,Helvetica,sans-serif; font-size:14px; line-height:30px; padding:5px; color:#FFF}
+.control a:hover, .control_buttons a:hover{border:none}
+.control_right{padding:10px 20px 0px 20px; margin-bottom:-15px}
+.control a, .control_buttons a{color:#FFF; font-weight:bold}
+#thumbs, #thumbs1, #thumbs2, #thumbs3, #thumbs4, #thumbs5, #thumbs6, #thumbs7, #thumbs8, #thumbs9, #thumbs10, #thumbs11, #thumbs12, #thumbs13, #thumbs14, #thumbs15, #thumbs16, #thumbs17, #thumbs18, #thumbs19, #thumbs20{padding:10px 0 10px 20px}
+#thumbs a, #thumbs1 a, #thumbs2 a, #thumbs3 a, #thumbs4 a, #thumbs5 a, #thumbs6 a, #thumbs7 a, #thumbs8 a, #thumbs9 a, #thumbs10 a, #thumbs11 a, #thumbs12 a, #thumbs13 a, #thumbs14 a, #thumbs15 a, #thumbs16 a, #thumbs17 a, #thumbs18 a, #thumbs19 a, #thumbs20 a{color:#FFF; text-decoration:none; display:block; font-size:12px; line-height:18px; float:left; text-align:center; width:18px; padding:5px; margin-right:5px; border:none}
+
+/* 2. Right Panel */
+
+.panel_right{background:url("../img/opacity85.png") repeat; top:20px; padding:30px 30px 0px 130px; border:1px solid #444}
+a.trigger_right{position:absolute; display:block; right:0; top:140px; height:60px; width:150px; padding:0; background:url("../img/titles/welcome.png") bottom no-repeat; border:1px solid #444; border-right:none}
+a.trigger_right:hover, a.active.trigger_right{background:url("../img/titles/welcome.png") top no-repeat; border:1px solid #444; border-right:none}
+a.trigger_right, a.trigger_right:hover, a.active.trigger_right{-moz-border-radius:15px 0px 0px 15px; -webkit-border-radius:15px 0px 0px 15px; border-radius:15px 0px 0px 15px}
+#close{position:absolute; top:-15px; right:-15px; width:30px; height:30px; background-image:url('../img/icons/close.png'); cursor:pointer; z-index:1103; display:none}
+#close:hover{border:none}
+
+/* 3. Left and Right Panels Common Styling */
+
+#overlay{margin-top:100px; position:absolute; left:0px; color:#fff; padding:10px 30px 10px 0; width:auto; z-index:1}
+* html #overlay_right{position:absolute}
+#overlay_right{left:50%; top:50%; margin-top:-190px; margin-left:-200px; position:fixed; padding:10px 0px; width:400px; z-index:1; -moz-border-radius:15px; -webkit-border-radius:15px; border-radius:15px; box-shadow:0 0 5px 0 #222; -webkit-box-shadow:0 0 5px 0 #222; -moz-box-shadow:0 0 5px 0 #222}
+#overlay_right .right{width:300px; padding:20px 0px 0px 19px}
+#transition{width:100%}
+#showtitle{z-index:3; position:absolute; bottom:20px; right:20px; background:#000; display:none; color:#fff; padding:10px; width:275px; border-top:solid 1px #d4d4d4; border-left:solid 1px #d4d4d4; border-right:solid 1px #666; border-bottom:solid 1px #666}
+
+
+
+/*  _______________________________________
+
+	06 CONTACT FORM
+    _______________________________________  */
+
+
+
+.form{padding-bottom:50px}
+.form label{font-family:"Lucida Sans","Lucida Grande",sans-serif; font-size:14px; font-weight:bold; padding:0; margin:0}
+.form ul li{list-style:none; display:inline}
+#name, #email, #message{font-family:"Lucida Sans","Lucida Grande",sans-serif; font-size:12px; width:300px; padding:0 3px 0 3px; border:none; margin:15px 0 15px 0; border:#889a94 solid 1px; display:block}
+#name, #email{height:25px}
+#message{height:100px; overflow:auto}
+.button{font-family:"Lucida Sans","Lucida Grande",sans-serif; font-size:14px; background:#FFFFFE; padding:3px; margin-right:15px; float:left}
+.button:hover{color:#FFFFFD; border:#2B2B2B solid 1px; padding:3px}
+.message{display:none; padding:5px}
+.contact ul{list-style-type:none}
+.contact li{list-style-type:none}
+.contact li.special{display:none}

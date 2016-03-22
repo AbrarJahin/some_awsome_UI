@@ -1,0 +1,629 @@
+/*
+Theme Name : Showcase
+Theme URI : http://themeforest.net/item/showcase-professional-portfolio-template/140938
+Author URI : http://themeforest.net/user/Keliah
+Version : 1.1
+*/
+
+/*
+
+TABLE OF CONTENTS
+
+01 RESET
+02 GRID
+03 CONTAINERS
+04 TYPOGRAPHY
+   1. Headings
+   2. Lists
+   3. Lists with Icons
+   4. Paragraphs with borders
+   5. Paragraphs with Icons
+   6. Buttons
+   7. Tooltip
+05 IMAGES
+   1. Image Containers
+   2. Flickr Stream
+   3. Image Effects
+   4. Ribbons
+   5. Filterable Gallery
+06 TABLES
+   1. Standard Tables
+   2. Mega Pricing Tables
+07 MISCELLANEOUS
+   1. Toggle & Accordion
+   2. Extra Classes
+08 FOOTER
+   1. Typography & Lists
+   2. Scroll Top Button
+   3. Tweets
+   4. Sliding Panel
+09 CONTACT FORM
+   1. General Form Elements
+   2. Contact Form Notices
+   3. Search Box
+10 BLOG LAYOUT
+
+*/
+
+
+
+/*  _____________________________________________________________________________
+
+	01 RESET
+    _____________________________________________________________________________  */
+
+
+
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, 
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td{margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline}
+/* remember to define focus styles! */
+:focus{outline:0}
+body{line-height:1; color:black; background:white}
+ol, ul{list-style:none}
+/* tables still need 'cellspacing="0"' in the markup */
+table{border-collapse:separate; border-spacing:0}
+caption, th, td{text-align:left; font-weight:normal}
+blockquote:before, blockquote:after, 
+q:before, q:after{content:""}
+blockquote, q{quotes:""""}
+
+
+
+/*  _____________________________________________________________________________
+
+	02 GRID
+    _____________________________________________________________________________  */
+
+
+
+#wrapper{width:100%; background:url("../img/background/content.jpg") repeat-x}
+.container{width:870px; margin:0px auto; padding:40px 30px}
+.grid1, .grid2, .grid3, .grid4, .grid5, .grid6{float:left; display:inline; margin-left:30px}
+.grid1{width:120px}
+.grid2{width:270px}
+.grid3{width:420px}
+.grid4{width:570px}
+.grid5{width:720px}
+.grid6{width:870px}
+.first{margin-left:0; clear:left}
+.clearfix:after{visibility:hidden; display:block; font-size:0; content:""; clear:both; height:0}
+* html .clearfix{zoom:1}/* IE6 */
+*:first-child+html .clearfix{zoom:1}/* IE7 */
+.clear{clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:24px; margin:0px}
+.clear_large{clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:42px; margin:0px}
+.clear0{clear:both; display:block; overflow:hidden; visibility:hidden; width:0; height:0; margin:0px}
+
+
+
+/*  _____________________________________________________________________________
+
+	03 CONTAINERS
+    _____________________________________________________________________________  */
+
+
+
+body {font-family:"Lucida Grande", "Lucida Sans Unicode", sans-serif;background: #ffffff;color:#3a3a3a;}
+
+/* Header Graphics & Containers */
+#header_large{width:100%; margin:0; padding:0; background:#181818; z-index:9999}
+#header_box{width:870px; background:url("../img/background/header.png") no-repeat; height:84px; margin:0px auto; padding:0px 10px 0px 10px;position:relative;z-index:99;}
+#logo{width:219px; height:84px; float:left}
+#search{float:right; width:280px}
+#top_shade{width:860px; height:13px; margin:0px auto 22px auto; background:url("../img/background/top_shade.png") no-repeat}
+#slider_container{width:100%; margin:0; height:518px;}
+#slider_bg{background:url("../img/background/sliderbg.png") no-repeat; margin:0px auto; padding:17px 14px 22px 14px;  position:relative; width:848px}
+#slider{ position:relative; width:848px}
+#static_container{width:100%; margin:0; height:440px;}
+#static_content{margin:50px auto;position:relative; width:930px}
+#static_content .container{ padding:0px 30px}
+#static_content h1, #static_content h2, #static_content h3, #static_content h4, #static_content h5, #static_content h6, #static_content p{color:#ffffff;text-shadow:1px 1px #222222;}
+#small_separator{width:100%; height:12px}
+
+/* Sidebar Background */
+#right_sidebar{background:url("../img/background/sidebar/sidebar_middle.jpg") repeat-y center center}
+#right_sidebar #sidebar_top{background:url("../img/background/sidebar/sidebar_top.jpg") no-repeat scroll center 0px}
+#right_sidebar #sidebar_top #sidebar_bottom{background:transparent url("../img/background/sidebar/sidebar_bottom.jpg") no-repeat scroll center bottom; overflow:hidden}
+
+#left_sidebar{background:url("../img/background/sidebar/left_sidebar_middle.jpg") repeat-y center center}
+#left_sidebar #left_sidebar_top{background:url("../img/background/sidebar/left_sidebar_top.jpg") no-repeat scroll center 0px}
+#left_sidebar #left_sidebar_top #left_sidebar_bottom{background:transparent url("../img/background/sidebar/left_sidebar_bottom.jpg") no-repeat scroll center bottom; overflow:hidden}
+
+
+
+/*  _____________________________________________________________________________
+
+	04 TYPOGRAPHY
+    _____________________________________________________________________________  */
+
+
+
+p{font-size:12px; line-height:21px; margin-bottom:18px}
+.strong{font-weight:bold}
+.italic{font-style:italic}
+a{color:#121212; text-decoration:none}
+a:hover{cursor:pointer}
+
+/* 1. Headings */
+
+h1, h2, h3, h4, h5, h6{font-family:Arial,Helvetica,sans-serif; color:#363636; margin-bottom:12px}
+h1{font-size:36px; line-height:36px;margin:4px 0px 12px 0px}
+h2{font-size:30px; line-height:42px;margin-bottom:18px}
+h3{font-size:28px; line-height:28px;margin-bottom:12px}
+h4{font-size:24px; line-height:24px;margin-bottom:12px}
+h5{font-size:18px; line-height:28px; text-transform:uppercase}
+h6{font-family:"Lucida Grande","Lucida Sans Unicode",sans-serif;font-size:14px; line-height:18px; text-transform:uppercase}
+
+/* 2. Lists */
+
+ul, 
+ol{ margin-bottom:18px}
+.list{font-size:12px; line-height:18px; margin-bottom:18px}
+.comments li{font-size:12px; padding-left:24px; margin-bottom:12px}
+.list, .list2, .num, .num2{font-size:12px; line-height:24px; color:#666}
+.list li, .list2 li, .num li, .num2 li{padding-left:12px}
+.list{margin:0 0 18px 15px; list-style:disc}
+.list2{margin:0 0 18px 15px; list-style:square}
+.num{margin:0 0 18px 18px; list-style:decimal}
+.num2{margin:0 0 18px 18px; list-style:upper-latin}
+
+/* 3. Lists with Icons */
+
+.tick, .red_cross, .fav, .blue_arrow{font-size:12px; line-height:24px; margin-left:0; color:#666}
+.tick li{background:url("../img/icons/tick.png") left 4px no-repeat; padding-left:25px}
+.red_cross li{background:url("../img/icons/red_cross.png") left 4px no-repeat; padding-left:25px}
+.fav li{background:url("../img/icons/fav.png") left 3px no-repeat; padding-left:25px}
+.blue_arrow li{background:url("../img/icons/blue_arrow.png") left 5px no-repeat; padding-left:25px}
+
+/* 4. Paragraphs with borders */
+
+.dark, .brown, .yellow, .red, .blue, .green{font-size:12px; line-height:18px; padding-left:15px; color:#666; margin-bottom:18px}
+.dark{border-left:#3B3B3B solid 7px}
+.brown{border-left:#8D8767 solid 7px}
+.yellow{border-left:#DBA742 solid 7px}
+.red{border-left:#C05D48 solid 7px}
+.blue{border-left:#52878B solid 7px}
+.green{border-left:#B0BD85 solid 7px}
+.border_top{background:url("../img/separators/border1.png") repeat-x; padding:21px 0px 0px 0px}
+.border_bottom{background:url("../img/separators/border1.png") repeat-x; height:9px; width:100%; padding:0px}
+
+.static_content {font-size:13px;}
+
+/* 5. Paragraphs with Icons */
+
+.del, .ok, .info, .alert{font-size:12px; line-height:18px; padding:10px; padding-left:36px; margin-bottom:18px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius: 5px;}
+.del{background:#FBE5E2 url("../img/icons/error.png") no-repeat 7px 10px; border:#F2A197 solid 1px; color:#992213}
+.ok{background:#E1F8CB url("../img/icons/ok.png") no-repeat 7px 10px; border:#C6D880 solid 1px; color:#37620d}
+.info{background:#E9F5FB url("../img/icons/info2.png") no-repeat 7px 10px; border:#84C7E9 solid 1px; color:#16597a}
+.alert{background:#FFB url("../img/icons/alert.png") no-repeat 7px 10px; border:#FFD324 solid 1px; color:#756730}
+
+.calendar, .note, .help, .delete, .favorite, .lock, .archive, .briefcase, .search, .user, .mail, .print, .chart, .brush, .computer{padding-left:36px; margin-bottom:18px}
+.calendar{background:url("../img/icons/calendar.png") no-repeat 0px 5px}
+.note{background:url("../img/icons/note.png") no-repeat 0px 5px}
+.help{background:url("../img/icons/help2.png") no-repeat 0px 5px}
+.delete{background:url("../img/icons/delete.png") no-repeat 0px 5px}
+.favorite{background:url("../img/icons/favorite.png") no-repeat 0px 5px}
+.lock{background:url("../img/icons/lock.png") no-repeat 0px 5px}
+.archive{background:url("../img/icons/archive.png") no-repeat 0px 5px}
+.briefcase{background:url("../img/icons/briefcase.png") no-repeat 0px 5px}
+.search{background:url("../img/icons/search.png") no-repeat 0px 5px}
+.user{background:url("../img/icons/user.png") no-repeat 0px 5px}
+.mail {background:url("../img/icons/mail.png") no-repeat 0px 2px;}
+.print {background:url("../img/icons/print.png") no-repeat 0px 2px;}
+.chart {background:url("../img/icons/chart.png") no-repeat 0px 3px;}
+.brush {background:url("../img/icons/brush.png") no-repeat 0px 3px;}
+.computer {background:url("../img/icons/computer.png") no-repeat 0px 3px;}
+
+.bullets_arrow{font-size:12px; line-height:21px; margin-bottom:18px}
+.bullets_arrow li{padding-left:18px; background:url("../img/icons/bullet1.png") no-repeat 0px 5px}
+
+/* 6. Buttons */
+
+.button_link{background:url("../img/buttons.png") repeat-x left 0px; color:#FFF; font-size:12px; text-transform:uppercase; margin-right:18px; float:left; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;padding:3px 15px 3px 15px;}
+.button_link:hover{background-position:left -30px; color:#fff; -moz-box-shadow:0px 0px 1px #222222; -webkit-box-shadow:0px 0px 1px #222222; box-shadow:0px 0px 1px #222222;}
+
+/* 7. Tooltip */
+
+#tooltip {position:absolute;z-index:9999;color:#fff;background:#000000;font-size:10px;width:auto;padding:12px;}
+
+
+
+/*  _____________________________________________________________________________
+
+	05 IMAGES
+    _____________________________________________________________________________  */
+
+
+
+/* 1. Image Containers */
+
+.img_minithumb_container{background:url("../img/gallery/img_minithumb.png") no-repeat; margin-left:-2px; width:48px; height:48px; padding:4px}
+.img_thumbnail_container{background:url("../img/gallery/img_thumbnail.png") no-repeat; margin-left:-2px; width:64px; height:64px; padding:4px}
+.img_small_container{background:url("../img/gallery/img_small.png") no-repeat; margin-left:-4px; width:262px; height:166px; padding:15px 12px 17px 12px}
+.img_medium_container{background:url("../img/gallery/img_medium.png") no-repeat; margin-left:-4px; width:404px; height:258px; padding:15px 12px 17px 12px}
+.img_large_container{background:url("../img/gallery/img_large.png") no-repeat; margin-left:-4px; width:854px; height:425px; padding:19px 12px 25px 12px}
+.img_post_container{background:url("../img/gallery/img_post.png") no-repeat; margin-left:-4px; width:554px; height:254px; padding:15px 12px 21px 12px; margin-bottom:21px;}
+.avatar_container{background:url("../img/gallery/avatar_bg.png") no-repeat; width:75px; height:75px; padding:5px 5px 6px 5px;}
+.imgshadow{background:#FFF; padding:4px; border:1px solid #333; margin-top:5px; -moz-box-shadow:0px 0px 5px #333333; -webkit-box-shadow:0px 0px 5px #333333; box-shadow:0px 0px 5px #333333;}
+.img_left{width:auto; float:left; margin:5px 18px 5px 0px}
+.img_right{width:auto; float:right; margin:5px 0px 5px 15px}
+
+/* 2. Flickr Stream */
+
+.flickr li {float:left;	margin-right:20px;margin-top:10px;margin-bottom:10px;}
+.flickr .last {margin-right:0;}
+
+/* 3. Image Effects */
+
+.box_container, .box_container2, .box_container3, .box_container4, .box_container5, .box_container6, .box_container7, .box_container8, .box_container9{position:relative; /* important */height:166px; /* important if you use slidedown/slideup effects (check the demo). */overflow:hidden; /* hide the content that goes beyond the div limits */}
+.box_image, .box_image2, .box_image3, .box_image4, .box_image5, .box_image6, .box_image7, .box_image8, .box_image9{position:absolute; /* important - to get the image position on top of the text */}
+.box_container p, .box_container2 p, .box_container3 p, .box_container4 p, .box_container5 p, .box_container6 p, .box_container7 p, .box_container8 p, .box_container9 p{padding:12px 12px 0px 12px}
+.fade_top{position:absolute; left:0; top:0; z-index:10}
+.full_caption{width:255px; height:165px; /* required to hide the image after resized */overflow:hidden; /* for child absolute position */position:relative; /* display div in line */float:left}
+.full_caption img{border:0; /* allow javascript moves the img position*/position:absolute}
+.full_caption .caption_text{background:#000; color:#fff; /* fix it at the bottom */position:absolute; left:0; /* hide it by default */display:none;-moz-opacity:0.8;-khtml-opacity: 0.8; opacity: 0.8;}
+.full_caption .caption_text p{padding:12px 12px 0px 12px; -moz-opacity:0.8; -khtml-opacity: 0.8; opacity: 0.8;}
+.ic_container{ vertical-align:baseline;  position:relative}
+.overlay{ position:absolute;  top:0px;  bottom:0px;  left:0px;  right:0px; display:none; opacity:0.3;}
+.img_caption{ position:absolute;   overflow:hidden;  margin:0px;  padding:0px;  left:0px;  right:0px;  cursor:default; opacity:0.6;}
+.text_caption{padding:12px 12px 0px 12px}
+
+/* 4. Ribbons */
+
+.ribbon1, .ribbon2, .ribbon3, .ribbon4, .ribbon5, .ribbon6, .ribbon7, .ribbon8, .ribbon9{width:67px; height:67px; position:absolute; margin-top:-10px; margin-left:-58px}
+.ribbon1{background:url("../img/ribbons/ribbon1.png")}
+.ribbon2{background:url("../img/ribbons/ribbon2.png")}
+.ribbon3{background:url("../img/ribbons/ribbon3.png")}
+.ribbon4{background:url("../img/ribbons/ribbon4.png")}
+.ribbon5{background:url("../img/ribbons/ribbon5.png")}
+.ribbon6{background:url("../img/ribbons/ribbon6.png")}
+.ribbon7{background:url("../img/ribbons/ribbon7.png")}
+.ribbon8{background:url("../img/ribbons/ribbon8.png")}
+.ribbon9{background:url("../img/ribbons/ribbon9.png")}
+.ribbona, .ribbonb, .ribbonc, .ribbond, .ribbone, .ribbonf, .ribbong, .ribbonh, .ribboni{width:114px; height:114px; position:absolute; margin-top:-10px; margin-left:-105px}
+.ribbona{background:url("../img/ribbons/ribbona.png")}
+.ribbonb{background:url("../img/ribbons/ribbonb.png")}
+.ribbonc{background:url("../img/ribbons/ribbonc.png")}
+.ribbond{background:url("../img/ribbons/ribbond.png")}
+.ribbone{background:url("../img/ribbons/ribbone.png")}
+.ribbonf{background:url("../img/ribbons/ribbonf.png")}
+.ribbong{background:url("../img/ribbons/ribbong.png")}
+.ribbonh{background:url("../img/ribbons/ribbonh.png")}
+.ribboni{background:url("../img/ribbons/ribboni.png")}
+.arrow1, .arrow2, .arrow3, .arrow4, .arrow5, .arrow6, .arrow7, .arrow8, .arrow9{width:112px; height:32px; position:absolute; margin-top:20px; margin-left:-102px}
+.arrow1{background:url("../img/ribbons/arrow1.png")}
+.arrow2{background:url("../img/ribbons/arrow2.png")}
+.arrow3{background:url("../img/ribbons/arrow3.png")}
+.arrow4{background:url("../img/ribbons/arrow4.png")}
+.arrow5{background:url("../img/ribbons/arrow5.png")}
+.arrow6{background:url("../img/ribbons/arrow6.png")}
+.arrow7{background:url("../img/ribbons/arrow7.png")}
+.arrow8{background:url("../img/ribbons/arrow8.png")}
+.arrow9{background:url("../img/ribbons/arrow9.png")}
+.fanion1, .fanion2, .fanion3, .fanion4, .fanion5, .fanion6, .fanion7, .fanion8, .fanion9{width:112px; height:32px; position:absolute; margin-top:20px; margin-left:-102px}
+.fanion1{background:url("../img/ribbons/fanion1.png")}
+.fanion2{background:url("../img/ribbons/fanion2.png")}
+.fanion3{background:url("../img/ribbons/fanion3.png")}
+.fanion4{background:url("../img/ribbons/fanion4.png")}
+.fanion5{background:url("../img/ribbons/fanion5.png")}
+.fanion6{background:url("../img/ribbons/fanion6.png")}
+.fanion7{background:url("../img/ribbons/fanion7.png")}
+.fanion8{background:url("../img/ribbons/fanion8.png")}
+.fanion9{background:url("../img/ribbons/fanion9.png")}
+
+/* 5. Filterable Gallery */
+
+ul#portfolio-filter{ margin: 0 0 21px 0; padding: 0;}
+ul#portfolio-filter li{display: inline; }
+ul#portfolio-filter a{ margin-right: 18px; padding: 8px 12px 8px 12px; background: #181818; color: #FFFFFF; font-size:12px; text-decoration: none; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;}
+ul#portfolio-filter a.current{ background-color: #3A3A3A; }
+ul#portfolio-list{ width:980px;margin: 36px 0 0 0; padding: 0; list-style: none; }
+ul#portfolio-list li{ width: 270px; height: 198px; display: block; float: left; margin: 0px 30px 30px 0px; }
+
+
+/*  _____________________________________________________________________________
+
+	06 TABLES
+    _____________________________________________________________________________  */
+
+
+
+
+/* 1. Standard Tables */
+
+#table, #table_dark{width:100%; padding:0; margin:0; font-size:12px}
+#table{border:1px solid #cbcbcb; border-bottom:none}
+#table_dark{border:1px solid #000; border-bottom:none}
+#table caption, #table_dark caption{padding:0 0 12px 0; width:100%; font-size:11px; text-align:right; color:#888}
+#table th, #table_dark th{text-align:left; padding:12px 9px 12px 9px; font-weight:bold; font-size:14px}
+#table th{color:#3A3A3A; border-bottom:1px solid #cbcbcb; background:#F5F5F5}
+#table_dark th{color:#FFF; border-bottom:1px solid #000; background:#0D0D0D}
+#table td{border-bottom:1px solid #cbcbcb; background:#fff; padding:12px 9px 12px 9px; color:#888}
+#table_dark td{border-bottom:1px solid #000; background:#161616; padding:12px 9px 12px 9px; color:#DDD}
+
+/* 2. Mega Pricing Tables */
+
+.mega-pricing-tables{margin:0; padding:0; line-height:1.2; width:1020px!important}
+.mega-pricing-tables .plans:after{content:"."; display:block; height:0; clear:both; visibility:hidden}
+.mega-pricing-tables .plans{display:inline-block; float:left; *zoom:1}
+* html .mega-pricing-tables .plans{height:1%; /* Hides from IE-mac \*/}
+.mega-pricing-tables{display:block}
+.mega-pricing-tables .plans >div{float:left}
+.mega-pricing-tables .plans >div ul{list-style:none}
+/* Category styling */
+.mega-pricing-tables .category{width:260px; float:left}
+.mega-pricing-tables .category h2{font-size:48px; color:#3A3A3A; font-weight:900; text-align:right; padding:21px 13px 1px 3px; line-height:0.9; text-shadow:#fff 1px 1px 1px; height:124px!important}
+.mega-pricing-tables .category ul{margin:0; padding:0; border-right:1px solid #eaeaea; list-style:none}
+.mega-pricing-tables .category ul li{color:#888; font-size:13px; text-shadow:#fff 1px 1px 0px; text-align:right; padding:7px 35px 7px 5px; border-bottom:1px dotted #a7a7a7; height:19px}
+.mega-pricing-tables .category ul li:first-child{border-top:1px dotted #a7a7a7; background:url("../img/pricing_tables/first-item-shade.png") right center no-repeat}
+/* Plan styling */
+.mega-pricing-tables .plan{width:150px; background:#fff; position:relative}
+.mega-pricing-tables .plan, .plan ul{margin:0}
+.mega-pricing-tables .plan ul{padding:0}
+.mega-pricing-tables .plan li{font-size:13px; border-bottom:1px solid #f8f8f8; margin:0; padding:7px 3px; height:19px; text-align:center; color:#888}
+/* Alternate styling */
+.mega-pricing-tables .plan li:first-child{border-top:1px solid #f8f8f8}
+.mega-pricing-tables .plan li:nth-child(2n+1){background:#fdfdfd}
+.mega-pricing-tables .plan:nth-child(2n+2) li{border-bottom:1px solid #ededed}
+.mega-pricing-tables .plan:nth-child(2n+2) li:nth-child(2n+1){background:#f9f9f9}
+.mega-pricing-tables .plan:nth-child(2n+2) li:first-child{border-top:1px solid #ededed; -webkit-transition:background-position 0.4s ease-in-out; -moz-transition:background-position 0.4s ease-in-out}
+/* Header styling */
+.mega-pricing-tables .last .header{background:url("../img/pricing_tables/header.png") center top no-repeat}
+.mega-pricing-tables .header{background:url("../img/pricing_tables/header.png") right top no-repeat; padding:44px 5px 54px 5px; color:#7f8791; font-size:12px; text-align:center; text-shadow:#fff 1px 1px 1px; font-weight:100; -webkit-transition:background-position 0.4s ease-in-out; -moz-transition:background-position 0.4s ease-in-out; border-top:1px solid #fff; height:129px!important}
+.mega-pricing-tables .header span{padding:4px 11px; color:#fffefe; font-size:18px; font-weight:900; margin:7px 7px; text-align:center; text-shadow:none; letter-spacing:0px; border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px}
+.mega-pricing-tables .header h2{color:#3A3A3A; font-size:42px; line-height:42px; margin:30px 0px 0px 0px}
+.mega-pricing-tables .header:hover{background:url("../img/pricing_tables/header.png") center 15px no-repeat}
+.mega-pricing-tables img{margin:0}
+/* Sign Up button states styling */
+.mega-pricing-tables .signup{padding:17px 12px 28px 35px!important; text-align:center;}
+/* Plans Theme styling */
+.mega-pricing-tables .header span{background:#333; text-transform:uppercase; font-family:Arial,Helvetica,sans-serif; font-size:18px; font-weight:400; letter-spacing:-1px}
+/* Featued styling and border, shadow styling for plans */
+.mega-pricing-tables .plan{border-bottom:4px solid #f3f3f3; border-top:4px solid #f3f3f3}
+.mega-pricing-tables .first{border-left:4px solid #f3f3f3}
+.mega-pricing-tables .last{border-right:4px solid #f3f3f3}
+.mega-pricing-tables .plans{box-shadow:#ddd 0px 0px 12px; -moz-box-shadow:#ddd 0px 0px 12px; -webkit-box-shadow:#ddd 0px 0px 12px; border-radius:7px; -moz-border-radius:7px; -webkit-border-radius:7px}
+
+
+
+/*  _____________________________________________________________________________
+
+	07 MISCELLANEOUS
+    _____________________________________________________________________________  */
+
+
+
+/* 1. Toggle & Accordion */
+
+h4.trigger, h4.acc_trigger{padding:0 0 0 30px; margin:12px 0 12px 0; height:20px; line-height:20px; font-size:18px; width:570px; float:left}
+h4.trigger{background:url("../img/icons/toggle.png") 0px 1px no-repeat}
+h4.acc_trigger{background:url("../img/icons/accordion.png") no-repeat}
+h4.trigger a, h4.acc_trigger a{text-decoration:none; display:block}
+h4.trigger a, h4.acc_trigger a{color:#3A3A3A}
+h4.trigger a:hover, h4.acc_trigger a:hover{color:#888; cursor:pointer}
+h4.active{background-position:left bottom}
+
+.toggle_container, .acc_container {margin:0 0 5px 2px; width:564px; padding:0; border:1px solid #d6d6d6; background:#FFF; overflow:hidden; font-size:1.2em; clear:both; border-radius: 9px;	-moz-border-radius: 9px; -webkit-border-radius: 9px;}
+.toggle_container, .acc_container{border:1px solid #d6d6d6; background:#FFF}
+.toggle_container .block, .acc_container .block {padding:20px}
+.toggle_container .block p, .acc_container .block p {padding:5px 0; margin:5px 0}
+
+/* 2. Extra Classes */
+
+.small{color:#ababab; font-size:12px; text-transform:uppercase; margin-top:-12px}
+.date{color:#CCCCCC; font-size:10px; text-transform:uppercase; margin-top:-12px}
+.dropcap{display:block; float:left; font-size:42px; line-height:36px; margin:2px 8px 0 0}
+.separator{background:url("../img/separators/separator.png") no-repeat; height:4px; width:100%; margin:36px 0 36px 0; clear:left; float:left}
+.separator_simple{height:1px; width:100%; margin:6px 0 18px 0; border-bottom:1px solid #E9E9E9;}
+.preloader{background:url("../img/icons/loader.gif") center center no-repeat; display:block}
+/* Pushers */
+.pusher_bottom {margin-bottom:12px;}
+.pusher_top {margin-top:12px;margin-bottom:0;}
+.pusher_both {margin-top:12px;margin-bottom:12px;;}
+
+
+/*  _____________________________________________________________________________
+
+	08 FOOTER
+    _____________________________________________________________________________  */
+
+
+
+/* 1. Typography & Lists */
+
+#footer_top{background:#141414 url("../img/separators/page_bottom.png") repeat-x top; width:100%; height:6px}
+#footer{background:#141414; width:100%}
+#footer p, #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6{color:#F4F4F4; text-shadow:1px 1px #000}
+#footer a{color:#CCC}
+#footer a:hover{color:#F4F4F4}
+#footer h2{text-transform:uppercase}
+#footer h4{padding-bottom:18px;background:url("../img/menu/menu_separator.jpg") bottom repeat-x;}
+#footer ul li{color:#fff; font-size:12px; line-height:12px; margin-bottom:12px}
+#footer .footer_social{list-style:none}
+#footer .footer_social li{margin-right:8px; float:left; margin-bottom:6px}
+
+.footer_comments li {background:url("../img/menu/menu_separator.jpg") bottom repeat-x; margin-bottom:12px; padding-bottom:12px}
+.footer_comments li a {background:url("../img/icons/comment_white.png") left 1px no-repeat; padding-left:24px;}
+.footer_categories {background:url("../img/menu/menu_separator.jpg") bottom repeat-x; margin-top:0px;}
+.footer_categories li {background:url("../img/menu/menu_separator.jpg") bottom repeat-x; margin-bottom:12px; padding-bottom:12px}
+
+#copyright{background:#0D0D0D; border-top:1px solid #262626; width:100%; margin:0; padding:0}
+#copyright_alt{background:#0a0a0a url("../img/background/header.png") no-repeat; width:100%; margin:0; padding:0}
+#copyright .container, #copyright_alt .container{margin:0 auto; padding:10px; background:url("../img/background/header.png") no-repeat}
+#copyright p, #copyright_alt p{margin:0px; padding:0; color:#555}
+
+#footer .img_thumbnail_container{background:#000000; margin-left:0px; width:64px; height:64px; padding:6px}
+
+/* 2. Scroll Top Button */
+
+.nav_up{bottom:20px;right:0px;cursor: pointer;}
+
+/* 3. Tweets */
+
+.tweet .tweet_list, .query .tweet_list{list-style-type:none; margin:0; padding:0; color:#F4F4F4; clear:left}
+.tweet .tweet_list li, .query .tweet_list li{overflow-y:auto; overflow-x:hidden; padding:0px 0px 12px 0px; font-size:12px; line-height:18px}
+.tweet_text{font-size:12px; line-height:18px}
+.tweet .tweet_list li a, .query .tweet_list li a{color:#CCC}
+.tweet .tweet_list .tweet_avatar, .query .tweet_list .tweet_avatar{padding:6px 12px 18px 0px; float:left}
+.tweet .tweet_list .tweet_avatar img, .query .tweet_list .tweet_avatar img{vertical-align:middle; border:1px solid #000}
+
+/* 4. Sliding Panel */
+
+.pc_panel{position:fixed;background:transparent url("../img/panel/bgSlide.png") repeat top left;color:#fff;font-size:11px;line-height:14px;width:100%;right:0px;display:none;}
+.pc_label{width:20px;height:20px;position:absolute;top:0px;text-align:center;letter-spacing:2px;text-shadow:0px 0px 1px #fff;cursor:pointer;}
+.pc_panel .expand{background:#010101 url("../img/panel/expand.gif") no-repeat center center;right:24px;}
+.pc_panel .collapse{background:#010101 url("../img/panel/collapse.gif") no-repeat center center;right:24px;}
+.pc_panel .close{background:#010101 url("../img/panel/close.gif") no-repeat center center;right:2px;}
+.pc_title{width:100%;height:20px;background:#000;font-size:9px;text-transform:uppercase;line-height:20px;text-indent:10px;letter-spacing:1px;}
+.pc_panel .selected{background:#222;}
+.pc_panel .selected img{border:4px solid #010101;}
+.pc_item{width:200px;height:140px;cursor:pointer;overflow:hidden;background:transparent url("../img/panel/bgSlide.png") repeat top left;float:left;margin:5px 10px 10px 10px;-moz-border-radius:4px;-webkit-border-radius:4px;	-moz-box-shadow:0px 0px 5px #000;-webkit-box-shadow:0px 0px 5px #000;box-shadow:0px 0px 5px #000;}
+.pc_item h2{padding:10px 0px 0px 10px;font-size:14px;height:32px;clear:both; line-height:32px;}
+.pc_item p{font-size:10px;line-height:14px;text-shadow:1px 1px 1px #000;padding:0px 10px 5px 10px;}
+.pc_item img{width:48px;float:left;margin:0px 10px 0px 10px;border:4px solid #191919;-moz-box-shadow:0px 0px 5px #000;-webkit-box-shadow:0px 0px 5px #000;box-shadow:0px 0px 5px #000;}
+.pc_more{display:none;}
+.pc_wrapper{overflow:hidden;position:relative;margin-top:10px;}
+.pc_slider{position:absolute;}
+
+
+
+/*  _____________________________________________________________________________
+
+	09 CONTACT FORM
+    _____________________________________________________________________________  */
+
+
+
+/* 1. General Form Elements */
+
+fieldset{padding:20px; border:1px solid #ddd; color:#888}
+form{font-size:12px; margin:0; padding:0; width:100%}
+legend, label{font-size:12px; letter-spacing:1px; text-transform:uppercase}
+legend{padding:0px 6px 0px 6px}
+input, textarea, select{font-family:Arial,Helvetica,sans-serif; font-size:12px; padding:5px; margin:5px 0 5px 0; background:#f5f5f5; border:1px solid #ddd; border-radius:3px; -moz-border-radius: 3px;-webkit-border-radius: 3px;}
+.radio, .checkbox {background:none; border:none;}
+select{width:280px}
+textarea{width:430px; height:180px}
+input:hover, textarea:hover{border:1px solid #ccc}
+textarea:hover{border:1px solid #BBB}
+optgroup{font-style:normal}
+form br{clear:left}
+input.required{background:#f5f5f5 url('../img/icons/required.gif') center right no-repeat}
+.inpt {width:270px;}
+.submit {padding:5px 15px 6px 15px; height:28px;}
+
+/* 2. Contact Form Notices */
+
+.notes{background:#f0f0f0; border:1px solid #b8b8b8}
+.success{background:#E1F8CB; border:1px solid #C6D880; color:#37620d}
+.error{background:#FBE5E2; border:1px solid #F2A197; color:#992213}
+.notice{background:#fcf0cc; border:1px solid #ecc735}
+.notes, .notice, .success, .error{padding:10px; font-size:12px; line-height:21px;}
+.notes span, .notice span, .success span, .error span{font-weight:bold; font-size:12px;}
+.notes p, .success p, .error p, .notice p{margin:0px; padding:0px}
+#note{width:100%; margin:0 auto 21px auto}
+
+.del, .ok, .info, .alert{font-size:12px; line-height:18px; padding:10px; padding-left:36px; margin-bottom:18px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius: 5px;}
+.del{background:#FBE5E2 url("../img/icons/error.png") no-repeat 7px 10px; border:#F2A197 solid 1px; color:#992213}
+.ok{background:#E1F8CB url("../img/icons/ok.png") no-repeat 7px 10px; border:#C6D880 solid 1px; color:#37620d}
+.info{background:#E9F5FB url("../img/icons/info2.png") no-repeat 7px 10px; border:#84C7E9 solid 1px; color:#16597a}
+.alert{background:#FFB url("../img/icons/alert.png") no-repeat 7px 10px; border:#FFD324 solid 1px; color:#756730}
+
+/* 3. Search Box */
+
+#ui_element p {margin:0;}
+.sb_input {width:218px; margin-bottom:28px;background:url("../img/icons/search2.png") no-repeat 226px 6px; padding-right:24px;}
+ul.sb_dropdown{background:#f5f5f5; border:1px solid #ddd; border-radius:3px; -moz-border-radius: 3px;-webkit-border-radius: 3px;outline:none;padding:6px;text-shadow:1px 1px 1px #fff;width:236px;float:left;margin:-24px 0px;	position:absolute;z-index:99;display:none;list-style:none;}
+ul.sb_dropdown li{line-height:32px;height:32px;float:left;width:50%;}
+ul.sb_dropdown li label{font-size:10px;}
+ul.sb_dropdown li input[type="checkbox"]{float:left;margin:10px 4px 0 5px; border:none; background:none;}
+.search{background:url("../img/icons/search.png") no-repeat 0px 5px}
+
+
+/*  _____________________________________________________________________________
+
+	10 BLOG LAYOUT
+    _____________________________________________________________________________  */
+
+
+
+#posts h1 a {color:#3A3A3A;}
+.post_info {border-bottom:1px solid #e3e5df;border-top:1px solid #e3e5df;font-size:10px;text-transform:uppercase;margin-bottom:21px;padding:10px 0px 20px 0px;}
+.post_info li {float:left;margin-right:21px;}
+.post_info a {color:#3A3A3A;}
+.post_date, .post_author, .post_tags, .post_comments {padding-left:21px; height:12px;}
+.post_date {background:url("../img/icons/post_date.png") no-repeat 0px 0px;}
+.post_author {background:url("../img/icons/post_author.png") no-repeat 0px 0px;}
+.post_tags {background:url("../img/icons/post_tags.png") no-repeat 0px 0px;}
+.post_comments {background:url("../img/icons/post_comments.png") no-repeat 0px 0px;}
+
+.pagination {margin:0;}
+.pagination li {margin-right:12px; width:22px; height:22px; text-align:center; float:left; font-size:12px; line-height:22px;}
+.pagination li a {color:#3A3A3A;}
+.pagination li.active, .pagination li.active:hover {background:url("../img/icons/pagination_active.jpg") no-repeat 0px 0px;}
+.pagination li.active a {color:#ffffff;}
+.pagination li:hover {background:url("../img/icons/pagination_hover.jpg") no-repeat 0px 0px;}
+
+.pages {text-align:right;}
+
+.list_posts {margin-top:18px;}
+.list_posts a {color:#888888;}
+.author {font-size:14px; font-weight:bold;line-height:24px;}
+.avatar_container {margin-top:0;}
+
+.list_comments {margin:28px 0;}
+.list_comments .depth2 {margin-left:45px;}
+.list_comments .depth3 {margin-left:90px;}
+.list_comments .depth4 {margin-left:135px;}
+#add_comment input {width:230px;}
+#add_comment .button_link {width:auto;}
+.comment {background:#f6f4ef; border:1px solid #dddede; padding:4px; margin:0px 0px 21px 100px;}
+.comment_author {font-size:18px; font-weight:bold;}
+.comment_author .date {font-weight:normal;}
+.comment_content {background:#ffffff; border:1px solid #dddede; padding:12px; margin:0;}
+.comment_content p {margin:6px 0px 12px 0px;}
+.reply {text-align:right; margin:0; line-height:12px;}
+.level2 {margin-left:45px}
+
+/* Sidebar */
+
+#sidebar {width:250px;margin-left:50px;}
+#sidebar_left {width:250px;margin-right:20px;}
+#sidebar a, #sidebar_left a {color:#999999;}
+#sidebar h4, #sidebar_left h4 { border-bottom:1px solid #e9e9e9; padding-bottom:16px;}
+#sidebar .pusher, #sidebar_left .pusher {width:auto;height:24px;clear:left;}
+#sidebar .comments, #sidebar .categories, #sidebar_left .comments, #sidebar_left .categories {font-size:12px;margin-left:0;color:#666666;}
+#sidebar .comments li, #sidebar_left .comments li {background:url("../img/icons/comment_black.png") no-repeat 0px 2px;border-bottom:1px solid #e9e9e9;padding-bottom:14px;margin-top:14px;}
+#sidebar .categories li,#sidebar_left .categories li {background:url("../img/icons/bullet1.png") no-repeat 0px 2px;border-bottom:1px solid #e9e9e9;padding-bottom:14px;padding-left:24px;margin-top:14px;}
+
+/* Sidebar Calendar */
+
+#calendar{width:250px; padding:0; margin:0; border-left:1px solid #cbcbcb; text-align:center; background-color:#fff;}
+#calendar .navnext{background:url("../img/menu/left.png") right center no-repeat; width:6px; padding-left:12px; height:9px}
+#calendar .navprev{background:url("../img/menu/right.png") left center no-repeat; width:16px; padding-right:12px; height:9px}
+#calendar caption{margin:0; padding:12px 9px 12px 9px; border:1px solid #000; border-bottom:none; background:#161616; color:#FFF; font-size:12px; text-align:center; text-transform:uppercase; 	border-radius: 6px 6px 0px 0px;-moz-border-radius: 6px 6px 0px 0px; -webkit-border-radius: 6px 6px 0px 0px;}
+#calendar th{font-size:12px; padding:9px; text-align:center; background:#f9f8f4; border-right:1px solid #cbcbcb; border-bottom:1px solid #cbcbcb; border-top:1px solid #cbcbcb}
+#calendar .today, #calendar td.today a, #calendar td.today a:link, #calendar td.today a:visited{font-weight:bold; background:#161616; color:#FFF}
+#calendar .today{border:1px solid #000}
+#calendar td{border-right:1px solid #cbcbcb; border-bottom:1px solid #cbcbcb; width:20px; font-size:12px; line-height:32px; color:#888; text-align:center}
+#calendar td a{text-decoration:none; font-weight:bold; display:block}
+
+/* Sidebar Scrolling Panel */
+
+#blog_scroller a{background-color:#f6f4ef; padding:9px; border:1px solid #dedede; font-weight:bold; font-size:14px; color:#888; border-radius:3px 3px 0px 0px; -moz-border-radius: 3px 3px 0px 0px;-webkit-border-radius: 3px 3px 0px 0px; float:left;}
+#blog_scroller a.selected{background-color:#f9f8f4; color:#000 !important}
+#blog_scroller{width:250px; height:30px}
+#blog_scroller_content{width:250px; margin:3px 0px; border:1px solid #dedede; padding-top:10px; border-radius: 0px 3px 3px 3px; -moz-border-radius: 0px 3px 3px 3px; -webkit-border-radius: 0px 3px 3px 3px;}
+#blog_scroller_mask{width:230px; overflow:hidden; margin:0 auto}
+#blog_scroller_panel{}
+#blog_scroller_panel div{float:left}
+#blog_scroller_panel ul{list-style:none; padding:0}
+#blog_scroller_panel ul li{padding:9px 3px 9px 3px; font-size:12px; border-bottom:1px dotted #ccc}
+#blog_scroller_panel ul li.last{border-bottom:none !important; padding-bottom:0}
+
+

@@ -1,0 +1,659 @@
+/*
+Item Name : StickyBars - Fixed Bars Animated on Scroll
+Author URI : http://codecanyon.net/user/Pixelworkshop
+Version : 1.0
+*/
+
+
+/*
+
+TABLE OF CONTENTS
+
+00 PAGE STYLING (demo)
+01 STICKY BAR CONTAINER
+02 STICKY BAR CONTENT
+03 MOBILE DEVICES
+04 STICKY BAR EFFECTS
+05 ICONS
+
+*/
+
+
+
+
+
+/*  _______________________________________________
+
+    00 PAGE STYLING (demo)
+    _______________________________________________  */
+
+
+
+
+.page-content a {
+	color: #777;
+	text-decoration: none;
+}
+.page-content h1 {
+	margin-bottom: 32px;
+	line-height: 28px;
+}
+.page-content h2 {
+	margin: 18px 0;
+	line-height: 24px;
+}
+.page-content .highlight {
+	font-style: italic;
+}
+.page-content hr {
+	height: 1px;
+	width: 100%;
+	margin: 20px 0;
+	border: none;
+	background: #fff;
+	border-top: 1px solid #ccc;
+	clear: both;
+	padding: 0 1.5em;
+}
+#sbar1 {
+	z-index: 10001;
+}
+#sbar2 {
+	z-index: 10002;
+	top:140px;
+}
+#sbar3 {
+	z-index: 10003;
+	bottom:120px;
+}
+#sbar4 {
+	z-index: 10004;
+}
+
+body {
+	background:#f4f4f4 url('../img/bg.png');
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 12px;
+	line-height: 160%;
+	margin: 0; 
+	padding: 0;
+}
+.page-content {
+	width: 80%;
+	max-width: 1080px;
+	margin: 60px auto;
+}
+.row {
+	float: left;
+	clear: both;
+}
+.col {
+	padding: 0 1.5em;
+	float: left;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.colhalf {width: 50%;}
+.coltwothirds {width: 66.66%;}
+.colonethird {width: 33.33%;}
+p, ul, li {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: #999;
+}
+h1, h2 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	color: #444;
+}
+@media only screen and (max-width: 767px) {
+	.colhalf,
+	.coltwothirds,
+	.colonethird {width: 100%;}
+}
+
+
+
+
+
+/*  _______________________________________________
+
+    01 STICKY BAR CONTAINER
+    _______________________________________________  */
+
+
+
+
+
+.sbar {
+	position: fixed;
+	padding: 0;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.sbar-horizontal {
+	width: 100%;
+	height: auto;
+}
+.sbar-horizontal-half {
+	width: 50%;
+}
+.sbar-vertical {
+
+}
+.sbar-left {
+	left: 0;
+}
+.sbar-right {
+	right: 0;
+}
+.sbar-top {
+	top:0;
+}
+.sbar-bottom {
+	bottom: 0;
+}
+
+/* Used to hide the bars when the page loads */
+.sbar-hide {
+	left:-9999em;
+	visibility:hidden;
+}
+
+
+
+
+/*  _______________________________________________
+
+    02 STICKY BAR CONTENT
+    _______________________________________________  */
+
+
+
+
+
+/* Optionnal close button */
+
+.sbar-close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	cursor: pointer;
+	top:10px;
+	right: 10px;
+}
+.sbar-close i {
+	font-size: 14px;
+	line-height: 40px;
+}
+
+/* Typography */
+
+.sbar h1,
+.sbar h2,
+.sbar h3,
+.sbar h4,
+.sbar p,
+.sbar ul,
+.sbar nav {
+	line-height: 20px;
+	margin: 10px 0;
+	vertical-align: middle;
+}
+.sbar ul li {
+	margin: 0;
+}
+
+/* Font sizes and basic styling */
+
+.sbar a {
+	text-decoration: none;
+	transition: color .3s;
+}
+.sbar p {
+	font-size: 12px;
+}
+.sbar h1 {
+    font-size: 24px;
+}
+.sbar h2 {
+    font-size: 20px;
+}
+.sbar h3 {
+    font-size: 16px;
+}
+.sbar h4 {
+    font-size: 14px;
+}
+.sbar ul {
+	list-style: none;
+	padding: 0;
+}
+.sbar ul li {
+	font-size: 12px;
+}
+	.sbar-horizontal ul li {
+		float: left;
+		margin-left: 20px;
+	}
+.sbar ul li a {
+	font-size: 12px;
+}
+.sbar ul.sbar-socialicons li a {
+	font-size: 16px;
+}
+
+/* Vertical lists */
+
+
+/* Videos & Images */
+
+.sbar img {
+    border:none;
+    max-width: 100%;
+    height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.sbar .sbar-logo {
+	width: 21px;
+	height: 26px;
+	float: left;
+	margin: 4px 10px 0 0;
+	background:url('../img/logo.png') left center no-repeat;
+}
+
+/* Content containers */
+
+.sbar .sbar-inner {
+	position: relative;
+	overflow: hidden;
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px 50px 10px 10px;
+}
+.sbar-horizontal .sbar-inner-button {
+}
+.sbar .sbar-contentleft {
+	float: left;
+}
+.sbar .sbar-contentright {
+	float: right;
+}
+.sbar .sbar-contentcenter {
+	float: none;
+	text-align: center;
+}
+
+/* Dark sbar */
+
+.sbar-dark {
+	background: #161616;
+}
+.sbar-dark p,
+.sbar-dark h1,
+.sbar-dark h2,
+.sbar-dark h3,
+.sbar-dark h4 {
+	color: #eeeeee;
+}
+.sbar-dark ul li {
+	color: #bbbbbb;
+}
+.sbar-dark a {
+	color: #999999;
+}
+.sbar-dark a:hover {
+	color: #aaaaaa;
+}
+.sbar-dark .sbar-close {
+	background: #000000;
+}
+.sbar-dark .sbar-close i {
+	color: #eeeeee;
+}
+.sbar-dark::-webkit-scrollbar {
+	width: 8px;
+}
+.sbar-dark::-webkit-scrollbar-track {
+	background:#444444;
+}
+.sbar-dark::-webkit-scrollbar-thumb {
+	background:#0a0a0a;
+}
+.sbar-dark::-webkit-scrollbar-thumb:hover {
+	background:#000000;
+}			
+
+/* Light sbar */
+
+.sbar-light {
+	background: #eeeeee;
+}
+.sbar-light p,
+.sbar-light h1,
+.sbar-light h2,
+.sbar-light h3,
+.sbar-light h4 {
+	color: #333333;
+}
+.sbar-light ul li {
+	color: #666666;
+}
+.sbar-light a {
+	color: #888888;
+}
+.sbar-light a:hover {
+	color: #777777;
+}
+.sbar-light .sbar-close {
+	background: #cccccc;
+}
+.sbar-light .sbar-close i {
+	color: #666666;
+}
+.sbar-light::-webkit-scrollbar {
+	width: 8px;
+}
+.sbar-light::-webkit-scrollbar-track {
+	background:#dddddd;
+}
+.sbar-light::-webkit-scrollbar-thumb {
+	background:#aaaaaa;
+}
+.sbar-light::-webkit-scrollbar-thumb:hover {
+	background:#bbbbbb;
+}
+
+
+
+
+/*  _______________________________________________
+
+    03 MOBILE DEVICES
+    _______________________________________________  */
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+	.sbar-container .sbar {
+		top:0 !important;
+	}
+	.sbar-container .sbar-bottom {
+		top:auto !important;
+		bottom: 0 !important;
+	}
+	.sbar-horizontal {
+		width: 100%;
+	}
+	.sbar-horizontal-half {
+		width: 100%;
+	}
+	.sbar-vertical {
+
+	}
+	.sbar .sbar-contentleft,
+	.sbar .sbar-contentright {
+		float: left;
+		margin-right: 20px;
+	}
+	.sbar-horizontal ul li {
+		margin-left: 0;
+		margin-right: 20px;
+	}
+
+}
+
+
+
+
+
+/*  _______________________________________________
+
+    04 STICKY BAR EFFECTS
+    _______________________________________________  */
+
+
+
+
+
+/* Effects List
+   fade
+   slideLeft
+   slideRight
+   slideDown (only for top bar)
+   slideUp (only for footer bar)
+   slideLeftFade
+   slideRightFade
+   slideDownFade (only for top bar)
+   slideUpFade (only for footer bar)
+   scaleUp
+   scaleDown
+   slideLeftScale
+   slideRightScale
+   slideDownScale (only for top bar)
+   slideUpScale (only for footer bar)
+   slideDownScaleReversed
+   slideUpScaleReversed
+*/
+
+/* 1. Fade in & out */
+
+
+/* 2. Move from and to left */
+
+.slideLeftIn {
+	-webkit-animation: slideLeftIn .5s ease both;
+	-moz-animation: slideLeftIn .5s ease both;
+	animation: slideLeftIn .5s ease both;
+}
+	@-webkit-keyframes slideLeftIn {
+		from { -webkit-transform: translateX(-100%); }
+	}
+	@-moz-keyframes slideLeftIn {
+		from { -moz-transform: translateX(-100%); }
+	}
+	@keyframes slideLeftIn {
+		from { transform: translateX(-100%); }
+	}
+.slideLeftOut {
+	-webkit-animation: slideLeftOut .5s ease both;
+	-moz-animation: slideLeftOut .5s ease both;
+	animation: slideLeftOut .5s ease both;
+}
+	@-webkit-keyframes slideLeftOut {
+		to { -webkit-transform: translateX(-100%); }
+	}
+	@-moz-keyframes slideLeftOut {
+		to { -moz-transform: translateX(-100%); }
+	}
+	@keyframes slideLeftOut {
+		to { transform: translateX(-100%); }
+	}
+
+/* 3. Move from and to right */
+
+
+/* 4. Move from and to top */
+
+
+/* 5. Move from and to bottom */
+
+
+/* 6. Move from and to left + fade */
+
+
+/* 7. Move from and to right + fade */
+
+.slideRightFadeIn {
+	-webkit-animation: slideRightFadeIn .5s ease both;
+	-moz-animation: slideRightFadeIn .5s ease both;
+	animation: slideRightFadeIn .5s ease both;
+}
+	@-webkit-keyframes slideRightFadeIn {
+		from { opacity: 0; -webkit-transform: translateX(100%); }
+	}
+	@-moz-keyframes slideRightFadeIn {
+		from { opacity: 0; -moz-transform: translateX(100%); }
+	}
+	@keyframes slideRightFadeIn {
+		from { opacity: 0; transform: translateX(100%); }
+	}
+.slideRightFadeOut {
+	-webkit-animation: slideRightFadeOut .5s ease both;
+	-moz-animation: slideRightFadeOut .5s ease both;
+	animation: slideRightFadeOut .5s ease both;
+}
+	@-webkit-keyframes slideRightFadeOut {
+		to { opacity: 0; -webkit-transform: translateX(100%); }
+	}
+	@-moz-keyframes slideRightFadeOut {
+		to { opacity: 0; -moz-transform: translateX(100%); }
+	}
+	@keyframes slideRightFadeOut {
+		to { opacity: 0; transform: translateX(100%); }
+	}
+
+/* 8. Move from and to top + fade */
+
+
+/* 9. Move from and to bottom + fade */
+
+
+/* 10. Scale up + fade */
+
+
+/* 11. Scale down + fade */
+
+
+/* 12. Slide left + scale */
+
+/* 13. Slide right + scale */
+
+
+/* 14. Slide down + scale */
+
+
+/* 15. Slide up + scale */
+
+.slideUpScaleIn {
+	-webkit-animation: slideUpScaleIn .8s both ease;
+	-moz-animation: slideUpScaleIn .8s both ease;
+	animation: slideUpScaleIn .8s both ease;
+}
+@-webkit-keyframes slideUpScaleIn {
+	from { opacity: 0; -webkit-transform: translateY(200%) scale(.8); }
+}
+@-moz-keyframes slideUpScaleIn {
+	from { opacity: 0; -moz-transform: translateY(200%) scale(.8); }
+}
+@keyframes slideUpScaleIn {
+	from { opacity: 0; transform: translateY(200%) scale(.8); }
+}
+.slideUpScaleOut {
+	-webkit-animation: slideUpScaleOut .8s both ease;
+	-moz-animation: slideUpScaleOut .8s both ease;
+	animation: slideUpScaleOut .8s both ease;
+}
+@-webkit-keyframes slideUpScaleOut {
+	to { opacity: 0; -webkit-transform: translateY(200%) scale(.8); }
+}
+@-moz-keyframes slideUpScaleOut {
+	to { opacity: 0; -moz-transform: translateY(200%) scale(.8); }
+}
+@keyframes slideUpScaleOut {
+	to { opacity: 0; transform: translateY(200%) scale(.8); }
+}
+
+/* 16. Slide down + reversed scale */
+
+.slideDownScaleReversedIn {
+	-webkit-animation: slideDownScaleReversedIn .8s both ease;
+	-moz-animation: slideDownScaleReversedIn .8s both ease;
+	animation: slideDownScaleReversedIn .8s both ease;
+}
+@-webkit-keyframes slideDownScaleReversedIn {
+	from { opacity: 0; -webkit-transform: translateY(-170%) scale(1.5); }
+}
+@-moz-keyframes slideDownScaleReversedIn {
+	from { opacity: 0; -moz-transform: translateY(-170%) scale(1.5); }
+}
+@keyframes slideDownScaleReversedIn {
+	from { opacity: 0; transform: translateY(-170%) scale(1.5); }
+}
+.slideDownScaleReversedOut {
+	-webkit-animation: slideDownScaleReversedOut .8s both ease;
+	-moz-animation: slideDownScaleReversedOut .8s both ease;
+	animation: slideDownScaleReversedOut .8s both ease;
+}
+@-webkit-keyframes slideDownScaleReversedOut {
+	to { opacity: 0; -webkit-transform: translateY(-170%) scale(1.5); }
+}
+@-moz-keyframes slideDownScaleReversedOut {
+	to { opacity: 0; -moz-transform: translateY(-170%) scale(1.5); }
+}
+@keyframes slideDownScaleReversedOut {
+	to { opacity: 0; transform: translateY(-170%) scale(1.5); }
+}
+
+/* 17. Slide up + reversed scale */
+
+
+
+
+
+
+/*  _______________________________________________
+
+    05 ICONS
+    _______________________________________________  */
+
+
+
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?3sdyr0');
+	src:url('../fonts/icomoon.eot?') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?3sdyr0') format('woff'),
+		url('../fonts/icomoon.ttf?3sdyr0') format('truetype'),
+		url('../fonts/icomoon.svg?3sdyr0') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+	content: "\e600";
+}
+.icon-facebook:before {
+	content: "\e602";
+}
+.icon-twitter:before {
+	content: "\e603";
+}
+.icon-vimeo:before {
+	content: "\e604";
+}
+.icon-flickr:before {
+	content: "\e605";
+}
+

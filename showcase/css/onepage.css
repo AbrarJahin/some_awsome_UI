@@ -1,0 +1,38 @@
+/*  _______________________________________
+
+	ONE-PAGE STYLING
+    _______________________________________  */
+
+
+
+#header_large {
+	position:fixed;
+}
+#wrapper {
+	background:url("../img/background/content.jpg") left 140px repeat-x;
+}
+.container {
+	padding-top:180px;
+}
+
+/* Coin Slider */
+
+#coin-slider {
+	overflow:hidden;
+}
+	.coin-slider { 
+		height:300px;
+	}
+	.cs-buttons {
+		top:12px;
+	}
+	.cs-buttons a { 
+		background:url("http://www.pixelworkshop.fr/demos/showcase/img/slider/bullets2.png") 0px 0px no-repeat;
+	}
+		.cs-buttons a.cs-active {
+			background:url("http://www.pixelworkshop.fr/demos/showcase/img/slider/bullets2.png") 0px -14px no-repeat;
+		}
+	.cs-prev, 
+	.cs-next {
+		display:none;
+	}

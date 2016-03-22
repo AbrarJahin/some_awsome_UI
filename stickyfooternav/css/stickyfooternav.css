@@ -1,0 +1,825 @@
+/*
+Item Name : FlexiFooter - Responsive Mega Footer Navigation
+Author URI : http://codecanyon.net/user/Pixelworkshop
+Version : 1.0
+*/
+
+/*
+
+TABLE OF CONTENTS
+
+00 PAGE STYLING (not part of the footer)
+01 FOOTER BAR
+02 DROP UPS
+03 TYPOGRAPHY & ELEMENTS
+   1. Basic Typography
+   2. Default Lists
+   3. Icons Lists
+   4. Videos & Images
+   5. Misc
+04 MOBILE DEVICES
+05 COLORS
+
+*/
+
+
+
+
+/*  _______________________________________________
+
+    00 PAGE STYLING (not part of the footer)
+    _______________________________________________  */
+
+
+
+
+body {background: #fafafa;background: url("../img/bg.png");}
+.container {position: relative;width: 960px;max-width:960px;margin: 40px auto 90px auto;font-family:Arial, Helvetica, sans-serif;font-size:12px;line-height:21px;}
+.dummy_content {margin: 0 auto;width: 960px;color: #212121;text-shadow:1px 1px 1px #eee;}
+.dummy_content h1, .dummy_content h2 {font-family: Georgia, Times, "Times New Roman", serif;font-weight: normal;}
+.dummy_content h1 {font-size:24px;line-height:28px;}
+.dummy_content h2 {font-size:18px;line-height:24px;}
+.dummy_content ul {font-size:12px;line-height:21px;list-style: square;margin: 0 0 0 25px;padding: 0;}
+.dummy_content a {color: #888;text-decoration: none;}
+@media only screen and (max-width: 991px) {
+    .container {width: 90%;}
+    .dummy_content {width: 100%;}
+}
+@media only screen and (max-width: 767px) {
+    .container {margin: 40px auto;}
+}
+
+
+
+
+/*  _______________________________________________
+
+    01 MENU BAR
+    _______________________________________________  */
+
+
+
+
+.stickyfooternav *,
+.stickyfooternav *:before,
+.stickyfooternav *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.stickyfooternav {
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:auto;
+    margin:0;
+    padding: 0;
+    z-index: 2;
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    line-height:21px;
+}
+    .stickyfooternav .stickyfooternav_wrapper {
+        width: 960px;
+        margin: 0 auto;
+    }
+    .stickyfooternav_responsive .stickyfooternav_wrapper {
+        width:100%;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu {
+        padding: 0;
+        margin: 0 auto;
+    }
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu_right {
+            float: right;
+        }
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li {
+            float: left;
+            padding:0;
+            margin: 0;
+            font-size: 12px;
+            list-style: none;
+            line-height:50px;
+            position: relative;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_mega {
+            position: static;
+        }
+            .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li > a,
+            .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li > span {
+                display: block;
+                padding:0 20px;
+                float: left;
+            }
+            .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li > a,
+            .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li > span,
+            .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li > span > a {
+                font-size: 12px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li > span > a {
+                margin-left: 14px;
+            }
+            .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li > i {
+                padding: 0 0 0 20px;
+                font-size: 13px;
+                float: left;
+            }
+            .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li > i + span {
+                padding-left: 15px;
+            }
+            .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li > span + i {
+                padding: 0 20px 0 0;
+                margin-left: -10px;
+            }
+            .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li > i.small {
+                font-size: 7px;
+            }
+
+/* Logo */
+
+.stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_logo {
+    width: 220px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+    .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_logo:hover {
+        background: none !important;
+    }
+    .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_logo > a,
+    .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_logo:hover > a {
+        width: 100%;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        float: left;
+        background: url('../img/logo.png') no-repeat left center;
+    }
+
+/* Toggle Button */
+
+.stickyfooternav_btn {
+    position: fixed;
+    z-index: 9990;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    text-decoration: none;
+    height: 50px;
+    padding: 0 17px;
+    outline:none;
+    cursor: pointer;
+}
+    .stickyfooternav_btn i {
+        font-size: 18px;
+        line-height: 50px;
+        float: left;
+        -webkit-transition: all 0.3s 0.2s;
+        -moz-transition: all 0.3s 0.2s;
+        -o-transition: all 0.3s 0.2s;
+        transition: all 0.3s 0.2s;
+    }
+    .stickyfooternav_btn.btn_active i {
+        -webkit-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+
+/* Menu bar social icons */
+
+.stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_social a {
+    padding: 0;
+    width: 40px;
+    text-align: center;
+}
+.stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_social i  {
+    font-size: 18px;
+    margin: 0;
+    float: none;
+}
+
+
+
+
+/*  _______________________________________________
+
+    02 DROP UPS
+    _______________________________________________  */
+
+
+
+
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top:auto;
+    bottom: 100%;
+    z-index: 9999;
+    padding: 30px 30px 10px 30px;
+    margin: 0 auto;
+    opacity: 0;
+    display: none;
+}
+.stickyfooternav .stickyfooternav_menu li > .stickyfooternav_ddown_960,
+.stickyfooternav .stickyfooternav_menu li > .stickyfooternav_ddown_880,
+.stickyfooternav .stickyfooternav_menu li > .stickyfooternav_ddown_800,
+.stickyfooternav .stickyfooternav_menu li > .stickyfooternav_ddown_720,
+.stickyfooternav .stickyfooternav_menu li > .stickyfooternav_ddown_640,
+.stickyfooternav .stickyfooternav_menu li > .stickyfooternav_ddown_560,
+.stickyfooternav .stickyfooternav_menu li > .stickyfooternav_ddown_480,
+.stickyfooternav .stickyfooternav_menu li > .stickyfooternav_ddown_400,
+.stickyfooternav .stickyfooternav_menu li > .stickyfooternav_ddown_320,
+.stickyfooternav .stickyfooternav_menu li > .stickyfooternav_ddown_240,
+.stickyfooternav .stickyfooternav_menu li > .stickyfooternav_ddown_160,
+.stickyfooternav .stickyfooternav_menu li > .stickyfooternav_ddown_80 {
+    left:auto;
+}
+.stickyfooternav .stickyfooternav_menu li > .stickyfooternav_ddown_mega {
+    left:50%;
+    margin-left: -480px;
+}
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown.mCustomScrollbar {
+    padding: 30px 14px 10px 30px;
+}
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown.mCustomScrollbar.mCS_no_scrollbar {
+    padding: 30px 30px 10px 30px;
+}
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown:before,
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown:after {
+    display: table;
+    content: " ";
+}
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown:after {
+    clear: both;
+}
+.stickyfooternav .stickyfooternav_menu li > .stickyfooternav_ddown_mega {
+    width: 960px;
+}
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown_960 {
+    width:960px;
+}
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown_880 {
+    width:880px;
+}
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown_800 {
+    width:800px;
+}
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown_720 {
+    width:720px;
+}
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown_640 {
+    width:640px;
+}
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown_560 {
+    width:560px;
+}
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown_480 {
+    width:480px;
+}
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown_400 {
+    width:400px;
+}
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown_320 {
+    width:320px;
+}
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown_240 {
+    width:240px;
+}
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown_160 {
+    width:160px;
+}
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown_80 {
+    width:80px;
+}
+
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown_right {
+    right:0;
+}
+
+/* Show Drop Downs on Mouse Hover */
+
+.stickyfooternav .stickyfooternav_menu li:hover > .stickyfooternav_ddown {
+    opacity: 1;
+    display: block;
+}
+
+/* Columns Grid */
+
+.stickyfooternav .colrow {
+    margin-right: -2%;
+    margin-left: -2%;
+}
+.stickyfooternav .colrow:before,
+.stickyfooternav .colrow:after {
+    display: table;
+    content: " ";
+}
+.stickyfooternav .colrow:after {
+    clear: both;
+}
+.stickyfooternav .col1,
+.stickyfooternav .col2,
+.stickyfooternav .col3,
+.stickyfooternav .col4,
+.stickyfooternav .col5,
+.stickyfooternav .col6,
+.stickyfooternav .col7,
+.stickyfooternav .col8,
+.stickyfooternav .col9,
+.stickyfooternav .col10,
+.stickyfooternav .col11,
+.stickyfooternav .col12 {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+.stickyfooternav .col12 {
+    width: 100%;
+}
+.stickyfooternav .col11 {
+    width: 91.66666666666666%;
+}
+.stickyfooternav .col10 {
+    width: 83.33333333333334%;
+}
+.stickyfooternav .col9 {
+    width: 75%;
+}
+.stickyfooternav .col8 {
+    width: 66.66666666666666%;
+}
+.stickyfooternav .col7 {
+    width: 58.333333333333336%;
+}
+.stickyfooternav .col6 {
+    width: 50%;
+}
+.stickyfooternav .col5 {
+    width: 41.66666666666667%;
+}
+.stickyfooternav .col4 {
+    width: 33.33333333333333%;
+}
+.stickyfooternav .col3 {
+    width: 25%;
+}
+.stickyfooternav .col2 {
+    width: 16.666666666666664%;
+}
+.stickyfooternav .col1 {
+    width: 8.333333333333332%;
+}
+
+/* Close button - mobile version */
+
+.stickyfooternav_close {
+    width: 80px;
+    height: 80px;
+    background: url('../img/close.png');
+    position: absolute;
+    top:0;
+    right: 0;
+    cursor: pointer;
+} 
+.stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li .stickyfooternav_close i {
+    font-size: 19px;
+    position: absolute;
+    right: 14px;
+} 
+
+
+
+
+/*  _______________________________________________
+
+    03 TYPOGRAPHY & ELEMENTS
+    _______________________________________________  */
+
+
+
+
+/* 1. Basic Typography */
+
+.stickyfooternav .stickyfooternav_ddown p,
+.stickyfooternav .stickyfooternav_ddown h1,
+.stickyfooternav .stickyfooternav_ddown h2,
+.stickyfooternav .stickyfooternav_ddown h3,
+.stickyfooternav .stickyfooternav_ddown h4,
+.stickyfooternav .stickyfooternav_ddown h5,
+.stickyfooternav .stickyfooternav_ddown h6,
+.stickyfooternav .stickyfooternav_ddown ul,
+.stickyfooternav .stickyfooternav_ddown ol {
+    margin:0;
+}
+.stickyfooternav .stickyfooternav_ddown p,
+.stickyfooternav .stickyfooternav_ddown ul,
+.stickyfooternav .stickyfooternav_ddown ol {
+    font-size: 12px;
+    margin: 0 0 21px 0;
+    line-height: 21px;
+}
+.stickyfooternav .stickyfooternav_ddown h1,
+.stickyfooternav .stickyfooternav_ddown h2,
+.stickyfooternav .stickyfooternav_ddown h3,
+.stickyfooternav .stickyfooternav_ddown h4,
+.stickyfooternav .stickyfooternav_ddown h5,
+.stickyfooternav .stickyfooternav_ddown h6 {
+    font-weight: normal;
+    font-family: 'PT Serif', Georgia, Times, "Times New Roman", serif;
+    margin-bottom: 21px;
+}
+.stickyfooternav .stickyfooternav_ddown h1 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.stickyfooternav .stickyfooternav_ddown h2 {
+    font-size: 20px;
+    line-height: 22px;
+}
+.stickyfooternav .stickyfooternav_ddown h3 {
+    font-size: 16px;
+    line-height: 20px;
+}
+.stickyfooternav .stickyfooternav_ddown h4 {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom:14px;
+}
+.stickyfooternav .stickyfooternav_ddown h5 {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom:14px;
+}
+.stickyfooternav .stickyfooternav_ddown h6 {
+    font-size: 10px;
+    line-height: 16px;
+    margin-bottom:14px;
+    text-transform:uppercase;
+}
+.stickyfooternav .stickyfooternav_ddown a {
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+/* 2. Default Lists */
+
+.stickyfooternav .stickyfooternav_ddown .colrow ul {
+    list-style: square;
+    padding-left: 15px;
+    margin-bottom: 21px;
+	margin-left:0;
+}
+.stickyfooternav .stickyfooternav_ddown .colrow ol {
+    padding-left: 16px;
+    margin-bottom: 21px;
+	margin-left:0;
+}
+.stickyfooternav .stickyfooternav_ddown .colrow ul li,
+.stickyfooternav .stickyfooternav_ddown .colrow ol li {
+    line-height: 21px;
+    padding: 0;
+    margin:0;
+}
+.stickyfooternav .stickyfooternav_ddown .colrow ul li i,
+.stickyfooternav .stickyfooternav_ddown .colrow ol li i {
+    font-size:11px;
+    line-height: 21px;
+    margin-right:12px;
+}
+
+/* 3. Icons Lists */
+
+.stickyfooternav .stickyfooternav_ddown .colrow .stickyfooternav_icons {
+    list-style: none;
+    padding: 0;
+    margin-left: -20px;
+}
+.stickyfooternav .stickyfooternav_ddown .colrow .stickyfooternav_icons > li {
+    padding: 0 0 5px 20px;
+    text-align: left;
+}
+.stickyfooternav .stickyfooternav_ddown .colrow .stickyfooternav_icons i {
+    font-size: 14px;
+    width: 12px;
+    float: left;
+}
+
+/* 4. Videos & Images */
+
+.stickyfooternav .stickyfooternav_ddown iframe {
+    border:none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+.stickyfooternav .stickyfooternav_ddown img {
+    display: block;
+    height: auto;
+    border: none;
+    max-width: 100% !important;
+    margin-bottom: 20px;
+}    
+.stickyfooternav .stickyfooternav_ddown .stickyfooternav_gallery img {
+    opacity: 0.85;
+    -webkit-filter: grayscale(30%);
+}
+
+/* 5. Misc */
+
+.stickyfooternav .stickyfooternav_ddown .greybox {
+    padding: 16px;
+}
+.stickyfooternav .stickyfooternav_ddown .coldemo {
+    padding: 4px 8px;
+}
+.stickyfooternav .stickyfooternav_ddown hr {
+    width: 100%;
+    height: 1px;
+    border:none;
+    margin: 20px 0;
+}
+
+
+
+
+/*  _______________________________________________
+
+    04 MOBILE DEVICES
+    _______________________________________________  */
+
+
+
+
+.stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_collapse i {
+    font-size: 12px;
+    margin: 0 9px 0 0;
+}
+
+/* IE8 */
+.stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_collapse {
+    display: none\0/;
+}
+
+/* Switch between the desktop and mobile versions */
+@media only screen and (min-width: 768px) {
+
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li {
+        display: block !important;
+    }
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_collapse {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (max-width: 1060px) {
+
+    .stickyfooternav_responsive.stickyfooternav_trigger .stickyfooternav_wrapper .stickyfooternav_menu {
+        padding-right: 50px;
+    }
+    .stickyfooternav_responsive .stickyfooternav_wrapper {
+        width:100%;
+    }
+        .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li {
+            position: static;
+        }
+            .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li > span,
+            .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li > a {
+                padding:0 15px;
+            }
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu .stickyfooternav_ddown {
+        width: 100%;
+        left:0;
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .stickyfooternav_responsive {
+        height: auto;
+        max-height: 100%;
+    }
+    .stickyfooternav_responsive.stickyfooternav_trigger .stickyfooternav_wrapper .stickyfooternav_menu {
+        padding-right: 0;
+    }
+    .stickyfooternav_responsive .stickyfooternav_close {
+        display: block;
+    }
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu_right {
+        float: left;
+        width: 100%;
+    }
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu {
+        width: 100%;
+    }
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li {
+        width: 100%;
+        display: none;
+        float: left;
+    }
+        .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li > span,
+        .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li > a {
+            width: 100%;
+            float: left;
+        }
+        .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li > i {
+            position: absolute;
+            right: 0;
+            padding: 0 20px 0 0;
+        }
+        .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li:first-child {
+            margin-left: 0;
+        }
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_social {
+            width: 40px;
+        }
+        .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_collapse {
+            display: block;
+        }
+            .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_collapse i {
+                float: none;
+            }
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu .stickyfooternav_ddown {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        bottom:0;
+        overflow: hidden;
+        /* Avoid page scroll when a drop down is visible */
+        -ms-touch-action: none;
+        touch-action: none;
+    }
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu .stickyfooternav_ddown .col1,
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu .stickyfooternav_ddown .col2,
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu .stickyfooternav_ddown .col3,
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu .stickyfooternav_ddown .col4,
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu .stickyfooternav_ddown .col5,
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu .stickyfooternav_ddown .col6,
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu .stickyfooternav_ddown .col7,
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu .stickyfooternav_ddown .col8,
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu .stickyfooternav_ddown .col9,
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu .stickyfooternav_ddown .col10,
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu .stickyfooternav_ddown .col11,
+    .stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu .stickyfooternav_ddown .col12 {
+        width: 100%;
+
+    }
+
+}
+
+
+
+
+/*  _______________________________________________
+
+    05 COLORS
+    _______________________________________________  */
+
+
+
+
+/* Menu bar */
+
+.stickyfooternav {
+    background: #212121;
+}
+
+/* Menu items */
+
+.stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li {
+    background: #212121;
+}
+
+    /* Hover and active states */
+
+    .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li:hover,
+    .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.active
+     {
+        background: #ffffff;
+    }
+    .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.noactive,
+    .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.noactive:hover {
+        background: #212121;
+    }
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li:hover > a,
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li:hover > span,
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li:hover > i,
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.active > a,
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.active > span,
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.active > i {
+            color:#212121;
+        }
+
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li > a,
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li > span,
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li > i,
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.noactive > a,
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.noactive > span,
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.noactive > i,
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.noactive:hover > a,
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.noactive:hover > span 
+        .stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li.noactive:hover > i {
+            color:#eeeeee;
+        }
+
+/* Trigger button */
+
+.stickyfooternav_btn {
+    color: #fff;
+    background: #121212;
+}
+
+/* Drop downs */
+
+.stickyfooternav .stickyfooternav_menu .stickyfooternav_ddown {
+    background: #ffffff;
+}
+
+    /* Texts & headings */
+
+    .stickyfooternav .stickyfooternav_ddown p,
+    .stickyfooternav .stickyfooternav_ddown h1,
+    .stickyfooternav .stickyfooternav_ddown h2,
+    .stickyfooternav .stickyfooternav_ddown h3,
+    .stickyfooternav .stickyfooternav_ddown h4,
+    .stickyfooternav .stickyfooternav_ddown h5,
+    .stickyfooternav .stickyfooternav_ddown h6 {
+        color:#212121;
+    }
+
+    /* Lists */
+
+    .stickyfooternav .stickyfooternav_ddown ul,
+    .stickyfooternav .stickyfooternav_ddown ol {
+        color:#999999;
+    }
+        .stickyfooternav .stickyfooternav_ddown ul li:hover,
+        .stickyfooternav .stickyfooternav_ddown ol li:hover {
+            color:#666666;
+        }
+
+    /* Links */
+
+    .stickyfooternav .stickyfooternav_ddown a {
+        color: #999999;
+    }
+        .stickyfooternav .stickyfooternav_ddown a:hover {
+            color: #666666;
+        }
+
+    /* Misc elements */
+
+    .stickyfooternav .stickyfooternav_ddown .greybox {
+        background: #eeeeee;
+        color:#aaaaaa;
+    }
+    .stickyfooternav .stickyfooternav_ddown .coldemo {
+        background: #dddddd;
+        color: #666666;
+    }
+    .stickyfooternav .stickyfooternav_ddown hr {
+        background: #e4e4e4;
+    }
+
+/* Close button - Mobile version only */
+
+.stickyfooternav .stickyfooternav_wrapper .stickyfooternav_menu > li .stickyfooternav_close i {
+    color: #eeeeee;
+} 
+
+/* Collapse button - Mobile version only */
+
+.stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_collapse_active,
+.stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_collapse_active:hover {
+    background: #111111;
+}
+.stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_collapse_noactive,
+.stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_collapse_noactive:hover {
+    background: #212121;
+}
+.stickyfooternav_responsive .stickyfooternav_wrapper .stickyfooternav_menu > li.stickyfooternav_collapse > span {
+    color: #dddddd !important;
+}

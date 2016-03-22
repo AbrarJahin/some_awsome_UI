@@ -1,0 +1,60 @@
+/*  _______________________________________
+
+	CAROUSEL (SLIDING 3 COLUMNS IMAGES)
+    _______________________________________  */
+
+
+
+.jcarousel .jcarousel-container-horizontal {
+    width: 890px;
+	margin-left:-5px;
+}
+.jcarousel .jcarousel-item {
+    width: 270px;
+    height: 195px;
+}
+.jcarousel .jcarousel-item-horizontal {
+	margin-left: 5px;
+    margin-right: 25px;
+}
+.jcarousel li {
+	float:left;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel .jcarousel-next-horizontal {
+    position: absolute;
+    top: 24px;
+    right: -30px;
+    width: 19px;
+    height: 140px;
+    cursor: pointer;
+    background: transparent url("../../img/carousel/next.png") no-repeat 0 0;
+}
+
+.jcarousel .jcarousel-next-horizontal:hover {
+    background: transparent url("../../img/carousel/next_hover.png") no-repeat 0 0;
+}
+
+.jcarousel .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 24px;
+    left: -40px;
+    width: 19px;
+    height: 140px;
+    cursor: pointer;
+    background: transparent url("../../img/carousel/previous.png") no-repeat 0 0;
+}
+
+.jcarousel .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    left: auto;
+    right: 5px;
+    background-image: url(http://www.pixelworkshop.fr/demos/showcase/css/next-horizontal.png);
+}
+
+.jcarousel .jcarousel-prev-horizontal:hover {
+    background: transparent url("../../img/carousel/previous_hover.png") no-repeat 0 0;
+}
+

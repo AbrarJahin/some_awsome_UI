@@ -1,0 +1,53 @@
+p, h1, h2, h3,
+#overlay_right h1, #overlay_right h3, #overlay_right p,
+.form ul li
+{
+	color:#FFFFFF;
+}
+.grid_1, .grid_2, .grid_3 {
+	background:#000;
+}
+.container_3 > .grid_1, .grid_2, .grid_3, #overlay_right {
+	border:#444444 solid 1px;
+	background:url("../../img/opacity.png") repeat;
+}
+.right {
+	border-left:#444444 1px dotted;
+}
+.panel {
+	background:url("../../img/opacity.png") repeat;
+}
+a {
+	color:#AAAAAA;
+}
+	a:hover {
+		color:#dddddd;
+		border-bottom:#dddddd dotted 1px;
+	}
+h1, h3 {
+	border-bottom:#dddddd 1px dotted;
+}
+.bullet_list li {
+	list-style-image: url("../../img/colors/bullet_dark.png");
+	color:#AAAAAA;
+}
+.numbered_list li {
+	color:#AAAAAA;
+}
+.button {
+	border:#dddddd solid 1px;
+}
+	.button:hover {
+		background:#444444;
+		color:#FFFFFE;
+		border:#aaaaaa solid 1px;
+	}
+.control ul li a.activegallery {
+	background:#444444;
+}
+a.activeslide {
+	background:#444444;
+}
+.thumb {
+	border:#AAAAAA solid 3px;
+}

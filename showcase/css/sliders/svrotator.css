@@ -1,0 +1,116 @@
+/*  _______________________________________
+
+	SV ROTATOR SLIDER
+    _______________________________________  */
+
+
+
+#slider_bg {
+	margin-top:35px;
+}
+ul.svrotator{	
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height:380px;
+	width:850px;
+	display:block;
+	position:relative;
+	overflow:hidden;
+}
+ul.svrotator li{
+	display:block;
+	padding:0;
+	margin:0;
+	height:380px;
+	width:850px;
+	position:relative;
+	overflow:hidden;
+}
+.slide{
+	height:380px;
+	width:850px;
+}
+.slide1{
+	background:url('../../img/slider/slide1.jpg') top left;
+}
+.slide2{
+	background:url('../../img/slider/slide2.jpg') top left;
+}
+.slide3{
+	background:url('../../img/slider/slide3.jpg') top left;
+}
+.slide4{
+	background:url('../../img/slider/slide4.jpg') top left;
+}
+.slide5{
+	background:url('../../img/slider/slide5.jpg') top left;
+}
+
+/* Left arrows stylings with fixed sizes */
+
+.rotator_controls {
+	width:260px;
+	left:14px;
+	top:18px;
+	margin:-1px 0px;
+	padding:0;
+	position:absolute;
+	z-index:3;
+	list-style:none;
+}
+.rotator_controls li.control {
+	width:260px;
+	margin:0;
+	height:76px;
+	background:url("../../img/slider/rotator_bg.png") top left no-repeat;
+	cursor:pointer;
+}
+.rotator_controls li.active{
+	width:260px;
+	margin:0;
+	background:url("../../img/slider/rotator_bg_active.png") top left no-repeat;
+}
+
+/* Left texts appearing on each arrow, change the color of the H2 with the 
+   CSS file in the folder css/colors */
+
+.control h2{
+	padding:19px 0px 0px 22px ;
+	margin:0px !important;
+	line-height:15px;
+	font-size:15px;
+	text-decoration:none;
+	border:0;
+}
+	.active h2{
+		font-size:17px;
+	}
+.control p{
+	padding:6px 30px 0px 22px ;
+	margin:0px;
+	line-height:11px;
+	font-size:11px;
+	color:#777;
+}
+	.active p{
+		font-size:12px;
+		color:#111;
+	}
+
+/* Texts appearing above pictures */
+
+span.slidetext{
+	display:block;
+	width:100%;
+	float:right;
+	text-align:right;
+	color:#FFFFFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height:18px;
+	letter-spacing:normal;
+	margin:0px;
+	padding:10px 14px 10px 10px;
+	background:url("../../img/background/darkbg.png") repeat;
+}
